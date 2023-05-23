@@ -281,9 +281,6 @@ export default function de() {
 				operator: "Betreiber",
 				operatorText: "Diese Website wurde erstellt und wird betrieben von:",
 				contactMe: "Bitte melden Sie sich bei Fragen oder Anmerkungen an die unten angegebene Email-Adresse.",
-				involved: "Beteiligte",
-				involvedText: "Folgende Personen sind an dieser Website beteiligt:",
-				roles: { design: "Design", development: "Programmierung", content: "Inhalt" },
 				resources: "Ressourcen",
 				resourcesText: "Bilder, Grafiken, Videos, und andere Ressourcen wurden von folgenden Quellen verwendet:",
 				links: {

@@ -45,7 +45,7 @@ export default function Contact() {
 					<Typography>
 						{ t("contact.emailAddress") }
 						<br />
-						<a href="mailto:contact@nicholas-krebs.ch">contact@nicholas-krebs.ch</a>
+						<a href="mailto:contact@nicholas-krebs.ch">contact@chraebsli.dev</a>
 					</Typography>
 				</section>
 

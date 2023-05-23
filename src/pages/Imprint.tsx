@@ -20,9 +20,9 @@ export default function Imprint() {
 					<address>
 						Nicholas Krebs
 						<br />
-						Breitebüneweg 5
+						In der Gass 1
 						<br />
-						4539 Rumisberg
+						3380 Wangen an der Aare
 						<br />
 						Bern, CH
 					</address>
@@ -31,16 +31,6 @@ export default function Imprint() {
 						<br />
 						<a href="mailto:contact@chraebsli.dev">contact@chraebsli.dev</a>
 					</Typography>
-				</section>
-				<Line />
-				<section>
-					<SectionTitle>{ t("imprint.involved") }</SectionTitle>
-					<Typography>{ t("imprint.involvedText") }</Typography>
-					<ul>
-						<li>{ t("imprint.roles.design") }: Nicholas Krebs</li>
-						<li>{ t("imprint.roles.development") }: Nicholas Krebs</li>
-						<li>{ t("imprint.roles.content") }: Nicholas Krebs</li>
-					</ul>
 				</section>
 				<Line />
 				<section>

@@ -282,9 +282,6 @@ export default function en() {
 				operator: "Developer",
 				operatorText: "This website is getting developed by:",
 				contactMe: "If you have any questions, please contact me via the e-mail address below.",
-				involved: "Involved",
-				involvedText: "Following people are involved in the development of this website:",
-				roles: { design: "Design", development: "Programming", content: "Content" },
 				resources: "Resources",
 				resourcesText: "Images, Videos, and other resources are used from the following sources:",
 				links: {
