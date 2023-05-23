@@ -3,7 +3,6 @@ import { Typography } from "@mui/material";
 import Page from "../../components/common/Page";
 import ServicesList from "../../components/services/ServicesList";
 import ProjectsList from "../../components/projects/ProjectsList";
-import SocialMediaList from "../../components/social-media/SocialMediaList";
 import { Line, SectionTitle } from "../../components/Text";
 import { useTranslation } from "react-i18next";
 
@@ -45,11 +44,6 @@ export default function Home() {
 					<ProjectsList space={ 70 } />
 				</section>
 				<Line top={ 5 } bottom={ 5 } />
-				<section>
-					<SectionTitle>{ t("home.sections.socialTitle") }</SectionTitle>
-					<Typography>{ t("home.sections.socialDescription") }</Typography>
-					<SocialMediaList />
-				</section>
 			</article>
 		</Page>
 	);
