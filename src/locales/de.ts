@@ -6,8 +6,8 @@ export default function de() {
 				description: "Ich biete verschiedene IT Dienstleistungen an, um neben meiner schulischen Lehre als Informatiker etwas Geld zu verdienen.",
 			},
 			about: {
-				title: "Über mich",
-				description: "Ich bin ein 17-jähriger Informatiklehrling aus der Schweiz im 3. Lehrjahr. Ich erstelle gerne Websites und Webapps und habe bereits einige Projekte realisiert.",
+				title: "Über uns",
+				description: "Wir sind Chraebsli IT Services",
 			},
 			projects: {
 				title: "Projekte",
@@ -60,10 +60,6 @@ export default function de() {
 			imprint: {
 				title: "Impressum",
 				description: "Hier finden Sie das Impressum dieser Website.",
-			},
-			privacy: {
-				title: "Datenschutz",
-				description: "Hier finden Sie die Datenschutzerklärung dieser Website.",
 			},
 			error: {
 				404: {
@@ -220,7 +216,7 @@ export default function de() {
 			header: {
 				title: "chraebsli IT-Services",
 				links: {
-					about: "Über mich",
+					about: "Über uns",
 					services: "Services",
 					projects: "Projekte",
 					contact: "Kontakt",
@@ -260,17 +256,9 @@ export default function de() {
 					socialDescription: "Folge mir auf meinen Social Media Kanälen:",
 				},
 			},
-			me: {
-				title: "Über mich",
-				description: "Mein Name ist Nicholas Krebs und ich bin ein Informatiklehrling Fachrichtung Betriebsinformatik im 3. Lehrjahr in der <1>Technischen Fachschule</1> in Bern. Ich interessiere mich sehr für die Informatik und am meisten für die Webentwicklung, in der ich mich dieses Jahr auch spezialisieren werde. \nIn meiner Freizeit investiere ich meine Zeit gerne in das Weiterbilden von JavaScript/ TypeScript und anderen Programmiersprachen für Web und Bibliotheken wie React. Früher habe ich kleinere Projekte erstellt, um mit praktischen Aufgaben lernen zu können. Das waren aber nur Projekte wie Tic-Tac-Toe. Nun möchte ich aber grössere Projekte neben meiner Ausbildung zu entwickeln für mich oder für Kunden. \nIch habe bereits für 2 Vereine aus meiner Umgebung eine Website entwickelt oder ich bin aktiv in deren Entwicklung. Mehr dazu bei den <1>Projekten</1>",
-				skills: {
-					title: "Skills",
-					description: "Hier sind einzelne Skills, die ich in meiner Freizeit oder bei der Ausbildung erlernt und weiterentwickelt habe.",
-				},
-				projectsTitle: "Projekte",
-				projectsDescription: "Projekte, die ich realisiert habe:",
-				statsTitle: "Statistiken",
-				statsDescription: "WakaTime Statistiken zu Programmiersprachen und Aktivität in den letzten 30 Tagen:",
+			about: {
+				title: "Über uns",
+				description: "Wir sind Chraebsli IT Services",
 			},
 			contact: {
 				title: "Kontakt",

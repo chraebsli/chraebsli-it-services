@@ -24,7 +24,7 @@ import Projects from "./pages/Projects/Projects";
 import SingleProject from "./pages/Projects/SingleProject";
 
 import Contact from "./pages/Contact";
-import Me from "./pages/Me/Me";
+import About from "./pages/About/About";
 
 import Imprint from "./pages/Imprint";
 import NotFound404 from "./pages/Error/404";
@@ -79,7 +79,7 @@ function App() {
 							<Route path="/projects" element={ <Projects /> } />
 							<Route path="/project/:project" element={ <SingleProject /> } />
 
-							<Route path="/me" element={ <Me /> } />
+							<Route path="/about" element={ <About /> } />
 							<Route path="/contact" element={ <Contact /> } />
 
 							<Route path="/imprint" element={ <Imprint /> } />

@@ -6,8 +6,8 @@ export default function en() {
 				description: "I am offering different IT services to earn some money besides my school apprenticeship as an IT specialist.",
 			},
 			about: {
-				title: "About me",
-				description: "I am a 17 year old IT specialist apprentice from Switzerland. I am interested in web development and software development.",
+				title: "About us",
+				description: "We are Chraebsli IT Services",
 			},
 			projects: {
 				title: "Projects",
@@ -60,10 +60,6 @@ export default function en() {
 			imprint: {
 				title: "Imprint",
 				description: "Imprint of the website.",
-			},
-			privacy: {
-				title: "Privacy",
-				description: "Privacy policy of the website.",
 			},
 			error: {
 				404: {
@@ -261,17 +257,9 @@ export default function en() {
 					socialDescription: "Follow me on this social media platforms:",
 				},
 			},
-			me: {
-				title: "About me",
-				description: "My name is Nicholas Krebs, and I am a third-year IT apprentice specializing in business IT at the <1>Technischen Fachschule</1> in Bern. I am very interested in computer science and most of all in web development, which I will also specialize in this year. \nIn my spare time, I like to invest my time in further training in JavaScript/ TypeScript and other programming languages for the web and libraries such as React. I used to create smaller projects to be able to learn with hands-on tasks. But those were just projects like Tic-Tac-Toe. But now I would like to develop larger projects alongside my training, for myself or for customers. \nI have already developed a website for 2 clubs in my area or I am actively developing it. More on this under <1>Projects</1>",
-				skills: {
-					title: "Skills",
-					description: "These are some of my skills I learned oder trained in my free time or while my apprenticeship as a computer scientist.",
-				},
-				projectsTitle: "Projects",
-				projectsDescription: "Some Projects I built:",
-				statsTitle: "Statistics",
-				statsDescription: "WakaTime statistics about my activity in programming and the languages I used in the last 30 days:",
+			about: {
+				title: "About us",
+				description: "We are Chraebsli IT Services",
 			},
 			contact: {
 				title: "Contact",

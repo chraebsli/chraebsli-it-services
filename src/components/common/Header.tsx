@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 import LogoWhiteTransparent from "../../assets/logo-white-transparent.svg";
 
 const pages = [
-	{ key: "about", href: "/me" },
+	{ key: "about", href: "/about" },
 	{ key: "services", href: "/services" },
 	{ key: "projects", href: "/projects" },
 	{ key: "contact", href: "/contact" },
