@@ -1,9 +1,13 @@
 import React from "react";
 import { Avatar, Chip, Typography } from "@mui/material";
 
-export default function Tag({ name }: { name: string }) {
+type Props = {
+	name: string
+}
+export default function Tag({name}: Props) {
 	let color: "secondary" | "default" | "success" | "warning" | "error" | "primary" | "info";
 	let avatar: any;
+	// TODO: enum
 	switch (name) {
 	case "deployed":
 		color = "success";
@@ -33,12 +37,11 @@ export default function Tag({ name }: { name: string }) {
 	return (
 		<Chip
 			variant="outlined"
-			color={ color }
-			avatar={ <Avatar>{ avatar }</Avatar> }
+			color={color}
+			avatar={<Avatar>{avatar}</Avatar>}
 			label={
-				<Typography variant={ "subtitle2" } color={ "text.primary" }>
-					{ " " }
-					{ name }{ " " }
+				<Typography variant={"subtitle2"} color={"text.primary"}>
+					{" "}{name}{" "}
 				</Typography>
 			}
 		/>

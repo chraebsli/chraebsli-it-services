@@ -38,7 +38,7 @@ function getFormData(form: any) {
 	formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
 	formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
-	return { data: formData, honeypot: honeypot };
+	return {data: formData, honeypot: honeypot};
 }
 
 export function handleFormSubmit(event: any) {
@@ -54,7 +54,7 @@ export function handleFormSubmit(event: any) {
 		.map(k => encodeURIComponent(k) + "=" + encodeURIComponent(data[k]))
 		.join("&");
 
-	return axios.post(url, encoded, { headers: { "Content-Type": "application/x-www-form-urlencoded" } });
+	return axios.post(url, encoded, {headers: {"Content-Type": "application/x-www-form-urlencoded"}});
 }
 
 function disableAllButtons(form: HTMLFormElement) {

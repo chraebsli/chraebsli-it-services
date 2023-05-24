@@ -16,7 +16,7 @@ i18n
 	// for all options read: https://www.i18next.com/overview/configuration-options
 	.init({
 		detection: {
-			order: [ "cookie", "querystring", "localStorage", "navigator", "htmlTag", "path", "subdomain" ],
+			order: ["cookie", "querystring", "localStorage", "navigator", "htmlTag", "path", "subdomain"],
 		},
 		debug: true,
 		fallbackLng: defaultLanguage,
@@ -26,20 +26,20 @@ i18n
 		react: {
 			transSupportBasicHtmlNodes: true,
 		},
-		ns: [ "common", "components", "pages", "meta" ],
+		ns: ["common", "components", "pages", "meta"],
 		defaultNS: "common",
 		resources: {
 			de: {
-				common: { ...de().common },
-				components: { ...de().components },
-				pages: { ...de().pages },
-				meta: { ...de().meta },
+				common: {...de().common},
+				components: {...de().components},
+				pages: {...de().pages},
+				meta: {...de().meta},
 			},
 			en: {
-				common: { ...en().common },
-				components: { ...en().components },
-				pages: { ...en().pages },
-				meta: { ...en().meta },
+				common: {...en().common},
+				components: {...en().components},
+				pages: {...en().pages},
+				meta: {...en().meta},
 			},
 		},
 	});
@@ -47,6 +47,6 @@ i18n
 export default i18n;
 
 export const languages = [
-	{ code: "de", name: "Deutsch" },
-	{ code: "en", name: "English" },
+	{code: "de", name: "Deutsch"},
+	{code: "en", name: "English"},
 ];

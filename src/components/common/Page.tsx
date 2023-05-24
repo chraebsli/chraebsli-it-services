@@ -1,14 +1,17 @@
 import React from "react";
 import Meta from "./Meta";
 
-export default function Page({
-	page, className, children,
-}: { page: string, className?: string, children: React.ReactNode }) {
+type Props = {
+	page: string,
+	className?: string,
+	children: React.ReactNode
+}
+export default function Page({page, className, children}: Props) {
 	return (
 		<>
-			<Meta page={ page } />
-			<main className={ `${ page.toLowerCase() } ${ className }` }>
-				{ children }
+			<Meta page={page} />
+			<main className={`${page.toLowerCase()} ${className}`}>
+				{children}
 			</main>
 		</>
 	);

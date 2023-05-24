@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import Project from "../../models/project";
 
 export default function projectsList(): Project[] {
-	const { t } = useTranslation("common");
+	const {t} = useTranslation("common");
 
 	return [
 		new Project(
@@ -11,7 +11,7 @@ export default function projectsList(): Project[] {
 			"/project/fischlehrpfad",
 			{
 				description: t("projects.fischlehrpfad.card.description"),
-				tags: t("projects.fischlehrpfad.card.tags", { returnObjects: true }),
+				tags: t("projects.fischlehrpfad.card.tags", {returnObjects: true}),
 			},
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/Fischlehrpfad-Burgdorf",
@@ -19,7 +19,7 @@ export default function projectsList(): Project[] {
 				textContent: t("projects.fischlehrpfad.page.textContent"),
 				titleProceed: t("projects.fischlehrpfad.page.textProceed"),
 				titleConclusion: t("projects.fischlehrpfad.page.textConclusion"),
-				tools: [ "Grav", "PHP", "Twig", "HTML5", "CSS3", "JavaScript" ],
+				tools: ["Grav", "PHP", "Twig", "HTML5", "CSS3", "JavaScript"],
 				website: "fischlehrpfad.ch",
 			},
 		),
@@ -29,7 +29,7 @@ export default function projectsList(): Project[] {
 			"/project/personal",
 			{
 				description: t("projects.personal.card.description"),
-				tags: t("projects.personal.card.tags", { returnObjects: true }),
+				tags: t("projects.personal.card.tags", {returnObjects: true}),
 			},
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/homepage",
@@ -37,7 +37,7 @@ export default function projectsList(): Project[] {
 				textContent: t("projects.personal.page.textContent"),
 				titleProceed: t("projects.personal.page.textProceed"),
 				titleConclusion: t("projects.personal.page.textConclusion"),
-				tools: [ "React", "Node.JS", "TypeScript", "MUI" ],
+				tools: ["React", "Node.JS", "TypeScript", "MUI"],
 			},
 		),
 		new Project(
@@ -46,7 +46,7 @@ export default function projectsList(): Project[] {
 			"/project/sgrumisberg",
 			{
 				description: t("projects.sgrumisberg.card.description"),
-				tags: t("projects.sgrumisberg.card.tags", { returnObjects: true }),
+				tags: t("projects.sgrumisberg.card.tags", {returnObjects: true}),
 			},
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/sgrumisberg.ch",
@@ -54,7 +54,7 @@ export default function projectsList(): Project[] {
 				textContent: t("projects.sgrumisberg.page.textContent"),
 				titleProceed: t("projects.sgrumisberg.page.textProceed"),
 				titleConclusion: t("projects.sgrumisberg.page.textConclusion"),
-				tools: [ "Grav", "PHP", "Twig", "HTML5", "CSS3", "JavaScript" ],
+				tools: ["Grav", "PHP", "Twig", "HTML5", "CSS3", "JavaScript"],
 				website: "sgrumisberg.ch",
 			},
 		),
@@ -64,7 +64,7 @@ export default function projectsList(): Project[] {
 			"/project/mgrumisberg",
 			{
 				description: t("projects.mgrumisberg.card.description"),
-				tags: t("projects.mgrumisberg.card.tags", { returnObjects: true }),
+				tags: t("projects.mgrumisberg.card.tags", {returnObjects: true}),
 			},
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/mgrumisberg.ch",
@@ -72,7 +72,7 @@ export default function projectsList(): Project[] {
 				textContent: t("projects.mgrumisberg.page.textContent"),
 				titleProceed: t("projects.mgrumisberg.page.textProceed"),
 				titleConclusion: t("projects.mgrumisberg.page.textConclusion"),
-				tools: [ "Grav", "PHP", "Twig", "HTML5", "CSS3", "JavaScript" ],
+				tools: ["Grav", "PHP", "Twig", "HTML5", "CSS3", "JavaScript"],
 			},
 		),
 		new Project(
@@ -81,7 +81,7 @@ export default function projectsList(): Project[] {
 			"/project/home-dashboard",
 			{
 				description: t("projects.homeDashboard.card.description"),
-				tags: t("projects.homeDashboard.card.tags", { returnObjects: true }),
+				tags: t("projects.homeDashboard.card.tags", {returnObjects: true}),
 			},
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/home-dashboard",
@@ -89,7 +89,7 @@ export default function projectsList(): Project[] {
 				textContent: t("projects.homeDashboard.page.textContent"),
 				titleProceed: t("projects.homeDashboard.page.textProceed"),
 				titleConclusion: t("projects.homeDashboard.page.textConclusion"),
-				tools: [ "React", "Node.JS", "Next.JS", "TypeScript", "MUI" ],
+				tools: ["React", "Node.JS", "Next.JS", "TypeScript", "MUI"],
 			},
 		),
 	];

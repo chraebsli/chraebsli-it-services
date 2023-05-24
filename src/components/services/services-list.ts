@@ -2,13 +2,13 @@ import { useTranslation } from "react-i18next";
 import FullService from "../../models/service";
 
 export default function servicesList(): FullService[] {
-	const { t } = useTranslation("common");
+	const {t} = useTranslation("common");
 	return [
 		new FullService(
 			"support",
 			t("services.itSupport.title"),
 			"/service/support",
-			t("services.itSupport.features", { returnObjects: true }),
+			t("services.itSupport.features", {returnObjects: true}),
 			{
 				teaser: t("services.itSupport.card.teaser"),
 				description: t("services.itSupport.card.description"),
@@ -22,7 +22,7 @@ export default function servicesList(): FullService[] {
 			"website",
 			t("services.website.title"),
 			"/service/website",
-			t("services.website.features", { returnObjects: true }),
+			t("services.website.features", {returnObjects: true}),
 			{
 				teaser: t("services.website.card.teaser"),
 				description: t("services.website.card.description"),
@@ -36,7 +36,7 @@ export default function servicesList(): FullService[] {
 			"webapp",
 			t("services.webapp.title"),
 			"/service/webapp",
-			t("services.webapp.features", { returnObjects: true }),
+			t("services.webapp.features", {returnObjects: true}),
 			{
 				teaser: t("services.webapp.card.teaser"),
 				description: t("services.webapp.card.description"),
@@ -50,7 +50,7 @@ export default function servicesList(): FullService[] {
 			"database",
 			t("services.database.title"),
 			"/service/database",
-			t("services.database.features", { returnObjects: true }),
+			t("services.database.features", {returnObjects: true}),
 			{
 				teaser: t("services.database.card.teaser"),
 				description: t("services.database.card.description"),

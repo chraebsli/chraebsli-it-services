@@ -5,12 +5,12 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import CookieIcon from "@mui/icons-material/Cookie";
 
 export default function CookieDisclaimer() {
-	const { t } = useTranslation("components");
-	const [ cookies, setCookie ] = useCookies([ "cookiesAccepted" ]);
-	const [ showDisclaimer, setShowDisclaimer ] = React.useState(false);
+	const {t} = useTranslation("components");
+	const [cookies, setCookie] = useCookies(["cookiesAccepted"]);
+	const [showDisclaimer, setShowDisclaimer] = React.useState(false);
 
 	const acceptCookie = () => {
-		setCookie("cookiesAccepted", true, { path: "/", maxAge: 60 * 60 * 24 * 7 });
+		setCookie("cookiesAccepted", true, {path: "/", maxAge: 60 * 60 * 24 * 7});
 		setShowDisclaimer(false);
 	};
 
@@ -18,12 +18,12 @@ export default function CookieDisclaimer() {
 		!cookies.cookiesAccepted
 			? setShowDisclaimer(true)
 			: (setShowDisclaimer(false),
-				setCookie("cookiesAccepted", true, { path: "/", maxAge: 60 * 60 * 24 * 7 }));
-	}, [ cookies ]);
+				setCookie("cookiesAccepted", true, {path: "/", maxAge: 60 * 60 * 24 * 7}));
+	}, [cookies]);
 
 	return showDisclaimer ? (
 		<Box
-			sx={ {
+			sx={{
 				maxWidth: "20rem",
 				zIndex: 1000,
 				padding: "1rem",
@@ -34,17 +34,17 @@ export default function CookieDisclaimer() {
 				borderRadius: "1rem",
 				border: ".2rem solid",
 				borderColor: "primary.main",
-			} }>
-			<Stack spacing={ 1 } direction={ "column" }>
-				<CookieIcon sx={ { width: "2rem", height: "2rem" } } />
-				<Typography sx={ { lineBreak: "auto" } }>
-					{ t("cookieDisclaimer.title") }
+			}}>
+			<Stack spacing={1} direction={"column"}>
+				<CookieIcon sx={{width: "2rem", height: "2rem"}} />
+				<Typography sx={{lineBreak: "auto"}}>
+					{t("cookieDisclaimer.title")}
 				</Typography>
-				<Typography component={ "a" } href={ "/privacy" } sx={ { lineBreak: "auto" } }>
-					{ t("cookieDisclaimer.learnMore") }
+				<Typography component={"a"} href={"/privacy"} sx={{lineBreak: "auto"}}>
+					{t("cookieDisclaimer.learnMore")}
 				</Typography>
-				<Button variant={ "contained" } color={ "primary" } onClick={ acceptCookie }>
-					{ t("cookieDisclaimer.accept") }
+				<Button variant={"contained"} color={"primary"} onClick={acceptCookie}>
+					{t("cookieDisclaimer.accept")}
 				</Button>
 			</Stack>
 		</Box>

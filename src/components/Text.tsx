@@ -1,29 +1,48 @@
 import React from "react";
 import { Typography, useTheme } from "@mui/material";
 
-export function Line({ top, bottom }: { top?: number; bottom?: number }) {
+type LineProps = {
+	top?: number;
+	bottom?: number;
+}
+
+export function Line({top, bottom}: LineProps) {
 	const primary = useTheme().palette.primary.main;
 	return (
 		<hr
-			style={ {
-				border: `2px solid ${ primary }`,
-				marginTop: `${ top }rem` ?? 0,
-				marginBottom: `${ bottom }rem` ?? 0,
-			} }
+			style={{
+				border: `2px solid ${primary}`,
+				marginTop: `${top}rem` ?? 0,
+				marginBottom: `${bottom}rem` ?? 0,
+			}}
 		/>
 	);
 }
 
-export function Image({ src, alt, height, width, sx, m, r }: { src: any; alt: string; height?: number; width?: number | string; sx?: React.CSSProperties, m?: boolean, r?: boolean }) {
+type ImageProps = {
+	src: any;
+	alt: string;
+	height?: number;
+	width?: number | string;
+	sx?: React.CSSProperties,
+	m?: boolean,
+	r?: boolean
+}
+
+export function Image({src, alt, height, width, sx, m, r}: ImageProps) {
 	return <img
-		className={ r ? "r" : "" } src={ src } alt={ alt } height={ height } width={width}
-		style={ { marginBottom: m ? "2rem" : 0, ...sx } } />;
+		className={r ? "r" : ""} src={src} alt={alt} height={height} width={width}
+		style={{marginBottom: m ? "2rem" : 0, ...sx}} />;
 }
 
-export function PageTitle({ children }: { children: React.ReactNode }) {
-	return <Typography variant={ "h4" }>{ children }</Typography>;
+type TitleProps = {
+	children: React.ReactNode;
 }
 
-export function SectionTitle({ children }: { children: React.ReactNode }) {
-	return <Typography variant={ "h5" }>{ children }</Typography>;
+export function PageTitle({children}: TitleProps) {
+	return <Typography variant={"h4"}>{children}</Typography>;
+}
+
+export function SectionTitle({children}: TitleProps) {
+	return <Typography variant={"h5"}>{children}</Typography>;
 }
