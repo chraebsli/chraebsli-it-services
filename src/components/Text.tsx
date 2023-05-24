@@ -14,10 +14,10 @@ export function Line({ top, bottom }: { top?: number; bottom?: number }) {
 	);
 }
 
-export function Image({ src, alt, height, m, r }: { src: any; alt: string; height: number; m?: boolean, r?: boolean }) {
+export function Image({ src, alt, height, width, sx, m, r }: { src: any; alt: string; height?: number; width?: number | string; sx?: React.CSSProperties, m?: boolean, r?: boolean }) {
 	return <img
-		className={ r ? "r" : "" } src={ src } alt={ alt } height={ height }
-		style={ { marginBottom: m ? "2rem" : 0 } } />;
+		className={ r ? "r" : "" } src={ src } alt={ alt } height={ height } width={width}
+		style={ { marginBottom: m ? "2rem" : 0, ...sx } } />;
 }
 
 export function PageTitle({ children }: { children: React.ReactNode }) {

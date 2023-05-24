@@ -44,13 +44,11 @@ export default function ProjectsList({
 							{ loading ? (
 								<Skeleton animation="wave" variant="rectangular" height={ 200 } />
 							) : (
-								<Picture
-									path={ `projects/${ project.id }` } name={ `${ project.id }` }
-									sizes={ [ 1280, 853, 533 ] } r>
-									<Image
-										src={ `/media/projects/${ project.id }/${ project.id }-853-min.jpg` }
-										alt={ `${ t("projects.imageAlt") } ${ project.title }` } height={ 200 } />
-								</Picture>
+								<Image
+									src={ `/media/projects/${ project.id }.webp` }
+									alt={ `${ t("projects.imageAlt") } ${ project.title }` }
+									width={ "100%" }
+									sx={{ padding:"1rem"}} />
 							) }
 
 							<CardHeader title={ project.title } titleTypographyProps={ { align: "center" } } />
