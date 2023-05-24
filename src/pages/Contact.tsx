@@ -9,20 +9,20 @@ import { handleFormSubmit } from "../components/form/FormSubmissionHandler";
 import SendIcon from "@mui/icons-material/Send";
 
 export default function Contact() {
-	const { t } = useTranslation("pages");
+	const {t} = useTranslation("pages");
 	const pageName = t("contact.title");
-	const service = { name: new URLSearchParams(window.location.search).get("service") };
-	const services = servicesList().map(service => { return { name: service.title }; });
+	const service = {name: new URLSearchParams(window.location.search).get("service")};
+	const services = servicesList().map(service => { return {name: service.title}; });
 
-	const [ sending, setSending ] = React.useState(false);
-	const [ status, setStatus ] = React.useState({ code: 0, message: "" });
+	const [sending, setSending] = React.useState(false);
+	const [status, setStatus] = React.useState({code: 0, message: ""});
 	const formSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 		setSending(true);
 		handleFormSubmit(event)
 			.then((response) => {
 				setSending(false);
-				const { status, statusText } = response;
-				setStatus({ code: status, message: statusText });
+				const {status, statusText} = response;
+				setStatus({code: status, message: statusText});
 			});
 	};
 
@@ -31,53 +31,51 @@ export default function Contact() {
 	}, []);
 
 	return (
-		<Page page={ "contact" }>
+		<Page page={"contact"}>
 			<section>
-				<PageTitle>{ pageName }</PageTitle>
-				<Line bottom={ 2 } />
+				<PageTitle>{pageName}</PageTitle>
+				<Line bottom={2} />
 			</section>
 
 			<article>
 				<section>
 					<Typography dangerouslySetInnerHTML={
-						{ __html: t("contact.contactMe", { interpolation: { escapeValue: false } }) } }
+						{__html: t("contact.contactMe", {interpolation: {escapeValue: false}})}}
 					/>
 					<Typography>
-						{ t("contact.emailAddress") }
+						{t("contact.emailAddress")}
 						<br />
 						<a href="mailto:contact@nicholas-krebs.ch">contact@chraebsli.dev</a>
 					</Typography>
 				</section>
 
 				<section>
-					<Typography sx={ { marginBottom: "2rem" } }>
-						{ t("contact.or") }
+					<Typography sx={{marginBottom: "2rem"}}>
+						{t("contact.or")}
 					</Typography>
 					<form
-						className={ "gform" }
-						action={
-							"https://script.google.com/macros/s/AKfycbyGX_jTNlOlP0eU2nAqu5dhgh9bJxqw4goiI8j0sHYmdKi6o2QXLd0ejo8aPexM5O1Egw/exec"
-						}
-						onSubmit={ formSubmit }
-						method={ "POST" }>
+						className={"gform"}
+						action={"https://script.google.com/macros/s/AKfycbyGX_jTNlOlP0eU2nAqu5dhgh9bJxqw4goiI8j0sHYmdKi6o2QXLd0ejo8aPexM5O1Egw/exec"}
+						onSubmit={formSubmit}
+						method={"POST"}>
 						<div>
 							<FormGroup>
-								<FormElements pos={ "left" }>
+								<FormElements pos={"left"}>
 									<TextField
-										name={ "firstname" }
-										id={ "firstname" }
-										variant={ "outlined" }
-										label={ t("contact.form.firstName") }
+										name={"firstname"}
+										id={"firstname"}
+										variant={"outlined"}
+										label={t("contact.form.firstName")}
 										fullWidth
 									/>
 								</FormElements>
-								<FormElements pos={ "right" }>
+								<FormElements pos={"right"}>
 									<TextField
 										required
-										name={ "lastname" }
-										id={ "lastname" }
-										variant={ "outlined" }
-										label={ t("contact.form.lastName") }
+										name={"lastname"}
+										id={"lastname"}
+										variant={"outlined"}
+										label={t("contact.form.lastName")}
 										fullWidth
 									/>
 								</FormElements>
@@ -86,11 +84,11 @@ export default function Contact() {
 								<FormElements>
 									<TextField
 										required
-										name={ "email" }
-										id={ "email" }
-										variant={ "outlined" }
-										label={ t("contact.form.email") }
-										type={ "email" }
+										name={"email"}
+										id={"email"}
+										variant={"outlined"}
+										label={t("contact.form.email")}
+										type={"email"}
 										fullWidth
 									/>
 								</FormElements>
@@ -100,18 +98,18 @@ export default function Contact() {
 									<Autocomplete
 										freeSolo
 										aria-required
-										options={ services.map(service => service.name) }
-										getOptionLabel={ option => option }
-										id={ "service" }
-										value={ service.name ? service.name : "" }
+										options={services.map(service => service.name)}
+										getOptionLabel={option => option}
+										id={"service"}
+										value={service.name ? service.name : ""}
 										includeInputInList
-										renderInput={ params => (
+										renderInput={params => (
 											<TextField
-												{ ...params }
-												label={ t("contact.form.service") }
-												variant={ "outlined" }
+												{...params}
+												label={t("contact.form.service")}
+												variant={"outlined"}
 											/>
-										) }
+										)}
 										fullWidth
 									/>
 								</FormElements>
@@ -120,44 +118,48 @@ export default function Contact() {
 								<FormElements>
 									<TextField
 										required
-										name={ "message" }
-										id={ "message" }
-										variant={ "outlined" }
-										label={ t("contact.form.message") }
+										name={"message"}
+										id={"message"}
+										variant={"outlined"}
+										label={t("contact.form.message")}
 										fullWidth
 										multiline
-										rows={ 5 }
+										rows={5}
 									/>
 								</FormElements>
 							</FormGroup>
 							<div>
-								<Typography>{ t("contact.form.required") }</Typography>
+								<Typography>{t("contact.form.required")}</Typography>
 							</div>
 							<FormGroup>
 								<FormElements>
 									<Button
-										variant={ "contained" }
-										type={ "submit" }
-										size={ "large" }
-										endIcon={ !sending && <SendIcon color={ "secondary" } /> }>
-										{ sending
-											? <CircularProgress color={ "secondary" } size={ 30 } />
+										variant={"contained"}
+										type={"submit"}
+										size={"large"}
+										endIcon={!sending && <SendIcon color={"secondary"} />}>
+										{sending
+											? <CircularProgress color={"secondary"} size={30} />
 											: t("contact.form.send")
 										}
 									</Button>
 								</FormElements>
 							</FormGroup>
 						</div>
-						<div className={ "after-submit" }>
-							{ !sending && status.code === 200 ? (
-								<Alert severity="success">
-									{ t("contact.form.success") }
-								</Alert>
-							) : !sending && status.code !== 0 ? (
-								<Alert severity="error">
-									Error { status.code }: { status.message }
-								</Alert>
-							) : null }
+						<div className={"after-submit"}>
+							{
+								// TODO: code style
+								!sending && status.code === 200
+									? (
+										<Alert severity="success">
+											{t("contact.form.success")}
+										</Alert>)
+									: !sending && status.code !== 0 ? (
+										<Alert severity="error">
+											Error {status.code}: {status.message}
+										</Alert>
+									) : null
+							}
 						</div>
 					</form>
 				</section>

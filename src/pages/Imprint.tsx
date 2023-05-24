@@ -5,46 +5,42 @@ import { useTranslation } from "react-i18next";
 import { Line, PageTitle, SectionTitle } from "../components/Text";
 
 export default function Imprint() {
-	const { t } = useTranslation("pages");
+	const {t} = useTranslation("pages");
 	return (
-		<Page page={ "imprint" }>
+		<Page page={"imprint"}>
 			<section>
-				<PageTitle>{ t("imprint.title") }</PageTitle>
-				<Line bottom={ 2 } />
+				<PageTitle>{t("imprint.title")}</PageTitle>
+				<Line bottom={2} />
 			</section>
 
 			<article>
 				<section>
-					<SectionTitle>{ t("imprint.operator") }</SectionTitle>
-					<Typography>{ t("imprint.operatorText") }</Typography>
+					<SectionTitle>{t("imprint.operator")}</SectionTitle>
+					<Typography>{t("imprint.operatorText")}</Typography>
 					<address>
-						Nicholas Krebs
-						<br />
-						In der Gass 1
-						<br />
-						3380 Wangen an der Aare
-						<br />
+						Nicholas Krebs <br />
+						In der Gass 1 <br />
+						3380 Wangen an der Aare <br />
 						Bern, CH
 					</address>
 					<Typography>
-						{ t("imprint.contactMe") }
+						{t("imprint.contactMe")}
 						<br />
 						<a href="mailto:contact@chraebsli.dev">contact@chraebsli.dev</a>
 					</Typography>
 				</section>
 				<Line />
 				<section>
-					<SectionTitle>{ t("imprint.resources") }</SectionTitle>
+					<SectionTitle>{t("imprint.resources")}</SectionTitle>
 					<Typography>
-						{ t("imprint.resourcesText") }
+						{t("imprint.resourcesText")}
 					</Typography>
 					<ul>
 						<li>
-							{ t("imprint.links.illustrations") }: <a href="https://www.freepik.com">vectorjuice /
-							Freepik</a>
+							{t("imprint.links.illustrations")}: <a href="https://www.freepik.com">vectorjuice / Freepik</a>
 						</li>
 						<li>
-							{ t("imprint.links.icons") }: <a href="https://mui.com/">Material UI</a>
+							{t("imprint.links.icons")}: <a href="https://mui.com/">Material UI</a>
 						</li>
 					</ul>
 				</section>

@@ -1,8 +1,6 @@
 import React from "react";
 import { Card, Stack, Typography } from "@mui/material";
 import Page from "../../components/common/Page";
-
-// assets and styles
 import "./About.sass";
 import PersonIcon from "@mui/icons-material/Person";
 import { Trans, useTranslation } from "react-i18next";
