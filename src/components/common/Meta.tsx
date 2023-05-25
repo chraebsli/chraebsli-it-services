@@ -7,6 +7,11 @@ import { useTranslation } from "react-i18next";
 const specialPages = {
 	noFollow: ["projects", "imprint"],
 	noIndex: [""],
+	// TODO: Meta for projects & services
+	meta: {
+		projects: "",
+		services: "",
+	}
 };
 
 type Props = {
