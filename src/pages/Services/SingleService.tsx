@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import { Button, Stack, Typography } from "@mui/material";
 import Page from "../../components/common/Page";
 import { Image, Line, PageTitle } from "../../components/Text";
-import { Picture } from "../../components/Picture";
 import SendIcon from "@mui/icons-material/Send";
 import servicesList from "../../components/services/services-list";
 import NotFound404 from "../Error/404";
@@ -30,9 +29,10 @@ export default function SingleService() {
 			</section>
 
 			<article>
-				<Picture path={`services/${id}`} name={id} sizes={[720, 480]}>
-					<Image src={`/media/services/${id}/${id}-720-min.jpg`} alt={`Illustration ${title}`} height={300} m />
-				</Picture>
+				<Image
+					src={`/media/services/${id}.webp`}
+					alt={`${t("services.imageAlt")} ${title}`}
+					height={300} />
 				<section>
 					<Stack spacing={3}>
 						<Typography className={"italic"}> {teaser} </Typography>
