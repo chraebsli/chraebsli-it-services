@@ -48,9 +48,9 @@ export default function de() {
 					title: "Datenbank erstellen",
 					description: "Ich erstelle für Sie eine beliebige Datenbank. Dabei kann es sich um eine SQL oder NoSQL Datenbank handeln.",
 				},
-				support: {
-					title: "IT Support",
-					description: "Ich biete Ihnen IT Support an. Dazu kann ich Ihnen Beispielsweise bei der Installation von einem neuen PC helfen oder Aufklärung über diverse IT Themen geben.",
+				other: {
+					title: "Andere IT Dienstleistungen",
+					description: "Ich biete auch andere IT Dienstleistungen an. Die Möglichkeiten sind nicht begrenzt. Kontaktieren Sie mich bitte.",
 				},
 			},
 			contact: {
@@ -152,23 +152,6 @@ export default function de() {
 				learnMore: "Mehr erfahren",
 				illustration: "Illustration",
 				includedFeatures: "Folgende Features sind inbegriffen:",
-				itSupport: {
-					title: "IT Support",
-					features: [
-						"professioneller Support",
-						"schnelle Hilfe über Chat/ Anruf",
-						"remote/ vor Ort Hilfestellung",
-						"Weiterbildung und Aufklärung",
-					],
-					card: {
-						teaser: "Brauchen Sie Hilfe bezüglich Computer oder Smartphones und wissen nicht mehr weiter?",
-						description: "Kommen Sie nicht mehr weiter bei Apps von Ihrem Computer oder ihrem Smartphone oder Fragen zu Sicherheit und Datenschutz?",
-					},
-					page: {
-						teaser: "Brauchen Sie Hilfe bezüglich Computer oder Smartphones und wissen nicht mehr weiter?",
-						description: "Kommen Sie nicht mehr weiter mit Ihrem Computer oder ihrem Smartphone? Zum Beispiel beim Installieren von Apps auf einem neuen Gerät oder dessen Konfiguration oder Verwendung? Oder haben Fragen bezüglich Sicherheit und Datenschutz oder anderer Themen der Computerwelt?\n Ich helfe Ihnen gerne weiter und möchte Sie dabei unterstützen, damit Sie in Zukunft weniger Fragen und Probleme bezüglich Ihres Computers oder Ihres Smartphones haben.",
-					},
-				},
 				website: {
 					title: "Website erstellen",
 					features: [ "professionelle Website", "Konfiguration", "Domain & Hosting", "E-Mail Adressen" ],
@@ -208,6 +191,23 @@ export default function de() {
 					page: {
 						teaser: "Möchten Sie eine Datenbank erstellen oder von einer anderen alle Daten in eine neue übernehmen?",
 						description: "Ich erstelle für Sie eine neue Datenbank oder übernehme Daten von einer anderen Datenbank in eine neue, egal ob SQL oder NoSQL. Dabei können Sie selbst entscheiden, welche Datenbank Sie verwenden möchten. Es spielt keine Rolle, welche Art von Daten Sie speichern möchten, ob Dokumente oder zum Beispiel ein Login-System.",
+					},
+				},
+				other: {
+					title: "andere IT Dienstleistungen",
+					features: [
+						"Domain Management & Transfer",
+						"Hosting & E-Mail",
+						"Supporting",
+						"IT Beratung & Schulung",
+					],
+					card: {
+						teaser: "Brauchen Sie eine andere IT Dienstleistung?",
+						description: "Ich biete auch andere IT Dienstleistungen an, wie zum Beispiel Domain Management & Transfer, Supporting, IT Beratung und IT Schulung.",
+					},
+					page: {
+						teaser: "Brauchen Sie eine andere IT Dienstleistung?",
+						description: "Ich biete auch andere IT Dienstleistungen an, wie zum Beispiel Domain Management & Transfer, Supporting, IT Beratung und IT Schulung. Wenn Sie eine andere IT Dienstleistung benötigen, können Sie mich gerne kontaktieren. Ich freue mich, Ihnen helfen zu können.",
 					},
 				},
 			},

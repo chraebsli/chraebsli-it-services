@@ -5,20 +5,6 @@ export default function servicesList(): FullService[] {
 	const {t} = useTranslation("common");
 	return [
 		new FullService(
-			"support",
-			t("services.itSupport.title"),
-			"/service/support",
-			t("services.itSupport.features", {returnObjects: true}),
-			{
-				teaser: t("services.itSupport.card.teaser"),
-				description: t("services.itSupport.card.description"),
-			},
-			{
-				teaser: t("services.itSupport.page.teaser"),
-				description: t("services.itSupport.page.description"),
-			},
-		),
-		new FullService(
 			"website",
 			t("services.website.title"),
 			"/service/website",
@@ -58,6 +44,20 @@ export default function servicesList(): FullService[] {
 			{
 				teaser: t("services.database.page.teaser"),
 				description: t("services.database.page.description"),
+			},
+		),
+		new FullService(
+			"other",
+			t("services.other.title"),
+			"/service/other",
+			t("services.other.features", {returnObjects: true}),
+			{
+				teaser: t("services.other.card.teaser"),
+				description: t("services.other.card.description"),
+			},
+			{
+				teaser: t("services.other.page.teaser"),
+				description: t("services.other.page.description"),
 			},
 		),
 	];

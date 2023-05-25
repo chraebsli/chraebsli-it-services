@@ -48,9 +48,9 @@ export default function en() {
 					title: "Database",
 					description: "I can create any database for you. It can be a SQL or NoSQL database.",
 				},
-				support: {
-					title: "IT Support",
-					description: "I can help you with your IT problems. I can help you with the installation of a new PC or I can give you information about IT topics.",
+				other: {
+					title: "other IT services",
+					description: "I can also offer you other IT services. Just contact me and we will find a solution.",
 				},
 			},
 			contact: {
@@ -151,23 +151,6 @@ export default function en() {
 				learnMore: "learn more",
 				illustration: "illustration",
 				includedFeatures: "Following services are included:",
-				itSupport: {
-					title: "IT Support",
-					features: [
-						"professional support",
-						"fast help via chat/ call",
-						"remote/ on site help",
-						"training and education",
-					],
-					card: {
-						teaser: "Do you need help with your computer or smartphone and don’t know what to do?",
-						description: "Are you having trouble with apps on your computer or smartphone or have questions about security and data protection?",
-					},
-					page: {
-						teaser: "Do you need help with computers or smartphones and don't know what to do?",
-						description: "Are you stuck with your computer or smartphone? For example installing apps on a new device or configuring it or using it? Or do you have questions about security and data protection or other topics in the computer world?\\n I would be happy to help you and would like to support you so that you have fewer questions and problems regarding your computer or smartphone in the future.",
-					},
-				},
 				website: {
 					title: "create a website",
 					features: [ "professional website", "configuration", "domain & hosting", "E-Mail addresses" ],
@@ -209,6 +192,23 @@ export default function en() {
 					page: {
 						teaser: "Do you want to create a database or transfer all data from another to a new one?",
 						description: "Ich erstelle für Sie eine neue Datenbank oder übernehme Daten von einer anderen Datenbank in eine neue, egal ob SQL oder NoSQL. Dabei können Sie selbst entscheiden, welche Datenbank Sie verwenden möchten. Es spielt keine Rolle, welche Art von Daten Sie speichern möchten, ob Dokumente oder zum Beispiel ein Login-System.",
+					},
+				},
+				other: {
+					title: "other IT services",
+					features: [
+						"Domain Management & Transfer",
+						"Hosting & E-Mail",
+						"Support",
+						"IT Consulting & Schooling",
+					],
+					card: {
+						teaser: "Do you need any other IT services?",
+						description: "I can help you with many other IT services. Just contact me and we will find a solution.",
+					},
+					page: {
+						teaser: "Do you need any other IT services like domain management, hosting or support?",
+						description: "I can help you with many other IT services. Just contact me and we will find a solution.",
 					},
 				},
 			},
