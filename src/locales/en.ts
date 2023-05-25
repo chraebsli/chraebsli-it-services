@@ -36,22 +36,6 @@ export default function en() {
 			services: {
 				title: "Services",
 				description: "Here you can find some of my services.",
-				website: {
-					title: "Create a website",
-					description: "I can create a website for you according to your wishes. In addition, I can register a domain and find a suitable hosting provider.",
-				},
-				webapp: {
-					title: "Create a webapp",
-					description: "I can create a web application for you according to your wishes. You can then use it, for example, in your company.",
-				},
-				database: {
-					title: "Database",
-					description: "I can create any database for you. It can be a SQL or NoSQL database.",
-				},
-				other: {
-					title: "other IT services",
-					description: "I can also offer you other IT services. Just contact me and we will find a solution.",
-				},
 			},
 			contact: {
 				title: "Contact",
@@ -81,7 +65,8 @@ export default function en() {
 					titleTools: "Tools",
 				},
 				fischlehrpfad: {
-					title: "Fischlehrpfad",
+					title: "Fischlehrpfad Burgdorf",
+					description: "The Fischlehrpfad Burgdorf is a website for a fish path in Burgdorf, Switzerland. It was the first website I created.",
 					card: {
 						description: "The \"Fischlehrpfad\" was my first project. I developed it in the 2nd year in my apprenticeship with a colleague. The project is a small website for a fishing club. It was developed with the CMS Grav.",
 						tags: [ "web", "client", "deployed" ],
@@ -95,6 +80,7 @@ export default function en() {
 				},
 				personal: {
 					title: "personal website",
+					description: "The website you are currently visiting was created with React and TypeScript.",
 					card: {
 						description: "This project is the website you are currently on. I designed and programmed this website by myself. For this I used TypeScript with React, which I learned during the development of the project.",
 						tags: [ "web", "personal", "development" ],
@@ -107,7 +93,8 @@ export default function en() {
 					},
 				},
 				sgrumisberg: {
-					title: "SG Rumisberg",
+					title: "Schützengesellschaft Rumisberg",
+					description: "This is a website for a shooting club. It was created with Grav. It also was my first customer project.",
 					card: {
 						description: "The first website for a private customer. It is for a society from my village, which wanted to open a website for their rifle club. I developed the website with the CMS Grav and gained a lot of experience.",
 						tags: [ "web", "client", "deployed" ],
@@ -120,7 +107,8 @@ export default function en() {
 					},
 				},
 				mgrumisberg: {
-					title: "MG Rumisberg",
+					title: "Musikgesellschaft Rumisberg",
+					description: "This is a website for a music club, that I am a member of. It was created with Grav.",
 					card: {
 						description: "This is a website for the brass band of Rumisberg, where I am active as a musician. Our old website was difficult to manage and therefore I should create a new one. I have decided to use the CMS Grav again.",
 						tags: [ "web", "client", "development" ],
@@ -133,7 +121,8 @@ export default function en() {
 					},
 				},
 				homeDashboard: {
-					title: "Home Dashboard",
+					title: "Home dashboard",
+					description: "This is the first webapp I created. I use it at home to see the current weather and my calendar.",
 					card: {
 						description: "This project is a dashboard for my smart home. The data is processed with an API from Next.js and then provided with TypeScript React. There are elements for time, weather and calendar. More in development and are coming soon.",
 						tags: [ "web", "personal", "development" ],
@@ -152,7 +141,8 @@ export default function en() {
 				illustration: "illustration",
 				includedFeatures: "Following services are included:",
 				website: {
-					title: "create a website",
+					title: "Create a website",
+					description: "I can create a website for you according to your wishes. In addition, I can register a domain and find a suitable hosting provider.",
 					features: [ "professional website", "configuration", "domain & hosting", "E-Mail addresses" ],
 					card: {
 						teaser: "Do you need a website for your club, startup or for a personal purpose?",
@@ -165,7 +155,8 @@ export default function en() {
 					},
 				},
 				webapp: {
-					title: "create a webapp",
+					title: "Create a webapp",
+					description: "I can create a web application for you according to your wishes. You can then use it, for example, in your company.",
 					features: [ "modern web application", "easy to operate", "expandable", "secure data" ],
 					card: {
 						teaser: "Do you need a web application for example to record working hours for your startup?",
@@ -179,6 +170,7 @@ export default function en() {
 				},
 				database: {
 					title: "Database",
+					description: "I can create any database for you. It can be a SQL or NoSQL database.",
 					features: [
 						"complete database system",
 						"clever structure",
@@ -196,6 +188,7 @@ export default function en() {
 				},
 				other: {
 					title: "other IT services",
+					description: "I can also offer you other IT services. Just contact me and we will find a solution.",
 					features: [
 						"Domain Management & Transfer",
 						"Hosting & E-Mail",

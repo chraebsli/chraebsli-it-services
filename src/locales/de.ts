@@ -12,46 +12,10 @@ export default function de() {
 			projects: {
 				title: "Projekte",
 				description: "Hier finden Sie eine Übersicht über meine Projekte.",
-				personal: {
-					title: "eigene Website",
-					description: "Diese Website, die Sie gerade besuchen, wurde mit React und TypeScript erstellt.",
-				},
-				fischlehrpfad: {
-					title: "Fischlehrpfad Burgdorf",
-					description: "Die Website des Fischlehrpfad Burgdorf wurde mit Grav erstellt. Es ist meine erste Website, die ich erstellt habe.",
-				},
-				sgrumisberg: {
-					title: "Schützengesellschaft Rumisberg",
-					description: "Die Website der Schützengesellschaft Rumisberg wurde mit Grav erstellt. Die Website war für meinen ersten Kunden",
-				},
-				mgrumisberg: {
-					title: "Musikgesellschaft Rumisberg",
-					description: "Die Website der Musikgesellschaft Rumisberg wurde mit Grav erstellt. Die Website war für einen Verein, dem ich angehöre.",
-				},
-				"home-dashboard": {
-					title: "Home Dashboard",
-					description: "Home Dashboard ist die erste Webapp, die ich erstellt habe. Darauf wird das aktuelle Wetter angezeigt, sowie aktuelle Termine.",
-				},
 			},
 			services: {
 				title: "Dienstleistungen",
 				description: "Hier finden Sie eine Übersicht über meine Dienstleistungen.",
-				website: {
-					title: "Website erstellen",
-					description: "Ich erstelle für Sie eine Website nach Ihren Wünschen. Dazu kann ich zusätzlich eine Domain registrieren und einen geeigneten Hosting Anbieter finden.",
-				},
-				webapp: {
-					title: "Webapp erstellen",
-					description: "Ich erstelle für Sie eine Webapplikation nach Ihren Wünschen. Sie können diese dann zum Beispiel in Ihrer Firma verwenden.",
-				},
-				database: {
-					title: "Datenbank erstellen",
-					description: "Ich erstelle für Sie eine beliebige Datenbank. Dabei kann es sich um eine SQL oder NoSQL Datenbank handeln.",
-				},
-				other: {
-					title: "Andere IT Dienstleistungen",
-					description: "Ich biete auch andere IT Dienstleistungen an. Die Möglichkeiten sind nicht begrenzt. Kontaktieren Sie mich bitte.",
-				},
 			},
 			contact: {
 				title: "Kontakt",
@@ -81,7 +45,8 @@ export default function de() {
 					titleTools: "Tools",
 				},
 				fischlehrpfad: {
-					title: "Fischlehrpfad",
+					title: "Fischlehrpfad Burgdorf",
+					description: "Die Website des Fischlehrpfad Burgdorf wurde mit Grav erstellt. Es ist meine erste Website, die ich erstellt habe.",
 					card: {
 						description: "Der Fischlehrpfad war mein erstes Projekt. Ich habe es im 2. Lehrjahr mit einem Kollegen entwickelt. Das Projekt ist eine kleine Website für einen Fischereiverein. Sie wurde mit dem CMS Grav entwickelt.",
 						tags: [ "web", "client", "deployed" ],
@@ -95,6 +60,7 @@ export default function de() {
 				},
 				personal: {
 					title: "eigene Website",
+					description: "Diese Website, die Sie gerade besuchen, wurde mit React und TypeScript erstellt.",
 					card: {
 						description: "Dieses Projekt ist die Website auf der sie sich befinden. Ich habe diese Website selber designed und anschliessen programmiert. Dazu habe ich TypeScript mit React verwendet, die ich währenddessen erlernt habe.",
 						tags: [ "web", "personal", "development" ],
@@ -107,7 +73,8 @@ export default function de() {
 					},
 				},
 				sgrumisberg: {
-					title: "SG Rumisberg",
+					title: "Schützengesellschaft Rumisberg",
+					description: "Die Website der Schützengesellschaft Rumisberg wurde mit Grav erstellt. Die Website war für meinen ersten Kunden",
 					card: {
 						description: "Die erste Website für einen privaten Kunden. Sie ist für ein Verein aus meinem Dorf, der eine Website für ihren Schützenverein eröffnen wollte. Ich habe die Website mit dem CMS Grav entwickelt und konnte viele Erfahrungen sammeln.",
 						tags: [ "web", "client", "deployed" ],
@@ -120,7 +87,8 @@ export default function de() {
 					},
 				},
 				mgrumisberg: {
-					title: "MG Rumisberg",
+					title: "Musikgesellschaft Rumisberg",
+					description: "Die Website der Musikgesellschaft Rumisberg wurde mit Grav erstellt. Die Website war für einen Verein, dem ich angehöre.",
 					card: {
 						description: "Das ist eine Website für die Musikgesellschaft Rumisberg, in der ich aktiv als Musikant bin. Unsere alte Website war mühsam zu verwalten und deshalb sollte ich eine neue erstellen. Ich habe mich wieder für das CMS Grav entschieden.",
 						tags: [ "web", "client", "development" ],
@@ -135,6 +103,7 @@ export default function de() {
 				},
 				homeDashboard: {
 					title: "Home Dashboard",
+					description: "Home Dashboard ist die erste Webapp, die ich erstellt habe. Darauf wird das aktuelle Wetter angezeigt, sowie aktuelle Termine.",
 					card: {
 						description: "Dieses Projekt ist ein Dashboard für mein Smart Home. Die Daten werden mit einer API von Next.js verarbeitet und anschliessend mit TypeScript React bereitgestellt. Es gibt Elemente für Zeit, Wetter und Kalender. Weitere kommen.",
 						tags: [ "web", "personal", "development" ],
@@ -154,6 +123,7 @@ export default function de() {
 				includedFeatures: "Folgende Features sind inbegriffen:",
 				website: {
 					title: "Website erstellen",
+					description: "Ich erstelle für Sie eine Website nach Ihren Wünschen. Dazu kann ich zusätzlich eine Domain registrieren und einen geeigneten Hosting Anbieter finden.",
 					features: [ "professionelle Website", "Konfiguration", "Domain & Hosting", "E-Mail Adressen" ],
 					card: {
 						teaser: "Brauchen Sie eine Website für Ihren Verein, Startup oder für einen persönlichen Zweck?",
@@ -166,6 +136,7 @@ export default function de() {
 				},
 				webapp: {
 					title: "Webapp erstellen",
+					description: "Ich erstelle für Sie eine Webapplikation nach Ihren Wünschen. Sie können diese dann zum Beispiel in Ihrer Firma verwenden.",
 					features: [ "moderne Webapplikation", "einfach zu bedienen", "einfach erweiterbar", "sichere Daten" ],
 					card: {
 						teaser: "Benötigen Sie eine Webapp für zum Beispiel bei ihrem Startup Arbeitszeiten zu erfassen?",
@@ -177,7 +148,8 @@ export default function de() {
 					},
 				},
 				database: {
-					title: "Datenbank",
+					title: "Datenbank erstellen",
+					description: "Ich erstelle für Sie eine beliebige Datenbank. Dabei kann es sich um eine SQL oder NoSQL Datenbank handeln.",
 					features: [
 						"vollständiges Datenbanksystem",
 						"überlegte Struktur",
@@ -195,6 +167,7 @@ export default function de() {
 				},
 				other: {
 					title: "andere IT Dienstleistungen",
+					description: "Ich biete auch andere IT Dienstleistungen an. Die Möglichkeiten sind nicht begrenzt. Kontaktieren Sie mich bitte.",
 					features: [
 						"Domain Management & Transfer",
 						"Hosting & E-Mail",
