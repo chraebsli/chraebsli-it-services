@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 const specialPages = {
 	noFollow: ["projects", "imprint"],
-	noIndex: ["privacy"],
+	noIndex: [""],
 };
 
 type Props = {
