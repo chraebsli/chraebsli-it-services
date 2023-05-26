@@ -1,4 +1,6 @@
-export default function de() {
+import { Translation } from "@models/translation";
+
+export default function de(): Translation {
 	return {
 		meta: {
 			home: {
