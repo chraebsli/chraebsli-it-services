@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Stack, Typography } from "@mui/material";
 import Page from "../../components/common/Page";
 import { Line, PageTitle, SectionTitle } from "../../components/Text";
@@ -13,65 +13,39 @@ import projectsList from "../../components/projects/projects-list";
 export default function SingleProject$() {
 	const {t} = useTranslation("common");
 
-	const pages = useLocation().pathname.split("/");
-	const page = pages[pages.length - 1];
+	const page = useParams().project;
 
 	const projects = projectsList();
-	const possibleProjects = projects.find(project => project.id === page);
+	const project = projects.find(project => project.id === page);
 
-	if (!possibleProjects) return <NotFound404 />;
-	// TODO: style
-	const {
-		id,
-		title,
-		page: {
-			wakaTimeBadge, textDescription, textContent, titleProceed, titleConclusion, tools, website,
-		},
-	} = possibleProjects;
-	const url = `https://${website}`;
+	if (!project) return <NotFound404 />;
 
 	return (
-		<Page page={`projects.${id}`} className={"single-project"}>
+		<Page page={`projects.${project.id}`} className={"single-project"}>
 			<section>
-				<PageTitle>{title}</PageTitle>
-				<WakaTimeBadge url={wakaTimeBadge} />
+				<PageTitle>{project.title}</PageTitle>
+				<WakaTimeBadge url={project.page.wakaTimeBadge} />
 				<Line bottom={2} />
 			</section>
 
 			<article className="page-content">
 				<Stack spacing={3}>
 					<section>
-						<SectionTitle> {t("projects.single.titleDescription")} </SectionTitle>
-						<Typography> {textDescription} </Typography>
+						<SectionTitle> {t("projects.titles.description")} </SectionTitle>
+						<Typography> {project.page.description} </Typography>
 					</section>
 					<section>
-						<SectionTitle> {t("projects.single.titleContent")} </SectionTitle>
-						<Typography> {textContent} </Typography>
+						<SectionTitle> {t("projects.titles.website")} </SectionTitle>
+						<Typography> {project.page.website} </Typography>
+						<br />
+						<Typography> <a href={project.page.link}>{project.page.link}</a> </Typography>
 					</section>
 					<section>
-						<SectionTitle> {t("projects.single.titleProceed")} </SectionTitle>
-						<Typography> {titleProceed} </Typography>
-					</section>
-					<section>
-						<SectionTitle> {t("projects.single.titleConclusion")} </SectionTitle>
-						<Typography> {titleConclusion} </Typography>
-					</section>
-					<section>
-						<SectionTitle> {t("projects.single.titleTools")} </SectionTitle>
+						<SectionTitle> {t("projects.titles.tools")} </SectionTitle>
 						<div className={"project-tools"} data-count={6}>
-							{tools.map((tool: string, i: number) => <ToolImage key={i} name={tool} />)}
+							{project.page.tools.map((tool: string, i: number) => <ToolImage key={i} name={tool} />)}
 						</div>
 					</section>
-					{website ? (
-						<section>
-							<SectionTitle>
-								Website - <a href={url} rel={"noopener noreferrer"}>{website}</a>
-							</SectionTitle>
-							<div className={"iframe-container"}>
-								<iframe src={url} width={1280} height={720} title={title} loading={"lazy"} />
-							</div>
-						</section>
-					) : null}
 				</Stack>
 			</article>
 		</Page>

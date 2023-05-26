@@ -15,14 +15,13 @@ export default function projectsList(): Project[] {
 			},
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/Fischlehrpfad-Burgdorf",
-				textDescription: t("projects.fischlehrpfad.page.textDescription"),
-				textContent: t("projects.fischlehrpfad.page.textContent"),
-				titleProceed: t("projects.fischlehrpfad.page.textProceed"),
-				titleConclusion: t("projects.fischlehrpfad.page.textConclusion"),
+				description: t("projects.fischlehrpfad.page.description"),
+				website: t("projects.fischlehrpfad.page.website"),
 				tools: ["Grav", "PHP", "Twig", "HTML5", "CSS3", "JavaScript"],
-				website: "fischlehrpfad.ch",
+				link: "https://fischlehrpfad.ch",
 			},
 		),
+		// TODO: split project to chraebsli ti services and portfolio
 		new Project(
 			"personal",
 			t("projects.personal.title"),
@@ -33,10 +32,8 @@ export default function projectsList(): Project[] {
 			},
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/homepage",
-				textDescription: t("projects.personal.page.textDescription"),
-				textContent: t("projects.personal.page.textContent"),
-				titleProceed: t("projects.personal.page.textProceed"),
-				titleConclusion: t("projects.personal.page.textConclusion"),
+				description: t("projects.personal.page.description"),
+				website: t("projects.personal.page.website"),
 				tools: ["React", "Node.JS", "TypeScript", "MUI"],
 			},
 		),
@@ -50,12 +47,10 @@ export default function projectsList(): Project[] {
 			},
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/sgrumisberg.ch",
-				textDescription: t("projects.sgrumisberg.page.textDescription"),
-				textContent: t("projects.sgrumisberg.page.textContent"),
-				titleProceed: t("projects.sgrumisberg.page.textProceed"),
-				titleConclusion: t("projects.sgrumisberg.page.textConclusion"),
+				description: t("projects.sgrumisberg.page.description"),
+				website: t("projects.sgrumisberg.page.website"),
 				tools: ["Grav", "PHP", "Twig", "HTML5", "CSS3", "JavaScript"],
-				website: "sgrumisberg.ch",
+				link: "https://sgrumisberg.ch",
 			},
 		),
 		new Project(
@@ -68,11 +63,10 @@ export default function projectsList(): Project[] {
 			},
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/mgrumisberg.ch",
-				textDescription: t("projects.mgrumisberg.page.textDescription"),
-				textContent: t("projects.mgrumisberg.page.textContent"),
-				titleProceed: t("projects.mgrumisberg.page.textProceed"),
-				titleConclusion: t("projects.mgrumisberg.page.textConclusion"),
+				description: t("projects.mgrumisberg.page.description"),
+				website: t("projects.mgrumisberg.page.website"),
 				tools: ["Grav", "PHP", "Twig", "HTML5", "CSS3", "JavaScript"],
+				link: "https://mgrumisberg.ch",
 			},
 		),
 		new Project(
@@ -85,11 +79,10 @@ export default function projectsList(): Project[] {
 			},
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/home-dashboard",
-				textDescription: t("projects.homeDashboard.page.textDescription"),
-				textContent: t("projects.homeDashboard.page.textContent"),
-				titleProceed: t("projects.homeDashboard.page.textProceed"),
-				titleConclusion: t("projects.homeDashboard.page.textConclusion"),
+				description: t("projects.homeDashboard.page.description"),
+				website: t("projects.homeDashboard.page.website"),
 				tools: ["React", "Node.JS", "Next.JS", "TypeScript", "MUI"],
+				link: "https://github.com/chraebsli/home-dashboard",
 			},
 		),
 	];

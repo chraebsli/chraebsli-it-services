@@ -9,12 +9,10 @@ export default class Project {
 		},
 		public readonly page: {
 			wakaTimeBadge: string,
-			textDescription: string,
-			textContent: string,
-			titleProceed: string,
-			titleConclusion: string,
+			description: string,
+			website: string,
 			tools: string[],
-			website?: string
+			link?: string
 		},
 	) {}
 }
