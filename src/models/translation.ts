@@ -21,7 +21,8 @@ export type Translation = {
 				tools: string,
 			},
 			fischlehrpfad: Project,
-			personal: Project,
+			portfolio: Project,
+			"chraebsli-it-services": Project,
 			sgrumisberg: Project,
 			mgrumisberg: Project,
 			homeDashboard: Project,
@@ -128,12 +129,14 @@ type Project = {
 		description: string,
 		tags: ProjectTag[],
 	},
+	// TODO: only string[]
 	page: {
-		description: string,
-		website: string,
+		description: string[] | string,
+		website: string[] | string,
 	},
 }
 
+// TODO: remove them from translations
 type ProjectTag = "web" | "client" | "server" | "deployed" | "inProgress" | "finished" | "personal" | "development"
 
 type Service = {

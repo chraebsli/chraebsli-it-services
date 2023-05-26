@@ -46,62 +46,112 @@ export default function de(): Translation {
 				},
 				fischlehrpfad: {
 					title: "Fischlehrpfad Burgdorf",
-					description: "Die Website des Fischlehrpfad Burgdorf wurde mit Grav erstellt. Es ist meine erste Website, die ich erstellt habe.",
+					description: "Der Fischlehrpfad in Burgdorf war mein erstes Webprojekt, das ich im 2. Lehrjahr mit einem Kollegen erstellt habe. Es ist eine kleine Website für einen Fischereiverein.",
 					card: {
-						description: "Der Fischlehrpfad war mein erstes Projekt. Ich habe es im 2. Lehrjahr mit einem Kollegen entwickelt. Das Projekt ist eine kleine Website für einen Fischereiverein. Sie wurde mit dem CMS Grav entwickelt.",
+						description: "Der Fischlehrpfad in Burgdorf war mein erstes Webprojekt, das ich im 2. Lehrjahr mit einem Kollegen erstellt habe. Es ist eine kleine Website für einen Fischereiverein.",
 						tags: [ "web", "client", "deployed" ],
 					},
 					page: {
-						description: "Der Fischlehrpfad war mein erstes grösseres Projekt, das ich entwickelt habe. Im 2. Lehrjahr meiner Ausbildung habe ich mit einem Kollegen das Projekt für den Fischereiverein an der Emme in Burgdorf geplant und anschliessend entwickelt. Der Verein wollte einen Lernpfad über Fische und andere Tierarten in der Emme erstellen, bei dem Schulen und Familien etwas über die verschiedenen Tierarten lernen können.",
-						website: "Der Besucher kann einen QR-Code an einem Posten einscannen und wird auf die jeweilige Seite weitergeleitet. Auf dieser Seite befinden sich Inhalte wie Text, Bilder, Videos, Audios bei denen man etwas lernt. Es hat aber auch interaktive Elemente, wie zB ein Slider, ein Quiz und andere, bei dem man dann das gelernte überprüfen kann.",
+						description: [
+							"Der Fischlehrpfad in Burgdorf war mein erstes grosses Webprojekt, das ich umsetzten durfte. Im 2. Lehrjahr habe ich mit einem Kollegen eine Website für einen Fischereiverein an der Emme in Burgdorf geplant und anschliessend entwickelt.",
+							"Der Verein wollte einen Lernpfad über Fische und andere Tierarten in der Emme, bei dem Schulen und Familien etwas über die verschiedenen Tierarten lernen können. Besucher können QR Codes am Weg entlang mit dem Smartphone einscannen und pro Posten dann etwas Neues lernen.",
+							"Auf den verschiedenen Seiten gibt es Bilder & Videos, Grafiken, Rätsel und andere dynamischen Elemente, die die Website einzigartig machen.",
+							"Da die Website darauf ausgelegt ist, dass man sie nur über die QR Codes erreichen kann, gibt es nur die Startseite, die auch indexiert wird. Deshalb gibt es keine Navigation zu den Posten, sondern nur eine Liste an Links.",
+						],
+						website: [
+							"Die Website wurde im Mai 2022 dem Fischereiverein übergeben und ist über folgenden Link auffindbar: XXXXXXXXXXXXXXXXXXXXX",
+							"Eine Übersicht der Seiten findest du hier: YYYYYYYYYYYYYYYYYYYYY",
+						],
 					},
 				},
-				personal: {
-					title: "eigene Website",
-					description: "Diese Website, die Sie gerade besuchen, wurde mit React und TypeScript erstellt.",
+				portfolio: {
+					title: "Portfolio",
+					description: "Diese Website ist mein persönliches Portfolio. Im Juni 2023 wurde diese von Grund auf überarbeitet. In einer etwas anderen Form gibt es sie aber schon 1 Jahr länger.",
 					card: {
-						description: "Dieses Projekt ist die Website auf der sie sich befinden. Ich habe diese Website selber designed und anschliessen programmiert. Dazu habe ich TypeScript mit React verwendet, die ich währenddessen erlernt habe.",
-						tags: [ "web", "personal", "development" ],
+						description: "Diese Website ist mein persönliches Portfolio. Im Juni 2023 wurde diese von Grund auf überarbeitet. In einer etwas anderen Form gibt es sie aber schon 1 Jahr länger.",
+						tags: [ "web", "personal", "deployed" ],
 					},
 					page: {
-						description: "Ich wollte schon längere Zeit eine eigene Website haben, die ich ohne CMS entwickelt habe. So kann ich zusätzlich lernen, was mich interessiert und bin frei, wie ich es umsetzten möchte. Ich habe mehrmals angefangen aber immer wieder aufgehört, weil ich keine Zeit mehr hatte. Schlussendlich konnte ich mich überreden und war motiviert, mit der JavaScript Bibliothek React die Website zu erstellen.",
-						website: "Auf meiner Website biete ich Dienstleistungen an, um in meiner Freizeit zu arbeiten und mich weiterzubilden. Zusätzlich möchte ich Geld verdienen, da ich in meiner Ausbildung kein Lohn erhalte. Ich möchte auch meine vergangenen Projekte zeigen, die ich erstellt habe und so meine Erfahrung zeigen.",
+						description: [
+							"Diese Website ist mein persönliches Portfolio. Im Juni 2023 wurde diese dann von Grund auf überarbeitet. Vorher war sie eine Kombination aus Portfolio und einer kommerziellen Website und wurde bereits 1 Jahr vorher veröffentlicht.",
+							"Dieses Portfolio habe ich ohne CMS erstellt und wird ständig überarbeitet und es werden auch immer wieder neue Funktionen oder Seiten kommen. Dazu zählen als Beispiel die multilinguale Funktion oder den Darkmode. Beide wurden erst später implementiert.",
+							"Mit diesem Portfolio möchte ich mein Können zeigen und auf mich aufmerksam machen.",
+						],
+						website: [
+							"Mein Portfolio findest du unter folgendem Link: ZZZZZZZ",
+						],
+					},
+				},
+				"chraebsli-it-services": {
+					title: "Chraebsli IT Services",
+					description: "Diese Website ist die, die du gerade besuchst. Auf dieser biete ich verschiedene Dienstleistungen an. Sie wurde im Juni 2023 komplett überarbeitet, aber es gab sie schon 1 Jahr vorher.",
+					card: {
+						description: "Diese Website ist die, die du gerade besuchst. Auf dieser biete ich verschiedene Dienstleistungen an. Sie wurde im Juni 2023 komplett überarbeitet, aber es gab sie schon 1 Jahr vorher.",
+						tags: [ "web", "personal", "deployed" ],
+					},
+					page: {
+						description: [
+							"Auf dieser Website biete ich verschiedene IT Dienstleistungen an, um neben meiner Lehre als Informatiker etwas Geld zu verdienen. Ich verdiene in meiner Ausbildung nicht, da dies ein spezieller Lehrgang ist, finanziert von Kanon Bern.",
+							"Diese Website wurde bereits im Juni 2022 veröffentlicht, aber sie wurde 1 Jahr später, im Juni 2023, überarbeitet. Der Grund war, dass diese Website und mein Portfolio eine einzige Website war und ich das nicht mehr wollte.",
+							"Ich überarbeite diese Website öfter und füge neue Funktionen hinzu oder verbessere bestehende. Da diese Seite nicht durch ein CMS verwaltet wird, besteht sie nur aus selbst geschriebenem Code.",
+						],
+						website: [
+							"Da dies die Seite ist, auf der du gerade bist, wird sie nicht verlinkt.",
+						],
 					},
 				},
 				sgrumisberg: {
 					title: "Schützengesellschaft Rumisberg",
-					description: "Die Website der Schützengesellschaft Rumisberg wurde mit Grav erstellt. Die Website war für meinen ersten Kunden",
+					description: "Die Website für die Schützengesellschaft Rumisberg ist die Erste für einen privaten Kunden. Sie möchten mit einer Website wichtige Information teilen.",
 					card: {
-						description: "Die erste Website für einen privaten Kunden. Sie ist für ein Verein aus meinem Dorf, der eine Website für ihren Schützenverein eröffnen wollte. Ich habe die Website mit dem CMS Grav entwickelt und konnte viele Erfahrungen sammeln.",
+						description: "Die Website für die Schützengesellschaft Rumisberg ist die Erste für einen privaten Kunden. Sie möchten mit einer Website wichtige Information teilen.",
 						tags: [ "web", "client", "deployed" ],
 					},
 					page: {
-						description: "Diese Website ist die erste Website, die ich für einen privaten Kunden entwickelt habe. Der Kunde ist ein Verein aus meinem Dorf, der eine neue Website möchte. Sie wollen ihren Verein vorstellen und Bilder von Events teilen.",
-						website: "Die Website simpel gestaltet, da auch ältere Mitglieder auf der Seite zurecht kommen und die Inhalte einfach finden können. Die verschiedenen Seiten enthalten Inhalte von Events, Bilder, Ranglisten, etc. Auf ein paar Seiten gibt es auch Inhalte über den Verein und wie man ein Mitglied werden kann.",
+						description: [
+							"Der Schützenverein aus meinem Dorf wollte eine Website, um wichtige Informationen mit anderen Mitgliedern zu teilen und für neue Mitglieder attraktiver und moderner wirken. Der Verein hatte jedoch nicht viel Geld, aber ich ging darauf ein, da ich mit diesem Projekt eine Möglichkeit sah, auf mich aufmerksam zu machen.",
+							"Die Website habe ich mit dem Open Source CMS Grav erstellt, da ich dieses bereits ein wenig kannte durch das Projekt «Fischlehrpfad». Ich lernte viele neue Funktionen des CMS kennen und lernte viel, primär das selbstständig sein und durch eigene Hand ein Projekt zu erstellen.",
+							"Ich musste zudem auch viel Verantwortung tragen und hatte viele Aufgaben. Dazu gehören Domain, DNS Management, Hosting und die Instandhaltung der Website.",
+						],
+						website: [
+							"Die Website wurde Ende Juni freigeschaltet, aber ich bin immer noch teilweise für den Inhalt zuständig. Du kannst sie unter folgendem Link ansehen: AAAAAAAAAAAAAAAAA",
+						],
 					},
 				},
 				mgrumisberg: {
-					title: "Musikgesellschaft Rumisberg",
-					description: "Die Website der Musikgesellschaft Rumisberg wurde mit Grav erstellt. Die Website war für einen Verein, dem ich angehöre.",
+					title: "Ein weiteres Webprojekt ist die Website der Musikgesellschaft Rumisberg, in der ich selbst Mitglied bin. Da wir ohnehin eine neue Website benötigten, übernahm ich diese Aufgabe.",
+					description: "Ein weiteres Webprojekt ist die Website der Musikgesellschaft Rumisberg, in der ich selbst Mitglied bin. Da wir ohnehin eine neue Website benötigten, übernahm ich diese Aufgabe.",
 					card: {
-						description: "Das ist eine Website für die Musikgesellschaft Rumisberg, in der ich aktiv als Musikant bin. Unsere alte Website war mühsam zu verwalten und deshalb sollte ich eine neue erstellen. Ich habe mich wieder für das CMS Grav entschieden.",
+						description: "",
 						tags: [ "web", "client", "development" ],
 					},
 					page: {
-						description: "Diese Website ist für die Musikgesellschaft Rumisberg, in der ich seit mehreren Jahren Mitglied bin. Unsere alte Website war schwierig zu verwalten und ändern. Aus diesem Grund sollte ich eine neue Website erstellen, die einfach zu verwalten ist.\n Dieses Projekt ist in Entwicklung.",
-						website: "Auf der Website sollen Daten für unsere Auftritte gelistet und wir möchten unseren Verein vorstellen. Es soll aber auch eine Art blogging Beiträge geben, bei denen wir Aktuelles aus dem Verein öffentlich teilen wollen. Dazu gehört zB das Teilen von Erfolgen und Veränderungen.",
+						description: [
+							"Ein weiteres Webprojekt ist die Website der Musikgesellschaft Rumisberg, in der ich selbst Mitglied bin. Da wir ohnehin eine neue Website benötigten, übernahm ich diese Aufgabe.",
+							"Ich arbeitete wieder mit dem CMS Grav, und konnte sogar vieles von der Website der SG Rumisberg übernehmen. Dies erleichterte mir die Arbeit um einiges.",
+							"Auch hier lernte ich viel. Obwohl ich recht frei war, wie ich die Website gestalte, habe ich das alte Design komplett überarbeitet und moderner und minimalistischer dargestellt. Hier merkte ich, wie viel Aufwand es ist, eine Website zu designen und zu realisieren.",
+						],
+						website: [
+							"Die Website wurde im September 2022 live geschaltet und wird auch durch mich verwaltet. Sie ist unter folgendem Link zu finden: VVVVVVVVVVVVVVVVVVVVVV",
+						],
 					},
 				},
 				homeDashboard: {
 					title: "Home Dashboard",
-					description: "Home Dashboard ist die erste Webapp, die ich erstellt habe. Darauf wird das aktuelle Wetter angezeigt, sowie aktuelle Termine.",
+					description: "Das Home Dashboard ist eine Webapplikation mit Next.js. Die Applikation ist eine Anlehnung an Magic Mirror und wurde auch für einen ähnlichen Zweck erstellt.",
 					card: {
-						description: "Dieses Projekt ist ein Dashboard für mein Smart Home. Die Daten werden mit einer API von Next.js verarbeitet und anschliessend mit TypeScript React bereitgestellt. Es gibt Elemente für Zeit, Wetter und Kalender. Weitere kommen.",
+						description: "Das Home Dashboard ist eine Webapplikation mit Next.js. Die Applikation ist eine Anlehnung an Magic Mirror und wurde auch für einen ähnlichen Zweck erstellt.",
 						tags: [ "web", "personal", "development" ],
 					},
 					page: {
-						description: "Vor etwas längerer Zeit hatte ich im Internet das Projekt Magic Mirror gesehen. Meine Mutter hat dann etwas Geld ausgegeben für einen TouchScreen und einen Raspberry Pi, auf dem die Software laufen soll. Den Bildschirm haben wir beim Eingang der Wohnung aufgehängt. Da aber viele Features nicht existieren die wir wollten, habe ich angefangen, selber so ein Dashboard zu erstellen.",
-						website: "Es soll ein Dashboard sein, welches die wichtigsten Informationen anzeigt. Dazu gehören Zeit & Datum, Wetter und die wichtigsten Termine. Außerdem soll die digitale Einkaufsliste angezeigt werden. Auch die Lampen wollen wir über dieses Dashboard steuern können, die bereits über die Google Home App verbunden sind. Weitere Features sind in Planung.",
+						description: [
+							"Das Home Dashboard ist eine Webapplikation mit Next.js. Die Applikation ist eine Anlehnung an Magic Mirror und wurde auch für einen ähnlichen Zweck erstellt und daher dem Design auch fast identisch. Da ich jedoch andere Ideen zum Erweitern hatte, die mit dem Magic Mirror nur sehr mühsam waren, erstellte ich selbst eine Applikation.",
+							"Die Applikation zeigt bisher das Wetter zweier Orte an, Zeitangaben und Kalendereinträge an. Sie soll noch mit einer Smarthomesteuerung ergänzt werden und ich möchte ausserdem einen Nachrichtenfeed hinzufügen.",
+							"Jedoch hatte ich nicht mehr wirklich Zeit, an der Applikation zu arbeiten und sie zu verbessern, aber es wird zu einem anderen Zeitpunkt wieder an ihr weitergearbeitet und verbessert.",
+						],
+						website: [
+							"Das Repository zur Applikation ist auf GitHub unter folgendem Link: GGGGGGGGGGGGGGGGGGGGG",
+						],
 					},
 				},
 			},
