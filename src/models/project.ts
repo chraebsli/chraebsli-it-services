@@ -9,8 +9,8 @@ export default class Project {
 		},
 		public readonly page: {
 			wakaTimeBadge: string,
-			description: string,
-			website: string,
+			description: string[],
+			website: string[],
 			tools: string[],
 			link?: string
 		},

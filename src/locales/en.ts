@@ -119,10 +119,10 @@ export default function en(): Translation {
 					},
 				},
 				mgrumisberg: {
-					title: "Another web project is the website of the Brass Band Rumisberg, of which I am a member myself. Since we needed a new website anyway, I took on this task.",
+					title: "Brass Band Rumisberg",
 					description: "Another web project is the website of the Brass Band Rumisberg, of which I am a member myself. Since we needed a new website anyway, I took on this task.",
 					card: {
-						description: "",
+						description: "Another web project is the website of the Brass Band Rumisberg, of which I am a member myself. Since we needed a new website anyway, I took on this task.",
 						tags: [ "web", "client", "development" ],
 					},
 					page: {

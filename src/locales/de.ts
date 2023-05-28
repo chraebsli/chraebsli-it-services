@@ -119,10 +119,10 @@ export default function de(): Translation {
 					},
 				},
 				mgrumisberg: {
-					title: "Ein weiteres Webprojekt ist die Website der Musikgesellschaft Rumisberg, in der ich selbst Mitglied bin. Da wir ohnehin eine neue Website benötigten, übernahm ich diese Aufgabe.",
+					title: "Musikgesellschaft Rumisberg",
 					description: "Ein weiteres Webprojekt ist die Website der Musikgesellschaft Rumisberg, in der ich selbst Mitglied bin. Da wir ohnehin eine neue Website benötigten, übernahm ich diese Aufgabe.",
 					card: {
-						description: "",
+						description: "Ein weiteres Webprojekt ist die Website der Musikgesellschaft Rumisberg, in der ich selbst Mitglied bin. Da wir ohnehin eine neue Website benötigten, übernahm ich diese Aufgabe.",
 						tags: [ "web", "client", "development" ],
 					},
 					page: {

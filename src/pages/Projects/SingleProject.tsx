@@ -32,13 +32,12 @@ export default function SingleProject$() {
 				<Stack spacing={3}>
 					<section>
 						<SectionTitle> {t("projects.titles.description")} </SectionTitle>
-						<Typography> {project.page.description} </Typography>
+						{project.page.description.map((paragraph: string, i: number) => <Typography key={i}> {paragraph} </Typography>)}
 					</section>
 					<section>
 						<SectionTitle> {t("projects.titles.website")} </SectionTitle>
-						<Typography> {project.page.website} </Typography>
+						{project.page.website.map((paragraph: string, i: number) => <Typography key={i}> {paragraph} </Typography>)}
 						<br />
-						<Typography> <a href={project.page.link}>{project.page.link}</a> </Typography>
 					</section>
 					<section>
 						<SectionTitle> {t("projects.titles.tools")} </SectionTitle>

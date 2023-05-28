@@ -129,10 +129,9 @@ type Project = {
 		description: string,
 		tags: ProjectTag[],
 	},
-	// TODO: only string[]
 	page: {
-		description: string[] | string,
-		website: string[] | string,
+		description: string[],
+		website: string[],
 	},
 }
 
