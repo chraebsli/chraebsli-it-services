@@ -30,7 +30,7 @@ export default function projectsList(): Project[] {
 				tags: t("projects.portfolio.card.tags", {returnObjects: true}),
 			},
 			{
-				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/homepage",
+				wakaTimeBadge: "https://wakatime.com/badge/user/2b5dcd85-63c3-46d3-8185-6766880e0b04/project/b7091aeb-09e8-4ca5-94d0-aa4455bc771a",
 				description: t("projects.portfolio.page.description", {returnObjects: true}),
 				website: t("projects.portfolio.page.website", {returnObjects: true}),
 				tools: ["React", "Node.JS", "TypeScript", "MUI"],
@@ -46,7 +46,7 @@ export default function projectsList(): Project[] {
 				tags: t("projects.chraebsli-it-services.card.tags", {returnObjects: true}),
 			},
 			{
-				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/homepage",
+				wakaTimeBadge: "https://wakatime.com/badge/user/2b5dcd85-63c3-46d3-8185-6766880e0b04/project/5f370487-9580-4e93-bf8e-17cb2bebd579",
 				description: t("projects.chraebsli-it-services.page.description", {returnObjects: true}),
 				website: t("projects.chraebsli-it-services.page.website", {returnObjects: true}),
 				tools: ["React", "Node.JS", "TypeScript", "MUI"],
@@ -61,7 +61,7 @@ export default function projectsList(): Project[] {
 				tags: t("projects.sgrumisberg.card.tags", {returnObjects: true}),
 			},
 			{
-				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/sgrumisberg.ch",
+				wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/sgrumisberg.ch",
 				description: t("projects.sgrumisberg.page.description", {returnObjects: true}),
 				website: t("projects.sgrumisberg.page.website", {returnObjects: true}),
 				tools: ["Grav", "PHP", "Twig", "HTML5", "CSS3", "JavaScript"],
@@ -77,7 +77,7 @@ export default function projectsList(): Project[] {
 				tags: t("projects.mgrumisberg.card.tags", {returnObjects: true}),
 			},
 			{
-				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/mgrumisberg.ch",
+				wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/mgrumisberg.ch",
 				description: t("projects.mgrumisberg.page.description", {returnObjects: true}),
 				website: t("projects.mgrumisberg.page.website", {returnObjects: true}),
 				tools: ["Grav", "PHP", "Twig", "HTML5", "CSS3", "JavaScript"],
