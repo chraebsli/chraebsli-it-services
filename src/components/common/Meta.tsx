@@ -7,21 +7,19 @@ import { useTranslation } from "react-i18next";
 const specialPages = {
 	noFollow: ["projects", "imprint"],
 	noIndex: [""],
-	// TODO: Meta for projects & services
-	meta: {
-		projects: "",
-		services: "",
-	}
 };
 
 type Props = {
 	page: string;
 }
 export default function Meta({page}: Props) {
-	const {t} = useTranslation("meta");
+	const parentPage = page.split(".")[0];
+	const customKey = parentPage === "projects" && "projects" || parentPage === "services" && "services";
+	const customMeta = customKey ? "common" : null;
+	const {t} = useTranslation(customMeta ?? "meta");
+
 	const title = t(`${page}.title`);
 	const description = t(`${page}.description`);
-	const parentPage = page.split(".")[0];
 
 	const follow = specialPages.noFollow.includes(parentPage) ? "nofollow" : "follow";
 	const index = specialPages.noIndex.includes(parentPage) ? "noindex" : "index";
