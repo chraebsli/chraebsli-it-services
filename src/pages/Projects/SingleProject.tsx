@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { Stack, Typography } from "@mui/material";
 import Page from "../../components/common/Page";
-import { Line, PageTitle, SectionTitle } from "../../components/Text";
+import { Image, Line, PageTitle, SectionTitle } from "../../components/Text";
 import NotFound404 from "../Error/404";
 import { useTranslation } from "react-i18next";
 import "./Projects.sass";
@@ -30,6 +30,9 @@ export default function SingleProject$() {
 
 			<article className="page-content">
 				<Stack spacing={3}>
+					<section>
+						<Image src={`/media/projects/${project.id}.webp`} alt={`${t("projects.imageAlt")} ${project.title}`} height={400} />
+					</section>
 					<section>
 						<SectionTitle> {t("projects.titles.description")} </SectionTitle>
 						{project.page.description.map((paragraph: string, i: number) => <Typography key={i}> {paragraph} </Typography>)}
