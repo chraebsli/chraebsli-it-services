@@ -125,18 +125,11 @@ type PageMeta = {
 type Project = {
 	title: string,
 	description: string,
-	card: {
-		description: string,
-		tags: ProjectTag[],
-	},
 	page: {
 		description: string[],
 		website: string[],
 	},
 }
-
-// TODO: remove them from translations
-type ProjectTag = "web" | "client" | "server" | "deployed" | "inProgress" | "finished" | "personal" | "development"
 
 type Service = {
 	title: string,

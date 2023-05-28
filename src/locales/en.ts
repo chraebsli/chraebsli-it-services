@@ -47,10 +47,6 @@ export default function en(): Translation {
 				fischlehrpfad: {
 					title: "Fischlehrpfad Burgdorf",
 					description: "The “Fischlehrpfad” in Burgdorf was my first webproject, which I created with a colleague in my 2nd year as an IT Student. It's a small website for a fishing club.",
-					card: {
-						description: "The “Fischlehrpfad” in Burgdorf was my first webproject, which I created with a colleague in my 2nd year as an IT Student. It's a small website for a fishing club.",
-						tags: [ "web", "client", "deployed" ],
-					},
 					page: {
 						description: [
 							"The “Fischlehrpfad” in Burgdorf was my first major webproject that I was allowed to implement. In the second year of my apprenticeship, I planned and then developed a website for a fishing club on the Emme in Burgdorf with a colleague.",
@@ -67,10 +63,6 @@ export default function en(): Translation {
 				portfolio: {
 					title: "Portfolio",
 					description: "This website is my personal portfolio. In June 2023, I have created a new variant from scratch in a slightly different form. However, a similar version has been around for 1 year longer.",
-					card: {
-						description: "This website is my personal portfolio. In June 2023, I have created a new variant from scratch in a slightly different form. However, a similar version has been around for 1 year longer.",
-						tags: [ "web", "personal", "deployed" ],
-					},
 					page: {
 						description: [
 							"This website is my personal portfolio. In June 2023, I have created a new variant from scratch in a slightly different form. Previously, it was a combination of a portfolio and a commercial website and was released 1 year earlier.",
@@ -85,10 +77,6 @@ export default function en(): Translation {
 				"chraebsli-it-services": {
 					title: "Chraebsli IT Services",
 					description: "This website is the one you are currently visiting. On this, I offer various IT services. I recreated it from scratch in June 2023, but it existed 1 year before.",
-					card: {
-						description: "This website is the one you are currently visiting. On this, I offer various IT services. I recreated it from scratch in June 2023, but it existed 1 year before.",
-						tags: [ "web", "personal", "deployed" ],
-					},
 					page: {
 						description: [
 							"On this website, I offer various IT services to earn some money alongside my apprenticeship as a computer scientist. I don't earn anything as a student, as this is a special course funded by the Canton of Bern (Switzerland).",
@@ -103,10 +91,6 @@ export default function en(): Translation {
 				sgrumisberg: {
 					title: "Rifle Club Rumisberg",
 					description: "The website for the Rumisberg rifle club is the first for a private customer. They want to share important information with a website.",
-					card: {
-						description: "The website for the Rumisberg rifle club is the first for a private customer. They want to share important information with a website.",
-						tags: [ "web", "client", "deployed" ],
-					},
 					page: {
 						description: [
 							"The rifle club in my village wanted a website to share important information with other members and be more attractive and modern for new members. However, the club didn't have much money, but I went along with it because I saw an opportunity with this project to draw attention to my services.",
@@ -121,10 +105,6 @@ export default function en(): Translation {
 				mgrumisberg: {
 					title: "Brass Band Rumisberg",
 					description: "Another web project is the website of the Brass Band Rumisberg, of which I am a member myself. Since we needed a new website anyway, I took on this task.",
-					card: {
-						description: "Another web project is the website of the Brass Band Rumisberg, of which I am a member myself. Since we needed a new website anyway, I took on this task.",
-						tags: [ "web", "client", "development" ],
-					},
 					page: {
 						description: [
 							"Another web project is the website of the Brass Band Rumisberg, of which I am a member myself. Since we needed a new website anyway, I took on this task.",
@@ -139,10 +119,6 @@ export default function en(): Translation {
 				homeDashboard: {
 					title: "Home Dashboard",
 					description: "The Home Dashboard is a web application, made with Next.js. The application is based on Magic Mirror and was also created for a similar purpose.",
-					card: {
-						description: "The Home Dashboard is a web application, made with Next.js. The application is based on Magic Mirror and was also created for a similar purpose.",
-						tags: [ "web", "personal", "development" ],
-					},
 					page: {
 						description: [
 							"The Home Dashboard is a web application, made with Next.js. The application is based on Magic Mirror and was also created for a similar purpose and is therefore almost identical to the design. However, since I had other ideas to expand, which were very complex with the Magic Mirror, I created an application myself.",

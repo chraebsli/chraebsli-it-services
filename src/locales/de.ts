@@ -47,10 +47,6 @@ export default function de(): Translation {
 				fischlehrpfad: {
 					title: "Fischlehrpfad Burgdorf",
 					description: "Der Fischlehrpfad in Burgdorf war mein erstes Webprojekt, das ich im 2. Lehrjahr mit einem Kollegen erstellt habe. Es ist eine kleine Website für einen Fischereiverein.",
-					card: {
-						description: "Der Fischlehrpfad in Burgdorf war mein erstes Webprojekt, das ich im 2. Lehrjahr mit einem Kollegen erstellt habe. Es ist eine kleine Website für einen Fischereiverein.",
-						tags: [ "web", "client", "deployed" ],
-					},
 					page: {
 						description: [
 							"Der Fischlehrpfad in Burgdorf war mein erstes grosses Webprojekt, das ich umsetzten durfte. Im 2. Lehrjahr habe ich mit einem Kollegen eine Website für einen Fischereiverein an der Emme in Burgdorf geplant und anschliessend entwickelt.",
@@ -67,10 +63,6 @@ export default function de(): Translation {
 				portfolio: {
 					title: "Portfolio",
 					description: "Diese Website ist mein persönliches Portfolio. Im Juni 2023 wurde diese von Grund auf überarbeitet. In einer etwas anderen Form gibt es sie aber schon 1 Jahr länger.",
-					card: {
-						description: "Diese Website ist mein persönliches Portfolio. Im Juni 2023 wurde diese von Grund auf überarbeitet. In einer etwas anderen Form gibt es sie aber schon 1 Jahr länger.",
-						tags: [ "web", "personal", "deployed" ],
-					},
 					page: {
 						description: [
 							"Diese Website ist mein persönliches Portfolio. Im Juni 2023 wurde diese dann von Grund auf überarbeitet. Vorher war sie eine Kombination aus Portfolio und einer kommerziellen Website und wurde bereits 1 Jahr vorher veröffentlicht.",
@@ -85,10 +77,6 @@ export default function de(): Translation {
 				"chraebsli-it-services": {
 					title: "Chraebsli IT Services",
 					description: "Diese Website ist die, die du gerade besuchst. Auf dieser biete ich verschiedene Dienstleistungen an. Sie wurde im Juni 2023 komplett überarbeitet, aber es gab sie schon 1 Jahr vorher.",
-					card: {
-						description: "Diese Website ist die, die du gerade besuchst. Auf dieser biete ich verschiedene Dienstleistungen an. Sie wurde im Juni 2023 komplett überarbeitet, aber es gab sie schon 1 Jahr vorher.",
-						tags: [ "web", "personal", "deployed" ],
-					},
 					page: {
 						description: [
 							"Auf dieser Website biete ich verschiedene IT Dienstleistungen an, um neben meiner Lehre als Informatiker etwas Geld zu verdienen. Ich verdiene in meiner Ausbildung nicht, da dies ein spezieller Lehrgang ist, finanziert von Kanon Bern.",
@@ -103,10 +91,6 @@ export default function de(): Translation {
 				sgrumisberg: {
 					title: "Schützengesellschaft Rumisberg",
 					description: "Die Website für die Schützengesellschaft Rumisberg ist die Erste für einen privaten Kunden. Sie möchten mit einer Website wichtige Information teilen.",
-					card: {
-						description: "Die Website für die Schützengesellschaft Rumisberg ist die Erste für einen privaten Kunden. Sie möchten mit einer Website wichtige Information teilen.",
-						tags: [ "web", "client", "deployed" ],
-					},
 					page: {
 						description: [
 							"Der Schützenverein aus meinem Dorf wollte eine Website, um wichtige Informationen mit anderen Mitgliedern zu teilen und für neue Mitglieder attraktiver und moderner wirken. Der Verein hatte jedoch nicht viel Geld, aber ich ging darauf ein, da ich mit diesem Projekt eine Möglichkeit sah, auf mich aufmerksam zu machen.",
@@ -121,10 +105,6 @@ export default function de(): Translation {
 				mgrumisberg: {
 					title: "Musikgesellschaft Rumisberg",
 					description: "Ein weiteres Webprojekt ist die Website der Musikgesellschaft Rumisberg, in der ich selbst Mitglied bin. Da wir ohnehin eine neue Website benötigten, übernahm ich diese Aufgabe.",
-					card: {
-						description: "Ein weiteres Webprojekt ist die Website der Musikgesellschaft Rumisberg, in der ich selbst Mitglied bin. Da wir ohnehin eine neue Website benötigten, übernahm ich diese Aufgabe.",
-						tags: [ "web", "client", "development" ],
-					},
 					page: {
 						description: [
 							"Ein weiteres Webprojekt ist die Website der Musikgesellschaft Rumisberg, in der ich selbst Mitglied bin. Da wir ohnehin eine neue Website benötigten, übernahm ich diese Aufgabe.",
@@ -139,10 +119,6 @@ export default function de(): Translation {
 				homeDashboard: {
 					title: "Home Dashboard",
 					description: "Das Home Dashboard ist eine Webapplikation mit Next.js. Die Applikation ist eine Anlehnung an Magic Mirror und wurde auch für einen ähnlichen Zweck erstellt.",
-					card: {
-						description: "Das Home Dashboard ist eine Webapplikation mit Next.js. Die Applikation ist eine Anlehnung an Magic Mirror und wurde auch für einen ähnlichen Zweck erstellt.",
-						tags: [ "web", "personal", "development" ],
-					},
 					page: {
 						description: [
 							"Das Home Dashboard ist eine Webapplikation mit Next.js. Die Applikation ist eine Anlehnung an Magic Mirror und wurde auch für einen ähnlichen Zweck erstellt und daher dem Design auch fast identisch. Da ich jedoch andere Ideen zum Erweitern hatte, die mit dem Magic Mirror nur sehr mühsam waren, erstellte ich selbst eine Applikation.",

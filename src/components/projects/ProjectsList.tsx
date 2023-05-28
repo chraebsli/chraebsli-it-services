@@ -46,11 +46,11 @@ export default function ProjectsList({loading = false, space = 30, projects = pr
 							<CardHeader title={project.title} titleTypographyProps={{align: "center"}} />
 							<CardContent>
 								<Box>
-									{project.card.tags.map(tag => <Tag name={tag} key={tag} />)}
+									{project.tags.map(tag => <Tag name={tag} key={tag} />)}
 								</Box>
 								<Box sx={{display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "baseline", mb: 2}}>
 									<Typography component="p" className="project-description" variant="body1" color="text.primary">
-										{project.card.description}
+										{project.description}
 									</Typography>
 								</Box>
 							</CardContent>
