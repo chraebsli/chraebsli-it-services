@@ -39,7 +39,8 @@ export default function SingleProject$() {
 					</section>
 					<section>
 						<SectionTitle> {t("projects.titles.website")} </SectionTitle>
-						{project.page.website.map((paragraph: string, i: number) => <Typography key={i}> {paragraph} </Typography>)}
+						{project.page.website.map((paragraph: string, i: number) =>
+							<Typography key={i} dangerouslySetInnerHTML={{__html: paragraph}} />)}
 						<br />
 					</section>
 					<section>

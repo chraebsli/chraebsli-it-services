@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 
 export default function About() {
 	const {t} = useTranslation("pages");
-	const description = t("about.description", {returnObjects: true}) as string[];
+	const description: string[] = t("about.description", {returnObjects: true});
 
 	return (
 		<Page page={"about"}>
@@ -17,7 +17,7 @@ export default function About() {
 						<h2>
 							<PersonIcon /> {t("about.title")}
 						</h2>
-						{description.map((paragraph, index) => <Typography key={index}>{paragraph}</Typography>)}
+						{description.map((paragraph, i) => <Typography key={i} dangerouslySetInnerHTML={{__html: paragraph}} />)}
 					</Card>
 				</Stack>
 			</article>

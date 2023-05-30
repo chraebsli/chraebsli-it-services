@@ -55,8 +55,8 @@ export default function en(): Translation {
 							"Since the website is designed to be accessed only via the QR codes, there is only the home page which is indexed. Therefore, there is no navigation to the items, only a list of links.",
 						],
 						website: [
-							"The website was handed over to the fishing club in May 2022 and can be found via the following link: XXXXXXXXXXXXXXXXXXXXX",
-							"You can find an overview of the pages here: YYYYYYYYYYYYYYYYYYYYY",
+							"The website was handed over to the fishing club in May 2022 and can be found via the following link: <a href='https://fischlehrpfad.ch'>fischlehrpfad.ch</a>",
+							"You can find an overview of the pages here: <a href='https://fischlehrpfad.ch/post'>fischlehrpfad.ch/post</a>",
 						],
 					},
 				},
@@ -70,7 +70,7 @@ export default function en(): Translation {
 							"With this portfolio, I want to show my skills and draw attention to myself. I also hope for a job request.",
 						],
 						website: [
-							"You can find my portfolio under the following link: ZZZZZZZ",
+							"You can find my portfolio under the following link: <a href='https://nicholas-krebs.ch'>nicholas-krebs.ch</a>",
 						],
 					},
 				},
@@ -98,7 +98,7 @@ export default function en(): Translation {
 							"Furthermore, I also had plenty of responsibilities and many tasks to do. This includes domain, DNS management, hosting and website maintenance.",
 						],
 						website: [
-							"The website went live at the end of June, but I'm still partly responsible for the content. You can visit it at this link: AAAAAAAAAAAAAAAAA",
+							"The website went live at the end of June, but I'm still partly responsible for the content. You can visit it at this link: <a href='https://sgrumisberg.ch'>sgrumisberg.ch</a>",
 						],
 					},
 				},
@@ -112,7 +112,7 @@ export default function en(): Translation {
 							"Although I was quite free in how I designed the website, I completely revised the old design and made it more modern and minimalistic. Here I realized how much effort it takes to design and implement a website which should come out uniquely.",
 						],
 						website: [
-							"The website went live in September 2022 and is also managed by me. It can be found at the following link: VVVVVVVVVVVVVVVVVVVVVV",
+							"The website went live in September 2022 and is also managed by me. It can be found at the following link: <a href='https://mgrumisberg.ch'>mgrumisberg.ch</a>",
 						],
 					},
 				},
@@ -126,7 +126,7 @@ export default function en(): Translation {
 							"However, I didn't really have time to work on the application and improve it, but it will be worked on and improved again at another time.",
 						],
 						website: [
-							"The repository for the application is on GitHub under the following link: GGGGGGGGGGGGGGGGGGGGG",
+							"The repository for the application is on GitHub under the following link: <a href='https://github.com/chraebsli/home-dashboard'>github.com/chraebsli/home-dashboard</a>",
 						],
 					},
 				},
@@ -140,7 +140,7 @@ export default function en(): Translation {
 							"I will only update and improve this side project in between. So, this project is rather inactive at the moment.",
 						],
 						website: [
-							"You can find the blog at this link: CCCCCCCCCCCCC",
+							"You can find the blog at this link: <a href='https://blog.chraebsli.dev'>blog.chraebsli.dev</a>",
 						],
 					},
 				},
@@ -262,7 +262,7 @@ export default function en(): Translation {
 					"We are Chraebsli IT Services and we offer various IT services. I'm an IT apprentice in my 3rd year and would like to earn something alongside my apprenticeship because I don't have a salary. This is because my apprenticeship is special and is financed by the canton of Bern (Switzerland).",
 					"I would like to earn money with these services, but above all I would like to enable smaller associations and start-ups to present themselves on the Internet without having to spend a lot of money. I try to keep the costs for hosting, email, administration, SEO, ... as low as possible to appear more attractive. Furthermore, I also hope that my projects and experiences will give me a higher value later on and that I can get better jobs.",
 					"I don't work on these projects in my full-time education. This means that in my spare time, I do this alongside other hobbies and on vacation. Since I'm truly interested in IT and programming, this is like another hobby for me.",
-					"You can find my personal portfolio at www.nicholas-krebs.ch.",
+					"You can find my personal portfolio at <a href='https://nicholas-krebs.ch'>nicholas-krebs.ch</a>.",
 				],
 			},
 			contact: {

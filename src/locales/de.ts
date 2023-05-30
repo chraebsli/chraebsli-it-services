@@ -55,8 +55,8 @@ export default function de(): Translation {
 							"Da die Website darauf ausgelegt ist, dass man sie nur über die QR Codes erreichen kann, gibt es nur die Startseite, die auch indexiert wird. Deshalb gibt es keine Navigation zu den Posten, sondern nur eine Liste an Links.",
 						],
 						website: [
-							"Die Website wurde im Mai 2022 dem Fischereiverein übergeben und ist über folgenden Link auffindbar: XXXXXXXXXXXXXXXXXXXXX",
-							"Eine Übersicht der Seiten findest du hier: YYYYYYYYYYYYYYYYYYYYY",
+							"Die Website wurde im Mai 2022 dem Fischereiverein übergeben und ist über folgenden Link auffindbar: <a href='https://fischlehrpfad.ch'>fischlehrpfad.ch</a>",
+							"Eine Übersicht der Seiten findest du hier: <a href='https://fischlehrpfad.ch/post'>fischlehrpfad.ch/post</a>",
 						],
 					},
 				},
@@ -70,7 +70,7 @@ export default function de(): Translation {
 							"Mit diesem Portfolio möchte ich mein Können zeigen und auf mich aufmerksam machen.",
 						],
 						website: [
-							"Mein Portfolio findest du unter folgendem Link: ZZZZZZZ",
+							"Mein Portfolio findest du unter folgendem Link: <a href='https://nicholas-krebs.ch'>nicholas-krebs.ch</a>",
 						],
 					},
 				},
@@ -98,7 +98,7 @@ export default function de(): Translation {
 							"Ich musste zudem auch viel Verantwortung tragen und hatte viele Aufgaben. Dazu gehören Domain, DNS Management, Hosting und die Instandhaltung der Website.",
 						],
 						website: [
-							"Die Website wurde Ende Juni freigeschaltet, aber ich bin immer noch teilweise für den Inhalt zuständig. Du kannst sie unter folgendem Link ansehen: AAAAAAAAAAAAAAAAA",
+							"Die Website wurde Ende Juni freigeschaltet, aber ich bin immer noch teilweise für den Inhalt zuständig. Du kannst sie unter folgendem Link ansehen: <a href='https://sgrumisberg.ch'>sgrumisberg.ch</a>",
 						],
 					},
 				},
@@ -112,7 +112,7 @@ export default function de(): Translation {
 							"Auch hier lernte ich viel. Obwohl ich recht frei war, wie ich die Website gestalte, habe ich das alte Design komplett überarbeitet und moderner und minimalistischer dargestellt. Hier merkte ich, wie viel Aufwand es ist, eine Website zu designen und zu realisieren.",
 						],
 						website: [
-							"Die Website wurde im September 2022 live geschaltet und wird auch durch mich verwaltet. Sie ist unter folgendem Link zu finden: VVVVVVVVVVVVVVVVVVVVVV",
+							"Die Website wurde im September 2022 live geschaltet und wird auch durch mich verwaltet. Sie ist unter folgendem Link zu finden: <a href='https://mgrumisberg.ch'>mgrumisberg.ch</a>",
 						],
 					},
 				},
@@ -126,7 +126,7 @@ export default function de(): Translation {
 							"Jedoch hatte ich nicht mehr wirklich Zeit, an der Applikation zu arbeiten und sie zu verbessern, aber es wird zu einem anderen Zeitpunkt wieder an ihr weitergearbeitet und verbessert.",
 						],
 						website: [
-							"Das Repository zur Applikation ist auf GitHub unter folgendem Link: GGGGGGGGGGGGGGGGGGGGG",
+							"Das Repository zur Applikation ist auf GitHub unter folgendem Link: <a href='https://github.com/chraebsli/home-dashboard'>github.com/chraebsli/home-dashboard</a>",
 						],
 					},
 				},
@@ -140,7 +140,7 @@ export default function de(): Translation {
 							"Dieses Nebenprojekt werde ich nur zwischendurch aktualisieren und verbessern. So ist dieses Projekt im Moment eher inaktiv. ",
 						],
 						website: [
-							"Den Blog findest du unter diesem Link: CCCCCCCCCCCCC",
+							"Den Blog findest du unter diesem Link: <a href='https://blog.chraebsli.dev'>blog.chraebsli.dev</a>",
 						],
 					},
 				},
@@ -262,7 +262,7 @@ export default function de(): Translation {
 					"Wir sind Chraebsli IT Services und bieten verschiedene IT Dienstleistungen an. Ich bin Informatiklehrling im 3. Lehrjahr und möchte neben meiner Ausbildung etwas verdienen, da ich keinen Lohn habe. Dies hat der Grund, da meine Ausbildung speziell ist und vom Kanton finanziert wird.",
 					"Ich möchte mit diesen Dienstleistungen zwar Geld verdienen, aber vor allem auch kleineren Vereinen und Startups ermöglichen, sich im Internet zu zeigen, ohne viel Geld ausgeben zu müssen. Dadurch probiere ich Kosten für Hosting, Email, Verwaltung, SEO, ... möglichst tief zu halten und dadurch attraktiver zu wirken. Dazu hoffe ich, dass ich später durch meine Projekte und Erfahrungen einen höheren Wert habe und bessere Stellen bekommen kann.",
 					"Ich arbeite an diesen Projekten nicht in meiner Vollzeitausbildung. Das heisst, dass ich in der Freizeit neben anderen Hobbys und in den Ferien mache. Da ich mich sehr für IT und Programmierung interessiere, ist dies sozusagen ein weiteres Hobby.",
-					"Mein persönliches Portfolio findest du unter www.nicholas-krebs.ch.",
+					"Mein persönliches Portfolio findest du unter <a href='https://nicholas-krebs.ch'>nicholas-krebs.ch</a>.",
 				],
 			},
 			contact: {
