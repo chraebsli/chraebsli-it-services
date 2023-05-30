@@ -85,7 +85,7 @@ export type Translation = {
 		},
 		about: {
 			title: string,
-			description: string,
+			description: string[],
 		},
 		contact: {
 			title: string,

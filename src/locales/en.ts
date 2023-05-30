@@ -244,7 +244,12 @@ export default function en(): Translation {
 			},
 			about: {
 				title: "About us",
-				description: "We are Chraebsli IT Services",
+				description: [
+					"We are Chraebsli IT Services and we offer various IT services. I'm an IT apprentice in my 3rd year and would like to earn something alongside my apprenticeship because I don't have a salary. This is because my apprenticeship is special and is financed by the canton of Bern (Switzerland).",
+					"I would like to earn money with these services, but above all I would like to enable smaller associations and start-ups to present themselves on the Internet without having to spend a lot of money. I try to keep the costs for hosting, email, administration, SEO, ... as low as possible to appear more attractive. Furthermore, I also hope that my projects and experiences will give me a higher value later on and that I can get better jobs.",
+					"I don't work on these projects in my full-time education. This means that in my spare time, I do this alongside other hobbies and on vacation. Since I'm truly interested in IT and programming, this is like another hobby for me.",
+					"You can find my personal portfolio at www.nicholas-krebs.ch.",
+				],
 			},
 			contact: {
 				title: "Contact",

@@ -3,10 +3,11 @@ import { Card, Stack, Typography } from "@mui/material";
 import Page from "../../components/common/Page";
 import "./About.sass";
 import PersonIcon from "@mui/icons-material/Person";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
 	const {t} = useTranslation("pages");
+	const description = t("about.description", {returnObjects: true}) as string[];
 
 	return (
 		<Page page={"about"}>
@@ -16,11 +17,7 @@ export default function About() {
 						<h2>
 							<PersonIcon /> {t("about.title")}
 						</h2>
-						<Typography>
-							<Trans i18nKey="about.description" t={t}>
-								We are Chraebsli IT Services
-							</Trans>
-						</Typography>
+						{description.map((paragraph, index) => <Typography key={index}>{paragraph}</Typography>)}
 					</Card>
 				</Stack>
 			</article>
