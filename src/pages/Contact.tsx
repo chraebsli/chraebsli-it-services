@@ -39,23 +39,14 @@ export default function Contact() {
 
 			<article>
 				<section>
-					<Typography dangerouslySetInnerHTML={
-						{__html: t("contact.contactMe", {interpolation: {escapeValue: false}})}}
-					/>
-					<Typography>
-						{t("contact.emailAddress")}
-						<br />
-						<a href="mailto:contact@nicholas-krebs.ch">contact@chraebsli.dev</a>
-					</Typography>
+					<Typography dangerouslySetInnerHTML={{__html: t("contact.contactMe", {interpolation: {escapeValue: false}})}} />
+					<br />
 				</section>
 
 				<section>
-					<Typography sx={{marginBottom: "2rem"}}>
-						{t("contact.or")}
-					</Typography>
 					<form
 						className={"gform"}
-						action={"https://script.google.com/macros/s/AKfycbyGX_jTNlOlP0eU2nAqu5dhgh9bJxqw4goiI8j0sHYmdKi6o2QXLd0ejo8aPexM5O1Egw/exec"}
+						action={"https://script.google.com/macros/s/AKfycby34XnYlPlWxzA9ijreq24F38SzU0uwrRST9FBr64ykCMCrSkhueznWG7O7Afuvkmbj_Q/exec"}
 						onSubmit={formSubmit}
 						method={"POST"}>
 						<div>

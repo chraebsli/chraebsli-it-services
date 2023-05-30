@@ -91,8 +91,6 @@ export type Translation = {
 		contact: {
 			title: string,
 			contactMe: string,
-			emailAddress: string,
-			or: string,
 			form: {
 				firstName: string,
 				lastName: string,

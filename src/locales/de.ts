@@ -267,9 +267,7 @@ export default function de(): Translation {
 			},
 			contact: {
 				title: "Kontakt",
-				contactMe: "Bei Fragen oder Anregungen können Sie gerne per Mail due unten stehende Adresse kontaktieren. Im Normalfall werde ich mich innerhalb von 2-4 Tagen bei ihnen melden. <br />	Gerne dürfen Sie mir auch eine Rückmeldung und Verbesserungsvorschläge für diese Website geben.",
-				emailAddress: "E-Mail Adresse",
-				or: "oder kontaktieren Sie mich mit diesem Formular:",
+				contactMe: "Bei Fragen oder Anregungen kontaktieren Sie mich bitte über folgende Email Adresse: <a href='mailto:contact@chraebsli.dev'>contact@chraebsli.dev</a>. Sie können mich auch über das Kontaktformular kontaktieren. <br /> Ich werde mich innerhalb von 1–2 Werktagen bei Ihnen melden.",
 				form: {
 					firstName: "Vorname",
 					lastName: "Nachname",
@@ -278,7 +276,7 @@ export default function de(): Translation {
 					message: "Nachricht",
 					required: "* Pflichtfeld",
 					send: "Senden",
-					success: "Danke für Ihre Nachricht. Ich werde mich in Kürze bei Ihnen melden.",
+					success: "Danke für Ihre Nachricht. Ich werde mich innerhalb von 1–2 Werktagen bei Ihnen melden.",
 				},
 			},
 			imprint: {
