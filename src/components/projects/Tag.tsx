@@ -1,35 +1,12 @@
 import React from "react";
 import { Chip, Typography } from "@mui/material";
-import { Tag as TagName } from "@models/project";
+import { TagColors, Tags, Tags_TagColors } from "../../models/project-tag";
 
 type Props = {
-	name: TagName
+	name: Tags
 }
 export default function Tag({name}: Props) {
-	let color: "secondary" | "default" | "success" | "warning" | "error" | "primary" | "info";
-	// TODO: enum
-	switch (name) {
-	case "development":
-		color = "warning";
-		break;
-	case "published":
-		color = "success";
-		break;
-	case "client":
-		color = "error";
-		break;
-	case "personal":
-		color = "info";
-		break;
-	case "website":
-		color = "primary";
-		break;
-	case "webapp":
-		color = "primary";
-		break;
-	default:
-		color = "default";
-	}
+	const color = Tags_TagColors[name] as TagColors;
 
 	return (
 		<Chip

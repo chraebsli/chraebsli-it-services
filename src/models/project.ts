@@ -1,3 +1,5 @@
+import { Tags } from "@models/project-tag";
+
 export enum Projects {
 	Fischlehrpfad = "fischlehrpfad",
 	Portfolio = "portfolio",
@@ -14,7 +16,7 @@ export default class Project {
 		public readonly title: string,
 		public readonly description: string[],
 		public readonly href: string,
-		public readonly tags: Tag[],
+		public readonly tags: Tags[],
 		public readonly page: {
 			wakaTimeBadge: string,
 			description: string[],
@@ -24,8 +26,3 @@ export default class Project {
 		},
 	) {}
 }
-
-export type Tag = TagStatus | TagType | TagClient
-type TagStatus = "development" | "published"
-type TagType = "website" | "webapp" | "server" | "api" | "other"
-type TagClient = "personal" | "client"

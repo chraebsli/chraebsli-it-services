@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Project, { Projects } from "../../models/project";
+import { Tags } from "../../models/project-tag";
 
 export default function projectsList(): Project[] {
 	const {t} = useTranslation("common");
@@ -10,7 +11,7 @@ export default function projectsList(): Project[] {
 			t(`projects.${Projects.Fischlehrpfad}.title`),
 			t(`projects.${Projects.Fischlehrpfad}.description`),
 			`/project/${Projects.Fischlehrpfad}`,
-			["website", "client", "published"],
+			[Tags.Website, Tags.Client, Tags.Published],
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/Fischlehrpfad-Burgdorf-user",
 				description: t(`projects.${Projects.Fischlehrpfad}.page.description`, {returnObjects: true}),
@@ -24,7 +25,7 @@ export default function projectsList(): Project[] {
 			t(`projects.${Projects.Portfolio}.title`),
 			t(`projects.${Projects.Portfolio}.description`),
 			`/project/${Projects.Portfolio}`,
-			["website", "personal", "published"],
+			[Tags.Website, Tags.Personal, Tags.Published],
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/portfolio",
 				description: t(`projects.${Projects.Portfolio}.page.description`, {returnObjects: true}),
@@ -38,7 +39,7 @@ export default function projectsList(): Project[] {
 			t(`projects.${Projects.ChraebsliItServices}.title`),
 			t(`projects.${Projects.ChraebsliItServices}.description`),
 			`/project/${Projects.ChraebsliItServices}`,
-			["website", "personal", "published"],
+			[Tags.Website, Tags.Personal, Tags.Published],
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/chraebsli-it-services",
 				description: t(`projects.${Projects.ChraebsliItServices}.page.description`, {returnObjects: true}),
@@ -51,7 +52,7 @@ export default function projectsList(): Project[] {
 			t(`projects.${Projects.SGRumisberg}.title`),
 			t(`projects.${Projects.SGRumisberg}.description`),
 			`/project/${Projects.SGRumisberg}`,
-			["website", "client", "published"],
+			[Tags.Website, Tags.Client, Tags.Published],
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/sgrumisberg.ch",
 				description: t(`projects.${Projects.SGRumisberg}.page.description`, {returnObjects: true}),
@@ -65,7 +66,7 @@ export default function projectsList(): Project[] {
 			t(`projects.${Projects.MGRumisberg}.title`),
 			t(`projects.${Projects.MGRumisberg}.description`),
 			`/project/${Projects.MGRumisberg}`,
-			["website", "client", "published"],
+			[Tags.Website, Tags.Client, Tags.Published],
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/mgrumisberg.ch",
 				description: t(`projects.${Projects.MGRumisberg}.page.description`, {returnObjects: true}),
@@ -79,7 +80,7 @@ export default function projectsList(): Project[] {
 			t(`projects.${Projects.HomeDashboard}.title`),
 			t(`projects.${Projects.HomeDashboard}.description`),
 			`/project/${Projects.HomeDashboard}`,
-			["webapp", "personal", "development"],
+			[Tags.Webapp, Tags.Personal, Tags.Development],
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/home-dashboard",
 				description: t(`projects.${Projects.HomeDashboard}.page.description`, {returnObjects: true}),
@@ -93,7 +94,7 @@ export default function projectsList(): Project[] {
 			t(`projects.${Projects.CodingCrabBlog}.title`),
 			t(`projects.${Projects.CodingCrabBlog}.description`),
 			`/project/${Projects.CodingCrabBlog}`,
-			["website", "personal", "published"],
+			[Tags.Website, Tags.Personal, Tags.Published],
 			{
 				wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/coding-crab-blog",
 				description: t(`projects.${Projects.CodingCrabBlog}.page.description`, {returnObjects: true}),
