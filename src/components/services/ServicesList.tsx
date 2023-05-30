@@ -5,10 +5,9 @@ import { Box, Button, Card, CardActions, CardContent, CardHeader, Grid, Skeleton
 import { Image } from "../Text";
 import { useTranslation } from "react-i18next";
 import servicesList from "./services-list";
-import FullService from "@models/service";
 
 export default function ServicesList({loading = false, space = 30}: {loading?: boolean; space?: number}) {
-	const services: FullService[] = servicesList();
+	const services = servicesList();
 	const {t} = useTranslation("common");
 
 	return (
@@ -47,10 +46,10 @@ export default function ServicesList({loading = false, space = 30}: {loading?: b
 								<Box
 									sx={{display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "baseline", mb: 2}}>
 									<Typography component="p" className="service-teaser">
-										{service.card.teaser}
+										{service.teaser}
 									</Typography>
 									<Typography component="p" className="service-description">
-										{service.card.description}
+										{service.description}
 									</Typography>
 								</Box>
 								<ul>

@@ -8,56 +8,44 @@ export default function servicesList(): FullService[] {
 			"website",
 			t("services.website.title"),
 			"/service/website",
+			t("services.website.teaser"),
+			t("services.website.description"),
 			t("services.website.features", {returnObjects: true}),
 			{
-				teaser: t("services.website.card.teaser"),
-				description: t("services.website.card.description"),
-			},
-			{
-				teaser: t("services.website.page.teaser"),
-				description: t("services.website.page.description"),
+				description: t("services.website.page.description", {returnObjects: true}),
 			},
 		),
 		new FullService(
 			"webapp",
 			t("services.webapp.title"),
 			"/service/webapp",
+			t("services.webapp.teaser"),
+			t("services.webapp.description"),
 			t("services.webapp.features", {returnObjects: true}),
 			{
-				teaser: t("services.webapp.card.teaser"),
-				description: t("services.webapp.card.description"),
-			},
-			{
-				teaser: t("services.webapp.page.teaser"),
-				description: t("services.webapp.page.description"),
+				description: t("services.webapp.page.description", {returnObjects: true}),
 			},
 		),
 		new FullService(
 			"database",
 			t("services.database.title"),
 			"/service/database",
+			t("services.database.teaser"),
+			t("services.database.description"),
 			t("services.database.features", {returnObjects: true}),
 			{
-				teaser: t("services.database.card.teaser"),
-				description: t("services.database.card.description"),
-			},
-			{
-				teaser: t("services.database.page.teaser"),
-				description: t("services.database.page.description"),
+				description: t("services.database.page.description", {returnObjects: true}),
 			},
 		),
 		new FullService(
 			"other",
 			t("services.other.title"),
 			"/service/other",
+			t("services.other.teaser"),
+			t("services.other.description"),
 			t("services.other.features", {returnObjects: true}),
 			{
-				teaser: t("services.other.card.teaser"),
-				description: t("services.other.card.description"),
-			},
-			{
-				teaser: t("services.other.page.teaser"),
-				description: t("services.other.page.description"),
+				description: t("services.other.page.description", {returnObjects: true}),
 			},
 		),
 	];

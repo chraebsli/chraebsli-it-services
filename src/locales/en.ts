@@ -137,67 +137,62 @@ export default function en(): Translation {
 				illustration: "illustration",
 				includedFeatures: "Following services are included:",
 				website: {
-					title: "Create a website",
-					description: "I can create a website for you according to your wishes. In addition, I can register a domain and find a suitable hosting provider.",
-					features: [ "professional website", "configuration", "domain & hosting", "E-Mail addresses" ],
-					card: {
-						teaser: "Do you need a website for your club, startup or for a personal purpose?",
-						description: "I will create a perfect and favorable website for your club, startup or for a personal purpose according to your wishes.",
-					},
+					title: "Website",
+					teaser: "Do you need a website for your association, startup or for a personal purpose?",
+					description: "I will create a website for you that meets your needs and has a modern design. I can also register a suitable domain and host your website and email.",
+					features: ["professional website", "responsive design", "optimized SEO", "Domain, Hosting & Email"],
 					page: {
-						teaser: "Do you need a small and simple website for your association, startup or for a personal purpose?",
-						description: "Then you are right here. I create the perfect website for your club, startup or for a personal purpose according to your wishes.\n" +
-							"Navigating the website is very easy, also for you. With the CMS Grav you can create, edit and delete pages or content such as text, images, videos, tables, etc. without a great deal of technical knowledge. There is also a page statistic where you can see the views.",
+						description: [
+							"I create the website for you, your association or startup that meets your needs at a reasonable price. The website and its content can later be easily managed by you using a CMS. This allows you to create, edit and delete content such as text, media (images, videos ...), tables and more without much experience with websites and IT.",
+							"In the admin panel, you can also see statistics showing how many times your page has been viewed. With optimized SEO, you will automatically be better found in Google search results without having to spend money on advertising.",
+							"If you wish, I can register a suitable domain and host your website and email. I also offer training courses that teach you how to manage the website and how the content has a positive impact on visitors. ",
+						],
 					},
 				},
 				webapp: {
-					title: "Create a webapp",
-					description: "I can create a web application for you according to your wishes. You can then use it, for example, in your company.",
-					features: [ "modern web application", "easy to operate", "expandable", "secure data" ],
-					card: {
-						teaser: "Do you need a web application for example to record working hours for your startup?",
-						description: "I can develop the perfect web application for your startup or for a personal purpose with login and other helpful features.",
-					},
+					title: "Application",
+					teaser: "Do you need your own application for your company that meets your needs?",
+					description: "I will create a modern web application for you that meets all your wishes and is personalized for your concerns. This can be for smartphones, desktop devices and/or web based.",
+					features: ["modern application", "easy to use", "easily expandable", "secure data"],
 					page: {
-						teaser: "Do you need a web application, for example to record working times or something similar for your startup?",
-						description: "I will develop for you the perfect web application for startup or for a personal purpose with a login system and many other features you want.\n" +
-							"The web application is safe and fast and has a modern design according to your ideas. In addition, it will also be available with a mobile version for on the go. If you later want more functions, these can also be expanded by other developers thanks to the clever structure.",
+						description: [
+							"I will create a modern web application for you that meets all your needs and is personalized for your concerns. This can be expanded later and is easy to use for the user. It can be designed for smartphones and/or desktop devices, or it can be web-based.",
+							"The application can be a time tracking system, online shop, inventory system or even your own idea. The application can come with a login process, administration panels, logging and other features that you determine.",
+						],
 					},
 				},
 				database: {
-					title: "Database",
-					description: "I can create any database for you. It can be a SQL or NoSQL database.",
+					title: "Databases",
+					teaser: "Do you need a new database or want to migrate an existing database?",
+					description: "I can create a database for you according to your wishes or migrate an existing one to another system. This can be a SQL or NoSQL DB.",
 					features: [
-						"complete database system",
-						"clever structure",
+						"database system",
+						"considered structure",
 						"easy to manage",
-						"fast queries",
+						"quick queries",
 					],
-					card: {
-						teaser: "Do you want to create a new database or import from an old database?",
-						description: "I can create a new database for you or transfer data from another database to a new one, regardless of SQL or NoSQL.",
-					},
 					page: {
-						teaser: "Do you want to create a database or transfer all data from another to a new one?",
-						description: "Ich erstelle für Sie eine neue Datenbank oder übernehme Daten von einer anderen Datenbank in eine neue, egal ob SQL oder NoSQL. Dabei können Sie selbst entscheiden, welche Datenbank Sie verwenden möchten. Es spielt keine Rolle, welche Art von Daten Sie speichern möchten, ob Dokumente oder zum Beispiel ein Login-System.",
+						description: [
+							"I can create a database for you according to your wishes or migrate an existing one to another system. This can be a SQL or NoSQL DB.",
+							"I would also be happy to advise you on which database makes the most sense for your system and what advantages and disadvantages they have.",
+						],
 					},
 				},
 				other: {
-					title: "other IT services",
-					description: "I can also offer you other IT services. Just contact me and we will find a solution.",
+					title: "IT service",
+					teaser: "Do you need another IT service or do you have a question about IT?",
+					description: "I also offer you other IT services or answer your questions about IT. The possibilities are unlimited. Contact me and we will find a solution.",
 					features: [
-						"Domain Management & Transfer",
-						"Hosting & E-Mail",
-						"Support",
-						"IT Consulting & Schooling",
+						"domain management & transfer",
+						"hosting & email",
+						"support",
+						"IT consulting & training",
 					],
-					card: {
-						teaser: "Do you need any other IT services?",
-						description: "I can help you with many other IT services. Just contact me and we will find a solution.",
-					},
 					page: {
-						teaser: "Do you need any other IT services like domain management, hosting or support?",
-						description: "I can help you with many other IT services. Just contact me and we will find a solution.",
+						description: [
+							"I also offer you other IT services or answer your questions about IT. Contact me and we will find a solution.",
+							"Services may include but are not limited to domain management & transfer, support, IT consulting, training or something else. The possibilities are endless.",
+						],
 					},
 				},
 			},

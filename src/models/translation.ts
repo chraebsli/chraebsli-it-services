@@ -133,14 +133,10 @@ type Project = {
 
 type Service = {
 	title: string,
+	teaser: string,
 	description: string,
 	features: string[],
-	card: {
-		teaser: string,
-		description: string,
-	},
 	page: {
-		teaser: string,
-		description: string,
+		description: string[],
 	},
 }

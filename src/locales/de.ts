@@ -137,65 +137,62 @@ export default function de(): Translation {
 				illustration: "Illustration",
 				includedFeatures: "Folgende Features sind inbegriffen:",
 				website: {
-					title: "Website erstellen",
-					description: "Ich erstelle für Sie eine Website nach Ihren Wünschen. Dazu kann ich zusätzlich eine Domain registrieren und einen geeigneten Hosting Anbieter finden.",
-					features: [ "professionelle Website", "Konfiguration", "Domain & Hosting", "E-Mail Adressen" ],
-					card: {
-						teaser: "Brauchen Sie eine Website für Ihren Verein, Startup oder für einen persönlichen Zweck?",
-						description: "Ich erstelle günstig für Sie die perfekte Website für Ihren Verein, Startup oder für einen persönlichen Zweck nach Ihren Wünschen.",
-					},
+					title: "Website",
+					teaser: "Benötigen Sie eine Website für Ihren Verein, Startup oder für einen persönlichen Zweck?",
+					description: "Ich erstelle für Sie eine Website, die Ihren Wünschen entspricht und ein modernes Design hat. Dazu kann ich eine passende Domain registrieren und Ihre Website und E-Mail hosten.",
+					features: ["professionelle Website", "responsive Design", "optimiertes SEO", "Domain, Hosting & Email"],
 					page: {
-						teaser: "Brauchen Sie eine kleine und einfache Website für Ihren Verein, Startup oder für einen persönlichen Zweck?",
-						description: "Dann sind Sie hier richtig. Ich erstelle günstig für Sie die perfekte Website für Ihren Verein, Startup oder für einen persönlichen Zweck nach Ihren Wünschen.\nDas handhaben der Website ist sehr einfach, auch für Sie. Mit dem CMS Grav können Sie ohne grosses technisches Verständnis Seiten oder Inhalte wie Text, Bilder, Videos, Tabellen, etc. erstellen, bearbeiten und löschen. Dazu gibt es eine Seitenstatistik wo Sie die Aufrufe sehen können.",
+						description: [
+							"Ich erstelle günstig die Website für Sie, Ihren Verein oder Startup, die Ihren Wünschen entspricht. Die Website und Ihr Inhalt kann später auch von Ihnen einfach verwaltet werden durch ein CMS. Durch dieses können Sie ohne viel Erfahrung mit Websites und IT selbst Inhalte wie Text, Medien (Bilder, Videos ...), Tabellen und weiteres erstellen, bearbeiten und löschen.",
+							"Im Admin Panel können Sie auch eine Statistik sehen, bei der Sie erkennen, wie oft Ihre Seite aufgerufen wurde. Durch optimiertes SEO werden sie automatisch besser in Google Suchergebnissen gefunden, ohne Geld für Werbung ausgeben zu müssen.",
+							"Auf Wunsch kann ich eine passende Domain registrieren und Ihre Website und E-Mail hosten. Ich biete auch Schulungen an, bei denen Sie lernen, die Website zu verwalten und wie sich der Inhalt positiv auf die Besucher auswirkt.",
+						],
 					},
 				},
 				webapp: {
-					title: "Webapp erstellen",
-					description: "Ich erstelle für Sie eine Webapplikation nach Ihren Wünschen. Sie können diese dann zum Beispiel in Ihrer Firma verwenden.",
-					features: [ "moderne Webapplikation", "einfach zu bedienen", "einfach erweiterbar", "sichere Daten" ],
-					card: {
-						teaser: "Benötigen Sie eine Webapp für zum Beispiel bei ihrem Startup Arbeitszeiten zu erfassen?",
-						description: "Ich entwickle für Sie die perfekte Webapplikation für Ihr Startup oder für einen persönlichen Zweck mit Login und anderen Funktionen.",
-					},
+					title: "Applikation",
+					teaser: "Benötigen Sie eine eigene Applikation für Ihre Firma, die Ihren Wünschen entspricht?",
+					description: "Ich erstelle für Sie eine moderne Webapplikation, die allen Ihren Wünschen entspricht, und für Ihr Anliegen personalisiert ist. Diese kann für Smartphones, Desktopgeräte und/ oder webbasiert sein.",
+					features: ["moderne Applikation", "einfach zu bedienen", "einfach erweiterbar", "sichere Daten"],
 					page: {
-						teaser: "Benötigen Sie eine Webapplikation um zum Beispiel bei ihrem Startup Arbeitszeiten oder ähnliches zu erfassen?",
-						description: "Ich entwickle für Sie die perfekte Webapplikation um bei Startup oder für einen persönlichen Zweck mit einem Login System und vielen weiteren Funktionen, die Sie möchten.\nDie Webapplikation ist sicher und schnell und hat ein modernes Design nach ihren Vorstellungen. Dazu wird sie auch mit einer mobile Version erreichbar sein für unterwegs. Wenn Sie später weitere Funktionen wünschen, können diese durch den cleveren Aufbau auch durch andere Entwickler erweitert werden.",
+						description: [
+							"Ich erstelle für Sie eine moderne Webapplikation, die allen Ihren Wünschen entspricht, und für Ihr Anliegen personalisiert ist. Diese kann später erweitert werden und ist für den Benutzer einfach zu bedienen. Sie kann für Smartphones und/ oder Desktopgeräte ausgerichtet sein oder auch webbasiert.",
+							"Die Applikation kann unter anderem ein Zeiterfassungssystem, Onlineshop, Inventarsystem oder auch Ihre eigene Idee sein. Die Applikation kann mit einem Login Prozess, Administrationspaten, Logging und weiteren Funktionen kommen, die Sie bestimmen.",
+						],
 					},
 				},
 				database: {
-					title: "Datenbank erstellen",
-					description: "Ich erstelle für Sie eine beliebige Datenbank. Dabei kann es sich um eine SQL oder NoSQL Datenbank handeln.",
+					title: "Datenbanken",
+					teaser: "Benötigen Sie eine neue Datenbank oder möchten eine bestehende Datenbank migrieren?",
+					description: "Ich kann für Sie eine Datenbank nach Ihren Wünschen erstellen oder eine bestehende zu einem anderen System migrieren. Dabei kann es sich um eine SQL oder NoSQL DB handeln.",
 					features: [
-						"vollständiges Datenbanksystem",
+						"Datenbanksystem",
 						"überlegte Struktur",
 						"einfach zu verwalten",
 						"schnelle Abfragen",
 					],
-					card: {
-						teaser: "Möchten Sie eine Datenbank erstellen oder von einer anderen Datenbank die Daten übernehmen?",
-						description: "Ich erstelle für Sie eine neue Datenbank oder übernehme Daten von einer anderen Datenbank in eine neue, egal ob SQL oder NoSQL.",
-					},
 					page: {
-						teaser: "Möchten Sie eine Datenbank erstellen oder von einer anderen alle Daten in eine neue übernehmen?",
-						description: "Ich erstelle für Sie eine neue Datenbank oder übernehme Daten von einer anderen Datenbank in eine neue, egal ob SQL oder NoSQL. Dabei können Sie selbst entscheiden, welche Datenbank Sie verwenden möchten. Es spielt keine Rolle, welche Art von Daten Sie speichern möchten, ob Dokumente oder zum Beispiel ein Login-System.",
+						description: [
+							"Ich kann für Sie eine Datenbank nach Ihren Wünschen erstellen oder eine bestehende zu einem anderen System migrieren. Dabei kann es sich um eine SQL oder NoSQL DB handeln.",
+							"Gerne berate ich Sie auch, welche Datenbank für Ihr System am sinnvollsten ist und welche Vor- und Nachteile diese haben.",
+						],
 					},
 				},
 				other: {
-					title: "andere IT Dienstleistungen",
-					description: "Ich biete auch andere IT Dienstleistungen an. Die Möglichkeiten sind nicht begrenzt. Kontaktieren Sie mich bitte.",
+					title: "IT Dienstleistung",
+					teaser: "Benötigen Sie eine andere IT Dienstleistung oder haben Sie eine Frage zur IT?",
+					description: "Ich biete Ihnen auch andere IT Dienstleistungen an oder beantworte Ihnen Fragen zum Thema IT. Die Möglichkeiten sind dabei unbegrenzt. Kontaktieren Sie mich und wir finden eine Lösung.",
 					features: [
 						"Domain Management & Transfer",
 						"Hosting & E-Mail",
 						"Supporting",
 						"IT Beratung & Schulung",
 					],
-					card: {
-						teaser: "Brauchen Sie eine andere IT Dienstleistung?",
-						description: "Ich biete auch andere IT Dienstleistungen an, wie zum Beispiel Domain Management & Transfer, Supporting, IT Beratung und IT Schulung.",
-					},
 					page: {
-						teaser: "Brauchen Sie eine andere IT Dienstleistung?",
-						description: "Ich biete auch andere IT Dienstleistungen an, wie zum Beispiel Domain Management & Transfer, Supporting, IT Beratung und IT Schulung. Wenn Sie eine andere IT Dienstleistung benötigen, können Sie mich gerne kontaktieren. Ich freue mich, Ihnen helfen zu können.",
+						description: [
+							"Ich biete Ihnen auch andere IT Dienstleistungen an oder beantworte Ihnen Fragen zum Thema IT. Kontaktieren Sie mich und wir finden eine Lösung.",
+							"Dienstleistungen können unter anderem Domain Management & Transfer, Support, IT-Beratung, Schulungen oder etwas anderes sein. Die Möglichkeiten sind dabei unbegrenzt.",
+						],
 					},
 				},
 			},

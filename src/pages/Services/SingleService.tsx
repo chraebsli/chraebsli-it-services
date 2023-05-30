@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Button, Stack, Typography } from "@mui/material";
 import Page from "../../components/common/Page";
 import { Image, Line, PageTitle } from "../../components/Text";
@@ -12,41 +12,37 @@ import "./Services.sass";
 export default function SingleService() {
 	const {t} = useTranslation("common");
 
-	const pages = useLocation().pathname.split("/");
-	const page = pages[pages.length - 1];
+	const page = useParams().service;
 
 	const services = servicesList();
-	const possibleServices = services.find(service => service.id === page);
+	const service = services.find(project => project.id === page);
 
-	if (!possibleServices) return <NotFound404 />;
-	const {id, title, features, page: {description, teaser}} = possibleServices;
+	if (!service) return <NotFound404 />;
 
 	return (
-		<Page page={`services.${id}`} className={"single-service"}>
+		<Page page={`services.${service.id}`} className={"single-service"}>
 			<section>
-				<PageTitle>{title}</PageTitle>
+				<PageTitle>{service.title}</PageTitle>
 				<Line bottom={2} />
 			</section>
 
 			<article>
 				<Image
-					src={`/media/services/${id}.webp`}
-					alt={`${t("services.imageAlt")} ${title}`}
+					src={`/media/services/${service.id}.webp`}
+					alt={`${t("services.imageAlt")} ${service.title}`}
 					height={300} />
 				<section>
 					<Stack spacing={3}>
-						<Typography className={"italic"}> {teaser} </Typography>
-						<Typography> {description} </Typography>
+						<Typography className={"italic"}> {service.teaser} </Typography>
+						{service.page.description.map((paragraph: string, i: number) => <Typography key={i}> {paragraph} </Typography>)}
 						<Typography>
 							{t("services.includedFeatures")}
 							<ul>
-								{features.map((feature, i) => (
-									<li key={i}>{feature}</li>
-								))}
+								{service.features.map((feature, i) => <li key={i}>{feature}</li>)}
 							</ul>
 						</Typography>
 						<Button
-							href={`/contact?service=${title}`}
+							href={`/contact?service=${service.title}`}
 							rel={"canonical"}
 							variant="contained"
 							endIcon={<SendIcon color={"secondary"} />}
