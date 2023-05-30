@@ -4,7 +4,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import { MaterialUISwitch } from "./ThemeSwitch";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
-import LogoWhiteTransparent from "../../assets/logo-white-transparent.svg";
+import { Image } from "../Text";
 
 const pages = [
 	{key: "about", href: "/about"},
@@ -24,7 +24,7 @@ export default function Header({toggleTheme, checked}: Props) {
 			<Container>
 				<Navbar collapseOnSelect expand={"md"} bg={"none"} variant={"dark"}>
 					<Navbar.Brand href={"/"}>
-						<img src={LogoWhiteTransparent} alt={"logo"} width={50} height={50} className={"d-inline-block align-center"} />
+						<Image src={"/assets/logo-white-transparent.svg"} alt={"logo"} width={50} height={50} />
 						<Typography component={"span"} variant={"h6"} sx={{marginLeft: "1rem"}}>
 							{t("header.title")}
 						</Typography>
