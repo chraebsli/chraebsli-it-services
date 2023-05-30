@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { defaultLanguage } from "./i18n";
+import { defaultLanguage } from "../../locales/_i18n";
 import { useCookies } from "react-cookie";
 import { Button, ButtonGroup } from "@mui/material";
 
