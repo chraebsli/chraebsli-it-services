@@ -1,3 +1,10 @@
+export enum Services {
+	Website = "website",
+	Webapp = "webapp",
+	Database = "database",
+	Other = "other",
+}
+
 export default class FullService {
 	constructor(
 		public readonly id: string,
