@@ -25,8 +25,8 @@ export type Translation = {
 			"chraebsli-it-services": Project,
 			sgrumisberg: Project,
 			mgrumisberg: Project,
-			homeDashboard: Project,
-			codingCrabBlog: Project,
+			"home-dashboard": Project,
+			"coding-crab-blog": Project,
 		},
 		services: {
 			title: string,

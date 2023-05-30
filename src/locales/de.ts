@@ -116,7 +116,7 @@ export default function de(): Translation {
 						],
 					},
 				},
-				homeDashboard: {
+				"home-dashboard": {
 					title: "Home Dashboard",
 					description: "Das Home Dashboard ist eine Webapplikation mit Next.js. Die Applikation ist eine Anlehnung an Magic Mirror und wurde auch für einen ähnlichen Zweck erstellt.",
 					page: {
@@ -130,7 +130,7 @@ export default function de(): Translation {
 						],
 					},
 				},
-				codingCrabBlog: {
+				"coding-crab-blog": {
 					title: "Coding Crab Blog",
 					description: "Der Coding Crab Blog ist mein Blog, der über GitHub Pages gehostet wird. Er wurde mit Jekyll, einem Ruby Gem erstellt. Darauf befinden sich meine Blogs und Anleitungen im Bereich der IT.",
 					page: {
