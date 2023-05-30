@@ -12,7 +12,7 @@ export default function projectsList(): Project[] {
 			"/project/fischlehrpfad",
 			["website", "client", "published"],
 			{
-				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/Fischlehrpfad-Burgdorf",
+				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/Fischlehrpfad-Burgdorf-user",
 				description: t("projects.fischlehrpfad.page.description", {returnObjects: true}),
 				website: t("projects.fischlehrpfad.page.website", {returnObjects: true}),
 				tools: ["Grav", "PHP", "Twig", "HTML5", "CSS3", "JavaScript"],
@@ -26,7 +26,7 @@ export default function projectsList(): Project[] {
 			"/project/portfolio",
 			["website", "personal", "published"],
 			{
-				wakaTimeBadge: "https://wakatime.com/badge/user/2b5dcd85-63c3-46d3-8185-6766880e0b04/project/b7091aeb-09e8-4ca5-94d0-aa4455bc771a",
+				wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/portfolio",
 				description: t("projects.portfolio.page.description", {returnObjects: true}),
 				website: t("projects.portfolio.page.website", {returnObjects: true}),
 				tools: ["React", "Node.JS", "TypeScript", "MUI"],
@@ -40,7 +40,7 @@ export default function projectsList(): Project[] {
 			"/project/chraebsli-it-services",
 			["website", "personal", "published"],
 			{
-				wakaTimeBadge: "https://wakatime.com/badge/user/2b5dcd85-63c3-46d3-8185-6766880e0b04/project/5f370487-9580-4e93-bf8e-17cb2bebd579",
+				wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/chraebsli-it-services",
 				description: t("projects.chraebsli-it-services.page.description", {returnObjects: true}),
 				website: t("projects.chraebsli-it-services.page.website", {returnObjects: true}),
 				tools: ["React", "Node.JS", "TypeScript", "MUI"],
@@ -81,7 +81,7 @@ export default function projectsList(): Project[] {
 			"/project/home-dashboard",
 			["webapp", "personal", "development"],
 			{
-				wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/home-dashboard",
+				wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/home-dashboard",
 				description: t("projects.home-dashboard.page.description", {returnObjects: true}),
 				website: t("projects.home-dashboard.page.website", {returnObjects: true}),
 				tools: ["React", "Node.JS", "Next.JS", "TypeScript", "MUI"],
