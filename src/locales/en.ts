@@ -130,6 +130,20 @@ export default function en(): Translation {
 						],
 					},
 				},
+				codingCrabBlog: {
+					title: "Coding Crab Blog",
+					description: "The Coding Crab Blog is my blog hosted on GitHub Pages. It was created with Jekyll, a Ruby Gem. It contains my blogs and instructions about IT.",
+					page: {
+						description: [
+							"The Coding Crab Blog is my blog hosted on GitHub Pages. It was created with Jekyll, a Ruby Gem. I used the «Minimal Mistakes Theme» as a template for the blog. On the blog are my blogs and instructions about IT.",
+							"With this blog, I mainly want to share my knowledge and create instructions for programming. However, there is also content on other topics.",
+							"I will only update and improve this side project in between. So, this project is rather inactive at the moment.",
+						],
+						website: [
+							"You can find the blog at this link: CCCCCCCCCCCCC",
+						],
+					},
+				},
 			},
 			services: {
 				title: "Services",

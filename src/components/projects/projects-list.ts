@@ -88,5 +88,19 @@ export default function projectsList(): Project[] {
 				link: "https://github.com/chraebsli/home-dashboard",
 			},
 		),
+		new Project(
+			"coding-crab-blog",
+			t("projects.codingCrabBlog.title"),
+			t("projects.codingCrabBlog.description"),
+			"/project/coding-crab-blog",
+			["web", "personal", "development"],
+			{
+				wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/coding-crab-blog",
+				description: t("projects.codingCrabBlog.page.description", {returnObjects: true}),
+				website: t("projects.codingCrabBlog.page.website", {returnObjects: true}),
+				tools: ["Ruby", "Jekyll", "SASS", "GitHub Pages"],
+				link: "https://blog.chraebsli.dev",
+			},
+		),
 	];
 }

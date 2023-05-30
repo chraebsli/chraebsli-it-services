@@ -130,6 +130,20 @@ export default function de(): Translation {
 						],
 					},
 				},
+				codingCrabBlog: {
+					title: "Coding Crab Blog",
+					description: "Der Coding Crab Blog ist mein Blog, der über GitHub Pages gehostet wird. Er wurde mit Jekyll, einem Ruby Gem erstellt. Darauf befinden sich meine Blogs und Anleitungen im Bereich der IT.",
+					page: {
+						description: [
+							"Der Coding Crab Blog ist mein Blog, der über GitHub Pages gehostet wird. Er wurde mit Jekyll, einem Ruby Gem erstellt. Als Vorlage für den Blog nutzte ich das «Minimal Mistakes Theme». Auf dem Blog befinden sich meine Blogs und Anleitungen im Bereich der IT.",
+							"Mit diesem Blog möchte ich hauptsächlich mein Wissen teilen und Anleitungen zur Programmierung erstellen. Jedoch befinden sich darauf auch Inhalte zu anderen Themen.",
+							"Dieses Nebenprojekt werde ich nur zwischendurch aktualisieren und verbessern. So ist dieses Projekt im Moment eher inaktiv. ",
+						],
+						website: [
+							"Den Blog findest du unter diesem Link: CCCCCCCCCCCCC",
+						],
+					},
+				},
 			},
 			services: {
 				title: "Dienstleistungen",
