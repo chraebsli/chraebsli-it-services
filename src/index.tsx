@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { Box, Container, createTheme, CssBaseline, ThemeProvider, useMediaQuery } from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useCookies } from "react-cookie";
-import { Pages } from "./models/page";
+import { Pages } from "./type/page";
 
 // styles
 import "bootstrap/dist/css/bootstrap.min.css";

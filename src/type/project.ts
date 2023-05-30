@@ -1,4 +1,4 @@
-import { Tags } from "@models/project-tag";
+import { Tags } from "@type/project-tag";
 
 export enum Projects {
 	Fischlehrpfad = "fischlehrpfad",

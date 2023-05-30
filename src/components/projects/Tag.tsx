@@ -1,6 +1,6 @@
 import React from "react";
 import { Chip, Typography } from "@mui/material";
-import { TagColors, Tags, Tags_TagColors } from "../../models/project-tag";
+import { TagColors, Tags, Tags_TagColors } from "../../type/project-tag";
 
 type Props = {
 	name: Tags

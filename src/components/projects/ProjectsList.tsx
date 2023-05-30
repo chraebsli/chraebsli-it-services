@@ -6,7 +6,7 @@ import Tag from "../projects/Tag";
 import { Image } from "../Text";
 import { useTranslation } from "react-i18next";
 import projectsList from "./projects-list";
-import Project from "@models/project";
+import Project from "@type/project";
 
 type Props = {
 	loading?: boolean;

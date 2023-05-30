@@ -1,4 +1,4 @@
-import { Translation } from "@models/translation";
+import { Translation } from "@type/translation";
 
 export default function en(): Translation {
 	return {

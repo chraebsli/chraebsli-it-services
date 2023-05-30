@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import Project, { Projects } from "../../models/project";
-import { Tags } from "../../models/project-tag";
+import Project, { Projects } from "../../type/project";
+import { Tags } from "../../type/project-tag";
 
 export default function projectsList(): Project[] {
 	const {t} = useTranslation("common");

@@ -5,7 +5,7 @@ export enum Services {
 	Other = "other",
 }
 
-export default class FullService {
+export default class Service {
 	constructor(
 		public readonly id: string,
 		public readonly title: string,
