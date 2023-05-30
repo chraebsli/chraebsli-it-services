@@ -19,14 +19,11 @@ import CookieDisclaimer from "./components/common/CookieDisclaimer";
 // pages
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
-import SingleService from "./pages/Services/SingleService";
-
+import Service from "./pages/Services/Service";
 import Projects from "./pages/Projects/Projects";
-import SingleProject from "./pages/Projects/SingleProject";
-
+import Project from "./pages/Projects/Project";
 import Contact from "./pages/Contact";
 import About from "./pages/About/About";
-
 import Imprint from "./pages/Imprint";
 import NotFound404 from "./pages/Error/404";
 
@@ -73,14 +70,14 @@ function App() {
 					<React.Suspense fallback={<Loader />}>
 						<Routes>
 							<Route path={Pages.Home} element={<Home />} />
-							<Route path={Pages.NotFound404} element={<NotFound404 />} />
 							<Route path={Pages.Services} element={<Services />} />
-							<Route path={Pages.Service} element={<SingleService />} />
+							<Route path={Pages.Service} element={<Service />} />
 							<Route path={Pages.Projects} element={<Projects />} />
-							<Route path={Pages.Project} element={<SingleProject />} />
+							<Route path={Pages.Project} element={<Project />} />
 							<Route path={Pages.About} element={<About />} />
 							<Route path={Pages.Contact} element={<Contact />} />
 							<Route path={Pages.Imprint} element={<Imprint />} />
+							<Route path={Pages.NotFound404} element={<NotFound404 />} />
 						</Routes>
 					</React.Suspense>
 				</Container>

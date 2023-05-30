@@ -9,7 +9,7 @@ import servicesList from "../../components/services/services-list";
 import NotFound404 from "../Error/404";
 import "./Services.sass";
 
-export default function SingleService() {
+export default function Service() {
 	const {t} = useTranslation("common");
 
 	const page = useParams().service;

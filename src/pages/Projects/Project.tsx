@@ -10,7 +10,7 @@ import ToolImage from "../../components/projects/ToolImage";
 import WakaTimeBadge from "../../components/projects/WakaTimeBadge";
 import projectsList from "../../components/projects/projects-list";
 
-export default function SingleProject$() {
+export default function Project() {
 	const {t} = useTranslation("common");
 
 	const page = useParams().project;
