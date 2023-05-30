@@ -1,7 +1,7 @@
 import React from "react";
 import { Autoplay, Mousewheel, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Box, Button, Card, CardActions, CardContent, CardHeader, Grid, Skeleton, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, Grid, Skeleton, Stack, Typography } from "@mui/material";
 import Tag from "../projects/Tag";
 import { Image } from "../Text";
 import { useTranslation } from "react-i18next";
@@ -45,9 +45,9 @@ export default function ProjectsList({loading = false, space = 30, projects = pr
 
 							<CardHeader title={project.title} titleTypographyProps={{align: "center"}} />
 							<CardContent>
-								<Box>
+								<Stack gap={1} direction={"row"}>
 									{project.tags.map(tag => <Tag name={tag} key={tag} />)}
-								</Box>
+								</Stack>
 								<Box sx={{display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "baseline", mb: 2}}>
 									<Typography component="p" className="project-description" variant="body1" color="text.primary">
 										{project.description}

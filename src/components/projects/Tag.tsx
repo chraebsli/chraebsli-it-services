@@ -1,49 +1,41 @@
 import React from "react";
-import { Avatar, Chip, Typography } from "@mui/material";
+import { Chip, Typography } from "@mui/material";
+import { Tag as TagName } from "@models/project";
 
 type Props = {
-	name: string
+	name: TagName
 }
 export default function Tag({name}: Props) {
 	let color: "secondary" | "default" | "success" | "warning" | "error" | "primary" | "info";
-	let avatar: any;
 	// TODO: enum
 	switch (name) {
-	case "deployed":
-		color = "success";
-		avatar = "D";
-		break;
 	case "development":
 		color = "warning";
-		avatar = "I";
+		break;
+	case "published":
+		color = "success";
 		break;
 	case "client":
 		color = "error";
-		avatar = "C";
 		break;
 	case "personal":
 		color = "info";
-		avatar = "P";
 		break;
-	case "web":
+	case "website":
 		color = "primary";
-		avatar = "W";
+		break;
+	case "webapp":
+		color = "primary";
 		break;
 	default:
 		color = "default";
-		avatar = "?";
 	}
 
 	return (
 		<Chip
 			variant="outlined"
 			color={color}
-			avatar={<Avatar>{avatar}</Avatar>}
-			label={
-				<Typography variant={"subtitle2"} color={"text.primary"}>
-					{" "}{name}{" "}
-				</Typography>
-			}
+			label={<Typography variant={"subtitle2"} color={"text.primary"}>{name}</Typography>}
 		/>
 	);
 }

@@ -15,4 +15,7 @@ export default class Project {
 	) {}
 }
 
-type Tag = "web" | "client" | "server" | "deployed" | "inProgress" | "finished" | "personal" | "development"
+export type Tag = TagStatus | TagType | TagClient
+type TagStatus = "development" | "published"
+type TagType = "website" | "webapp" | "server" | "api" | "other"
+type TagClient = "personal" | "client"
