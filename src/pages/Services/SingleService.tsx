@@ -47,7 +47,7 @@ export default function SingleService() {
 							variant="contained"
 							endIcon={<SendIcon color={"secondary"} />}
 							sx={{width: "20rem"}}>
-							Anfrage senden
+							{t("services.sendRequest")}
 						</Button>
 					</Stack>
 				</section>

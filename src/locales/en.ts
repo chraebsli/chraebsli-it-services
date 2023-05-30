@@ -136,6 +136,7 @@ export default function en(): Translation {
 				learnMore: "learn more",
 				illustration: "illustration",
 				includedFeatures: "Following services are included:",
+				sendRequest: "Send Request",
 				website: {
 					title: "Website",
 					teaser: "Do you need a website for your association, startup or for a personal purpose?",

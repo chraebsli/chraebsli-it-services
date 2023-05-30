@@ -32,6 +32,7 @@ export type Translation = {
 			learnMore: string,
 			illustration: string,
 			includedFeatures: string,
+			sendRequest: string,
 			website: Service
 			webapp: Service,
 			database: Service,
