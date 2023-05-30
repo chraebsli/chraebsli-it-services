@@ -1,3 +1,13 @@
+export enum Projects {
+	Fischlehrpfad = "fischlehrpfad",
+	Portfolio = "portfolio",
+	ChraebsliItServices = "chraebsli-it-services",
+	MGRumisberg = "mgrumisberg",
+	SGRumisberg = "sgrumisberg",
+	HomeDashboard = "home-dashboard",
+	CodingCrabBlog = "coding-crab-blog",
+}
+
 export default class Project {
 	constructor(
 		public readonly id: string,
