@@ -164,7 +164,7 @@ export default function en(): Translation {
 						],
 					},
 				},
-				webapp: {
+				application: {
 					title: "Application",
 					teaser: "Do you need your own application for your company that meets your needs?",
 					description: "I will create a modern web application for you that meets all your wishes and is personalized for your concerns. This can be for smartphones, desktop devices and/or web based.",

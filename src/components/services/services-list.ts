@@ -17,14 +17,14 @@ export default function servicesList(): Service[] {
 			},
 		),
 		new Service(
-			Services.Webapp,
-			t(`service.${Services.Webapp}.title`),
-			`${Pages.Service}/${Services.Webapp}`,
-			t(`service.${Services.Webapp}.teaser`),
-			t(`service.${Services.Webapp}.description`),
-			t(`service.${Services.Webapp}.features`, {returnObjects: true}),
+			Services.Application,
+			t(`service.${Services.Application}.title`),
+			`${Pages.Service}/${Services.Application}`,
+			t(`service.${Services.Application}.teaser`),
+			t(`service.${Services.Application}.description`),
+			t(`service.${Services.Application}.features`, {returnObjects: true}),
 			{
-				description: t(`service.${Services.Webapp}.page.description`, {returnObjects: true}),
+				description: t(`service.${Services.Application}.page.description`, {returnObjects: true}),
 			},
 		),
 		new Service(

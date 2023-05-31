@@ -1,6 +1,6 @@
 export enum Services {
 	Website = "website",
-	Webapp = "webapp",
+	Application = "application",
 	Database = "database",
 	Other = "other",
 }

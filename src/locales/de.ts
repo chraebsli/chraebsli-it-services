@@ -164,7 +164,7 @@ export default function de(): Translation {
 						],
 					},
 				},
-				webapp: {
+				application: {
 					title: "Applikation",
 					teaser: "Benötigen Sie eine eigene Applikation für Ihre Firma, die Ihren Wünschen entspricht?",
 					description: "Ich erstelle für Sie eine moderne Webapplikation, die allen Ihren Wünschen entspricht, und für Ihr Anliegen personalisiert ist. Diese kann für Smartphones, Desktopgeräte und/ oder webbasiert sein.",

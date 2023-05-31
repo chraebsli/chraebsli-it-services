@@ -35,7 +35,7 @@ export type Translation = {
 			includedFeatures: string,
 			sendRequest: string,
 			website: Service
-			webapp: Service,
+			application: Service,
 			database: Service,
 			other: Service,
 		},
