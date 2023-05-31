@@ -36,8 +36,8 @@ export default function ProjectsList({loading = false, space = 30, projects = pr
 									? (<Skeleton animation="wave" variant="rectangular" height={200} />)
 									: (
 										<Image
-											src={`/media/projects/${project.id}.webp`}
-											alt={`${t("projects.imageAlt")} ${project.title}`}
+											src={`/media/project/${project.id}.webp`}
+											alt={`${t("project.imageAlt")} ${project.title}`}
 											width={"100%"}
 											sx={{padding: "1rem"}} />
 									)
@@ -56,7 +56,7 @@ export default function ProjectsList({loading = false, space = 30, projects = pr
 							</CardContent>
 							<CardActions>
 								<Button fullWidth variant={"outlined"} href={project.href}>
-									{t("projects.learnMore")}
+									{t("project.learnMore")}
 								</Button>
 							</CardActions>
 						</Card>

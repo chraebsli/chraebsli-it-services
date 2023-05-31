@@ -6,14 +6,15 @@ import "swiper/css/pagination";
 import { Line, PageTitle } from "../../components/Text";
 import "./Services.sass";
 import ServicesList from "../../components/services/ServicesList";
+import { Pages } from "../../type/page";
 
 export default function Services() {
 	const {t} = useTranslation("common");
 
 	return (
-		<Page page={"services"}>
+		<Page page={Pages.Services}>
 			<section>
-				<PageTitle>{t("services.title")}</PageTitle>
+				<PageTitle>{t("service.title")}</PageTitle>
 				<Line bottom={2} />
 			</section>
 			<article>

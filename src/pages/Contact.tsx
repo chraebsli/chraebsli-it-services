@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { FormElements, FormGroup } from "../components/form/FormElements";
 import { handleFormSubmit } from "../components/form/FormSubmissionHandler";
 import SendIcon from "@mui/icons-material/Send";
+import { Pages } from "../type/page";
 
 export default function Contact() {
 	const {t} = useTranslation("pages");
@@ -31,7 +32,7 @@ export default function Contact() {
 	}, []);
 
 	return (
-		<Page page={"contact"}>
+		<Page page={Pages.Contact}>
 			<section>
 				<PageTitle>{pageName}</PageTitle>
 				<Line bottom={2} />

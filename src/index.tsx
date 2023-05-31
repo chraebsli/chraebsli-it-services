@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { Box, Container, createTheme, CssBaseline, ThemeProvider, useMediaQuery } from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useCookies } from "react-cookie";
-import { Pages } from "./type/page";
+import { Pages, Paths } from "./type/page";
 
 // styles
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -69,10 +69,11 @@ function App() {
 					<React.Suspense fallback={<Loader />}>
 						<Routes>
 							<Route path={Pages.Home} element={<Home />} />
+							<Route path={Paths.Home} element={<Home />} />
 							<Route path={Pages.Services} element={<Services />} />
-							<Route path={Pages.Service} element={<Service />} />
+							<Route path={Pages.ServiceId} element={<Service />} />
 							<Route path={Pages.Projects} element={<Projects />} />
-							<Route path={Pages.Project} element={<Project />} />
+							<Route path={Pages.ProjectId} element={<Project />} />
 							<Route path={Pages.About} element={<About />} />
 							<Route path={Pages.Contact} element={<Contact />} />
 							<Route path={Pages.Imprint} element={<Imprint />} />

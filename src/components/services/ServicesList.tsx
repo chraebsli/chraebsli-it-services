@@ -35,8 +35,8 @@ export default function ServicesList({loading = false, space = 30}: {loading?: b
 									? <Skeleton animation="wave" variant="rectangular" height={200} />
 									: (
 										<Image
-											src={`/media/services/${service.id}.webp`}
-											alt={`${t("services.imageAlt")} ${service.title}`}
+											src={`/media/service/${service.id}.webp`}
+											alt={`${t("service.imageAlt")} ${service.title}`}
 											width={"100%"}
 											sx={{padding: "1rem"}} />
 									)}
@@ -62,7 +62,7 @@ export default function ServicesList({loading = false, space = 30}: {loading?: b
 							</CardContent>
 							<CardActions>
 								<Button fullWidth variant={"outlined"} href={service.href}>
-									{t("services.learnMore")}
+									{t("service.learnMore")}
 								</Button>
 							</CardActions>
 						</Card>

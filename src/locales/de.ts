@@ -35,7 +35,7 @@ export default function de(): Translation {
 			},
 		},
 		common: {
-			projects: {
+			project: {
 				title: "Projekte",
 				learnMore: "Mehr erfahren",
 				imageAlt: "Bild Projekt",
@@ -145,7 +145,7 @@ export default function de(): Translation {
 					},
 				},
 			},
-			services: {
+			service: {
 				title: "Dienstleistungen",
 				learnMore: "Mehr erfahren",
 				illustration: "Illustration",

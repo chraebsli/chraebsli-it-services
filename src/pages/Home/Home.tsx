@@ -6,12 +6,13 @@ import ProjectsList from "../../components/projects/ProjectsList";
 import { Line, SectionTitle } from "../../components/Text";
 import { useTranslation } from "react-i18next";
 import "./Home.sass";
+import { Paths } from "../../type/page";
 
 export default function Home() {
 	const {t} = useTranslation("pages");
 
 	return (
-		<Page page={"home"}>
+		<Page page={Paths.Home}>
 			<article>
 				<section id={"welcome"} style={{marginTop: "10rem"}}>
 					<Typography variant={"h3"} component={"h1"} sx={{color: "primary.main"}}>
