@@ -177,7 +177,7 @@ export default function de(): Translation {
 					},
 				},
 				database: {
-					title: "Datenbanken",
+					title: "Datenbank",
 					teaser: "Benötigen Sie eine neue Datenbank oder möchten eine bestehende Datenbank migrieren?",
 					description: "Ich kann für Sie eine Datenbank nach Ihren Wünschen erstellen oder eine bestehende zu einem anderen System migrieren. Dabei kann es sich um eine SQL oder NoSQL DB handeln.",
 					features: [
@@ -227,13 +227,7 @@ export default function de(): Translation {
 				links: {
 					imprint: "Impressum",
 					contact: "Kontakt",
-					privacy: "Datenschutz",
 				},
-			},
-			cookieDisclaimer: {
-				title: "Diese Website verwendet Cookies um die Benutzererfahrung zu verbessern.",
-				learnMore: "Mehr erfahren",
-				accept: "Akzeptieren",
 			},
 		},
 		pages: {
@@ -252,8 +246,6 @@ export default function de(): Translation {
 					servicesDescription: "Ich biete folgende Dienstleistungen an:",
 					projectsTitle: "Projekte",
 					projectsDescription: "Hier sind einige meiner Projekte:",
-					socialTitle: "Soziale Medien",
-					socialDescription: "Folge mir auf meinen Social Media Kanälen:",
 				},
 			},
 			about: {

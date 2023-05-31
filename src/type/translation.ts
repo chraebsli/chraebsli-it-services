@@ -55,13 +55,7 @@ export type Translation = {
 			links: {
 				imprint: string,
 				contact: string,
-				privacy: string,
 			},
-		},
-		cookieDisclaimer: {
-			title: string,
-			learnMore: string,
-			accept: string,
 		},
 	},
 	pages: {
@@ -80,8 +74,6 @@ export type Translation = {
 				servicesDescription: string,
 				projectsTitle: string,
 				projectsDescription: string,
-				socialTitle: string,
-				socialDescription: string,
 			},
 		},
 		about: {

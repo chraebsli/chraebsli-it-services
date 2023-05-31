@@ -177,7 +177,7 @@ export default function en(): Translation {
 					},
 				},
 				database: {
-					title: "Databases",
+					title: "Database",
 					teaser: "Do you need a new database or want to migrate an existing database?",
 					description: "I can create a database for you according to your wishes or migrate an existing one to another system. This can be a SQL or NoSQL DB.",
 					features: [
@@ -227,13 +227,7 @@ export default function en(): Translation {
 				links: {
 					imprint: "Imprint",
 					contact: "Contact",
-					privacy: "Privacy",
 				},
-			},
-			cookieDisclaimer: {
-				title: "This website uses cookies to enhance the user experience.",
-				learnMore: "Learn more",
-				accept: "Accept",
 			},
 		},
 		pages: {
@@ -251,9 +245,7 @@ export default function en(): Translation {
 					servicesTitle: "Services",
 					servicesDescription: "I offer following services:",
 					projectsTitle: "Projects",
-					projectsDescription: "This are some of my projects:",
-					socialTitle: "Social Media",
-					socialDescription: "Follow me on this social media platforms:",
+					projectsDescription: "These are some of my projects:",
 				},
 			},
 			about: {
