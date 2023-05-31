@@ -7,7 +7,7 @@ const links = [
 	{
 		name: "services", children: [
 			{key: "website", href: "/service/website"},
-			{key: "application", href: "/service/webapp"},
+			{key: "application", href: "/service/application"},
 			{key: "database", href: "/service/database"},
 			{key: "other", href: "/service/other"},
 		],
