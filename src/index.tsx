@@ -4,6 +4,7 @@ import { Box, Container, createTheme, CssBaseline, ThemeProvider, useMediaQuery 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useCookies } from "react-cookie";
 import { Pages, Paths } from "./type/page";
+import { inject } from "@vercel/analytics";
 
 // styles
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -59,6 +60,8 @@ function App() {
 		setTheme(newTheme);
 		setChecked(!checked);
 	};
+
+	inject();
 
 	return (
 		<ThemeProvider theme={theme === "light" ? light : dark}>
