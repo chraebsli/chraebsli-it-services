@@ -26,7 +26,7 @@ export default function ProjectsList() {
 
 							<CardHeader title={project.title} titleTypographyProps={{align: "center"}} />
 							<CardContent>
-								<Stack gap={1} direction={"row"}>
+								<Stack gap={1} direction={"row"} sx={{mb: "1rem"}}>
 									{project.tags.map(tag => <Tag name={tag} key={tag} />)}
 								</Stack>
 								<Box sx={{display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "baseline", mb: 2}}>
