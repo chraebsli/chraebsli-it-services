@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import Page from "../components/common/Page";
 import servicesList from "../components/services/services-list";
 import { Alert, Autocomplete, Button, CircularProgress, TextField, Typography } from "@mui/material";
@@ -10,11 +10,10 @@ import SendIcon from "@mui/icons-material/Send";
 import { Pages } from "../type/page";
 
 type MessageProps = {
-	sending: boolean,
 	status: {code: number, message: string}
 }
 
-function Message({sending, status}: MessageProps) {
+function Message({status}: MessageProps) {
 	const {t} = useTranslation("pages");
 
 	let type: "success" | "error";
@@ -35,9 +34,9 @@ export default function Contact() {
 	const service = {name: new URLSearchParams(window.location.search).get("service")};
 	const services = servicesList().map(service => { return {name: service.title}; });
 
-	const [sending, setSending] = React.useState(false);
-	const [status, setStatus] = React.useState({code: 0, message: ""});
-	const formSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+	const [sending, setSending] = useState(false);
+	const [status, setStatus] = useState({code: 0, message: ""});
+	const formSubmit = (event: FormEvent<HTMLFormElement>) => {
 		setSending(true);
 		handleFormSubmit(event)
 			.then((response) => {
@@ -159,7 +158,7 @@ export default function Contact() {
 							</FormGroup>
 						</div>
 						<div className={"after-submit"}>
-							<Message sending={sending} status={status} />
+							<Message status={status} />
 						</div>
 					</form>
 				</section>

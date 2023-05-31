@@ -4,7 +4,7 @@ import { useCookies } from "react-cookie";
 import { Button, ButtonGroup } from "@mui/material";
 
 export function LanguageSwitcher() {
-	const [language, setLanguage] = React.useState(defaultLanguage);
+	const [, setLanguage] = React.useState(defaultLanguage);
 	const [cookies, setCookie] = useCookies(["i18next"]);
 
 	useEffect(() => { cookies.i18next ? setLanguage(cookies.i18next) : null; }, [cookies, setCookie]);

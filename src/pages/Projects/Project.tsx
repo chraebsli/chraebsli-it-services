@@ -1,4 +1,3 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import { Stack, Typography } from "@mui/material";
 import Page from "../../components/common/Page";

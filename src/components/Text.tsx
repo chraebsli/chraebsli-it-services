@@ -24,7 +24,7 @@ export function Line({top, bottom, width, primary = true}: LineProps) {
 }
 
 type ImageProps = {
-	src: any;
+	src: string;
 	alt: string;
 	height?: number;
 	width?: number | string;
