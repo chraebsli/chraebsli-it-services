@@ -1,41 +1,54 @@
 import React from "react";
-import { Box, Link, Stack, Typography } from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import { Line } from "../Text";
 
 const links = [
-	{key: "imprint", href: "/imprint"},
-	{key: "contact", href: "/contact"},
+	{
+		name: "services", children: [
+			{key: "website", href: "/service/website"},
+			{key: "application", href: "/service/webapp"},
+			{key: "database", href: "/service/database"},
+			{key: "other", href: "/service/other"},
+		],
+	},
+	{
+		name: "about", children: [
+			{key: "home", href: "/"},
+			{key: "about", href: "/about"},
+			{key: "contact", href: "/contact"},
+			{key: "imprint", href: "/imprint"},
+		],
+	},
 ];
 
 export default function Footer() {
 	const {t} = useTranslation("components");
 	return (
-		<Box
-			sx={{
-				bottom: 0,
-				position: "absolute",
-				width: "100%",
-				padding: "1rem",
-				backgroundColor: "primary.main",
-			}}>
+		<Box sx={{bottom: 0, position: "absolute", width: "100%", padding: "1rem", backgroundColor: "primary.main"}}>
 			<footer>
-				<nav>
-					<Stack direction={"column"} sx={{textAlign: "center", color: "secondary.main"}}>
-						<Stack gap={2} direction={"row"} sx={{display: "flex", justifyContent: "center"}}>
-							{links.map((link, index) => (
-								<>
-									<Link href={link.href} sx={{color: "secondary.main"}} key={index}>
-										{t(`footer.links.${link.key}`)}
-									</Link>
-									<Typography key={index + 100}>{index < links.length - 1 && "|"}</Typography>
-								</>
+				<Container sx={{width: "fit-content"}}>
+					<Stack direction={"column"} alignItems={"center"}>
+						<Stack direction={"row"} gap={10}>
+							{links.map(category => (
+								<Stack key={category.name} direction={"column"} sx={{padding: "0 2rem"}}>
+									<Typography variant={"h6"} sx={{color: "secondary.main"}}>
+										{t(`footer.${category.name}.self`)}
+									</Typography>
+									{category.children.map(link => (
+										<Typography key={link.key} component={"a"} href={link.href} sx={{color: "secondary.main"}}>
+											{t(`footer.${category.name}.${link.key}`)}
+										</Typography>
+									))}
+								</Stack>
 							))}
 						</Stack>
+						<Line primary={false} />
 						<Typography component={"span"} sx={{color: "secondary.main"}}>
-							&copy; {new Date().getFullYear()} {t("footer.copyright")}
+							&copy; {new Date().getFullYear()} &mdash; {t("footer.copyright")}
 						</Typography>
 					</Stack>
-				</nav>
+				</Container>
 			</footer>
 		</Box>
 	);

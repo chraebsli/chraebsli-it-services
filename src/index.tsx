@@ -84,7 +84,7 @@ function App() {
 						</Routes>
 					</React.Suspense>
 				</Container>
-				<Box sx={{height: "5rem"}} />
+				<Box sx={{height: "220px", marginTop: "5rem"}} />
 				<Footer />
 				<ScrollToTop />
 			</Router>
