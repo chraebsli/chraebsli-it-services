@@ -17,8 +17,7 @@ export default function Meta({page}: Props) {
 	const pageElements = page.split("/").splice(1);
 	const parentPage = pageElements[0];
 	const customKey = parentPage === "project" && "project" || parentPage === "service" && "service";
-	const customMeta = customKey ? "common" : null;
-	const {t} = useTranslation(customMeta ?? "meta");
+	const {t} = useTranslation(customKey ? "common" : "meta");
 
 	const translationPath = pageElements.join(".");
 	const title = t(`${translationPath}.title`);
