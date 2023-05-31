@@ -52,10 +52,19 @@ export type Translation = {
 		},
 		footer: {
 			copyright: string,
-			links: {
-				imprint: string,
+			about: {
+				self: string,
+				home: string,
+				about: string,
 				contact: string,
-				privacy: string,
+				imprint: string,
+			},
+			services: {
+				self: string,
+				website: string,
+				application: string,
+				database: string,
+				other: string,
 			},
 		},
 		cookieDisclaimer: {

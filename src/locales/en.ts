@@ -224,10 +224,19 @@ export default function en(): Translation {
 			},
 			footer: {
 				copyright: "chraebsli IT-Services",
-				links: {
+				about: {
+					self: "About",
+					home: "Home",
+					about: "About us",
 					imprint: "Imprint",
 					contact: "Contact",
-					privacy: "Privacy",
+				},
+				services: {
+					self: "Services",
+					website: "Website",
+					application: "Application",
+					database: "Database",
+					other: "Other",
 				},
 			},
 			cookieDisclaimer: {
