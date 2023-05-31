@@ -5,7 +5,6 @@ import ServicesList from "../../components/services/ServicesList";
 import ProjectsList from "../../components/projects/ProjectsList";
 import { Line, SectionTitle } from "../../components/Text";
 import { useTranslation } from "react-i18next";
-import "./Home.sass";
 import { Paths } from "../../type/page";
 
 export default function Home() {
