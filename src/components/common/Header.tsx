@@ -1,4 +1,3 @@
-import React from "react";
 import { AppBar, Container, Stack, Typography } from "@mui/material";
 import { Nav, Navbar } from "react-bootstrap";
 import { MaterialUISwitch } from "./ThemeSwitch";

@@ -1,5 +1,7 @@
 import axios from "axios";
+import { FormEvent } from "react";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function getFormData(form: any) {
 	const elements = form.elements;
 	let honeypot;
@@ -18,6 +20,7 @@ function getFormData(form: any) {
 		})
 		.filter((item, pos, self) => self.indexOf(item) == pos && item);
 
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	const formData: any = {};
 	fields.forEach((name) => {
 		const element = elements[name];
@@ -41,9 +44,9 @@ function getFormData(form: any) {
 	return {data: formData, honeypot: honeypot};
 }
 
-export function handleFormSubmit(event: any) {
+export function handleFormSubmit(event: FormEvent<HTMLFormElement>) {
 	event.preventDefault();
-	const form = event.target;
+	const form = event.target as HTMLFormElement;
 	const formData = getFormData(form);
 	const data = formData.data;
 

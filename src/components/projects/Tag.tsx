@@ -1,4 +1,3 @@
-import React from "react";
 import { Chip, Typography } from "@mui/material";
 import { TagColors, Tags, Tags_TagColors } from "../../type/project-tag";
 

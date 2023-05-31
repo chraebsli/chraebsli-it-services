@@ -1,4 +1,3 @@
-import React from "react";
 import Page from "../../components/common/Page";
 import { useTranslation } from "react-i18next";
 import "swiper/css";

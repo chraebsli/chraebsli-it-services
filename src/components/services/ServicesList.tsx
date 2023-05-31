@@ -1,4 +1,3 @@
-import React from "react";
 import { SwiperSlide } from "swiper/react";
 import { Box, Button, Card, CardActions, CardContent, CardHeader, Grid, Typography } from "@mui/material";
 import { Image } from "../Text";
