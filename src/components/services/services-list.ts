@@ -1,51 +1,52 @@
 import { useTranslation } from "react-i18next";
-import FullService from "../../models/service";
+import Service, { Services } from "../../type/service";
+import { Pages } from "../../type/page";
 
-export default function servicesList(): FullService[] {
+export default function servicesList(): Service[] {
 	const {t} = useTranslation("common");
 	return [
-		new FullService(
-			"website",
-			t("services.website.title"),
-			"/service/website",
-			t("services.website.teaser"),
-			t("services.website.description"),
-			t("services.website.features", {returnObjects: true}),
+		new Service(
+			Services.Website,
+			t(`service.${Services.Website}.title`),
+			`${Pages.Service}/${Services.Website}`,
+			t(`service.${Services.Website}.teaser`),
+			t(`service.${Services.Website}.description`),
+			t(`service.${Services.Website}.features`, {returnObjects: true}),
 			{
-				description: t("services.website.page.description", {returnObjects: true}),
+				description: t(`service.${Services.Website}.page.description`, {returnObjects: true}),
 			},
 		),
-		new FullService(
-			"webapp",
-			t("services.webapp.title"),
-			"/service/webapp",
-			t("services.webapp.teaser"),
-			t("services.webapp.description"),
-			t("services.webapp.features", {returnObjects: true}),
+		new Service(
+			Services.Application,
+			t(`service.${Services.Application}.title`),
+			`${Pages.Service}/${Services.Application}`,
+			t(`service.${Services.Application}.teaser`),
+			t(`service.${Services.Application}.description`),
+			t(`service.${Services.Application}.features`, {returnObjects: true}),
 			{
-				description: t("services.webapp.page.description", {returnObjects: true}),
+				description: t(`service.${Services.Application}.page.description`, {returnObjects: true}),
 			},
 		),
-		new FullService(
-			"database",
-			t("services.database.title"),
-			"/service/database",
-			t("services.database.teaser"),
-			t("services.database.description"),
-			t("services.database.features", {returnObjects: true}),
+		new Service(
+			Services.Database,
+			t(`service.${Services.Database}.title`),
+			`${Pages.Service}/${Services.Database}`,
+			t(`service.${Services.Database}.teaser`),
+			t(`service.${Services.Database}.description`),
+			t(`service.${Services.Database}.features`, {returnObjects: true}),
 			{
-				description: t("services.database.page.description", {returnObjects: true}),
+				description: t(`service.${Services.Database}.page.description`, {returnObjects: true}),
 			},
 		),
-		new FullService(
-			"other",
-			t("services.other.title"),
-			"/service/other",
-			t("services.other.teaser"),
-			t("services.other.description"),
-			t("services.other.features", {returnObjects: true}),
+		new Service(
+			Services.Other,
+			t(`service.${Services.Other}.title`),
+			`${Pages.Service}/${Services.Other}`,
+			t(`service.${Services.Other}.teaser`),
+			t(`service.${Services.Other}.description`),
+			t(`service.${Services.Other}.features`, {returnObjects: true}),
 			{
-				description: t("services.other.page.description", {returnObjects: true}),
+				description: t(`service.${Services.Other}.page.description`, {returnObjects: true}),
 			},
 		),
 	];

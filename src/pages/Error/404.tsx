@@ -3,12 +3,13 @@ import { Stack, Typography } from "@mui/material";
 import Page from "../../components/common/Page";
 import { Image, Line, PageTitle, SectionTitle } from "../../components/Text";
 import { useTranslation } from "react-i18next";
+import { Paths } from "../../type/page";
 
 export default function NotFound404() {
 	const {t} = useTranslation("pages");
 
 	return (
-		<Page page={"error.404"}>
+		<Page page={Paths.NotFound404}>
 			<section>
 				<PageTitle>Error 404</PageTitle>
 				<Line bottom={2} />

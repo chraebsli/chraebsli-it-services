@@ -11,7 +11,7 @@ export type Translation = {
 		},
 	},
 	common: {
-		projects: {
+		project: {
 			title: string,
 			learnMore: string,
 			imageAlt: string,
@@ -28,14 +28,14 @@ export type Translation = {
 			"home-dashboard": Project,
 			"coding-crab-blog": Project,
 		},
-		services: {
+		service: {
 			title: string,
 			learnMore: string,
 			illustration: string,
 			includedFeatures: string,
 			sendRequest: string,
 			website: Service
-			webapp: Service,
+			application: Service,
 			database: Service,
 			other: Service,
 		},
@@ -55,13 +55,7 @@ export type Translation = {
 			links: {
 				imprint: string,
 				contact: string,
-				privacy: string,
 			},
-		},
-		cookieDisclaimer: {
-			title: string,
-			learnMore: string,
-			accept: string,
 		},
 	},
 	pages: {
@@ -80,8 +74,6 @@ export type Translation = {
 				servicesDescription: string,
 				projectsTitle: string,
 				projectsDescription: string,
-				socialTitle: string,
-				socialDescription: string,
 			},
 		},
 		about: {

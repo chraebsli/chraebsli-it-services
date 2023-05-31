@@ -1,4 +1,4 @@
-import { Translation } from "@models/translation";
+import { Translation } from "@type/translation";
 
 export default function de(): Translation {
 	return {
@@ -35,7 +35,7 @@ export default function de(): Translation {
 			},
 		},
 		common: {
-			projects: {
+			project: {
 				title: "Projekte",
 				learnMore: "Mehr erfahren",
 				imageAlt: "Bild Projekt",
@@ -145,7 +145,7 @@ export default function de(): Translation {
 					},
 				},
 			},
-			services: {
+			service: {
 				title: "Dienstleistungen",
 				learnMore: "Mehr erfahren",
 				illustration: "Illustration",
@@ -164,7 +164,7 @@ export default function de(): Translation {
 						],
 					},
 				},
-				webapp: {
+				application: {
 					title: "Applikation",
 					teaser: "Benötigen Sie eine eigene Applikation für Ihre Firma, die Ihren Wünschen entspricht?",
 					description: "Ich erstelle für Sie eine moderne Webapplikation, die allen Ihren Wünschen entspricht, und für Ihr Anliegen personalisiert ist. Diese kann für Smartphones, Desktopgeräte und/ oder webbasiert sein.",
@@ -177,7 +177,7 @@ export default function de(): Translation {
 					},
 				},
 				database: {
-					title: "Datenbanken",
+					title: "Datenbank",
 					teaser: "Benötigen Sie eine neue Datenbank oder möchten eine bestehende Datenbank migrieren?",
 					description: "Ich kann für Sie eine Datenbank nach Ihren Wünschen erstellen oder eine bestehende zu einem anderen System migrieren. Dabei kann es sich um eine SQL oder NoSQL DB handeln.",
 					features: [
@@ -227,13 +227,7 @@ export default function de(): Translation {
 				links: {
 					imprint: "Impressum",
 					contact: "Kontakt",
-					privacy: "Datenschutz",
 				},
-			},
-			cookieDisclaimer: {
-				title: "Diese Website verwendet Cookies um die Benutzererfahrung zu verbessern.",
-				learnMore: "Mehr erfahren",
-				accept: "Akzeptieren",
 			},
 		},
 		pages: {
@@ -252,8 +246,6 @@ export default function de(): Translation {
 					servicesDescription: "Ich biete folgende Dienstleistungen an:",
 					projectsTitle: "Projekte",
 					projectsDescription: "Hier sind einige meiner Projekte:",
-					socialTitle: "Soziale Medien",
-					socialDescription: "Folge mir auf meinen Social Media Kanälen:",
 				},
 			},
 			about: {

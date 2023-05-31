@@ -3,11 +3,12 @@ import Page from "../components/common/Page";
 import { Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { Line, PageTitle, SectionTitle } from "../components/Text";
+import { Pages } from "../type/page";
 
 export default function Imprint() {
 	const {t} = useTranslation("pages");
 	return (
-		<Page page={"imprint"}>
+		<Page page={Pages.Imprint}>
 			<section>
 				<PageTitle>{t("imprint.title")}</PageTitle>
 				<Line bottom={2} />

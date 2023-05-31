@@ -1,4 +1,11 @@
-export default class FullService {
+export enum Services {
+	Website = "website",
+	Application = "application",
+	Database = "database",
+	Other = "other",
+}
+
+export default class Service {
 	constructor(
 		public readonly id: string,
 		public readonly title: string,
