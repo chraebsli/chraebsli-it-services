@@ -32,61 +32,61 @@ import NotFound404 from "./pages/Error/404";
 const light = createTheme({
 	palette: {
 		mode: "light",
-		primary: { main: "#507cff" },
-		secondary: { main: "#ffffff" },
+		primary: {main: "#507cff"},
+		secondary: {main: "#ffffff"},
 	},
 });
 const dark = createTheme({
 	palette: {
 		mode: "dark",
-		primary: { main: "#507cff" },
-		secondary: { main: "#ffffff" },
+		primary: {main: "#507cff"},
+		secondary: {main: "#ffffff"},
 	},
 });
 
 function App() {
-	const [ cookies, setCookie ] = useCookies([ "colorScheme" ]);
+	const [cookies, setCookie] = useCookies(["colorScheme"]);
 	const expires = new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 365);
 	const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 	const colorScheme = cookies.colorScheme;
 	if (!colorScheme) {
-		setCookie("colorScheme", prefersDarkMode ? "dark" : "light", { path: "/", expires: expires });
+		setCookie("colorScheme", prefersDarkMode ? "dark" : "light", {path: "/", expires: expires});
 	}
 
-	const [ theme, setTheme ] = useState<"light" | "dark">(!colorScheme ? (prefersDarkMode ? "dark" : "light") : colorScheme);
-	const [ checked, setChecked ] = React.useState<boolean>(theme !== "light");
+	const [theme, setTheme] = useState<"light" | "dark">(!colorScheme ? (prefersDarkMode ? "dark" : "light") : colorScheme);
+	const [checked, setChecked] = React.useState<boolean>(theme !== "light");
 
 	const toggleTheme = () => {
 		const newTheme = theme === "light" ? "dark" : "light";
-		setCookie("colorScheme", newTheme, { path: "/", expires: expires });
+		setCookie("colorScheme", newTheme, {path: "/", expires: expires});
 		setTheme(newTheme);
 		setChecked(!checked);
 	};
 
 	return (
-		<ThemeProvider theme={ theme === "light" ? light : dark }>
+		<ThemeProvider theme={theme === "light" ? light : dark}>
 			<Router>
 				<CssBaseline />
-				<Header toggleTheme={ toggleTheme } checked={ checked } />
-				<Container sx={ { mt: "2rem", mb: "2rem" } }>
-					<React.Suspense fallback={ <Loader /> }>
+				<Header toggleTheme={toggleTheme} checked={checked} />
+				<Container sx={{mt: "2rem", mb: "2rem"}}>
+					<React.Suspense fallback={<Loader />}>
 						<Routes>
-							<Route path="/" element={ <Home /> } />
-							<Route path="*" element={ <NotFound404 /> } />
-							<Route path="/services" element={ <Services /> } />
-							<Route path="/service/:service" element={ <SingleService /> } />
+							<Route path="/" element={<Home />} />
+							<Route path="*" element={<NotFound404 />} />
+							<Route path="/services" element={<Services />} />
+							<Route path="/service/:service" element={<SingleService />} />
 
-							<Route path="/projects" element={ <Projects /> } />
-							<Route path="/project/:project" element={ <SingleProject /> } />
+							<Route path="/projects" element={<Projects />} />
+							<Route path="/project/:project" element={<SingleProject />} />
 
-							<Route path="/about" element={ <About /> } />
-							<Route path="/contact" element={ <Contact /> } />
+							<Route path="/about" element={<About />} />
+							<Route path="/contact" element={<Contact />} />
 
-							<Route path="/imprint" element={ <Imprint /> } />
+							<Route path="/imprint" element={<Imprint />} />
 						</Routes>
 					</React.Suspense>
 				</Container>
-				<Box sx={ { height: "5rem" } } />
+				<Box sx={{height: "220px", marginTop: "5rem"}} />
 				<Footer />
 				<ScrollToTop />
 				<CookieDisclaimer />

@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Container, Stack, Typography, useTheme } from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import { Line } from "../Text";
 
 const links = [
 	{
@@ -42,7 +43,7 @@ export default function Footer() {
 								</Stack>
 							))}
 						</Stack>
-						<hr style={{border: `2px solid ${useTheme().palette.secondary.main}`, width: "-webkit-fill-available"}} />
+						<Line primary={false} />
 						<Typography component={"span"} sx={{color: "secondary.main"}}>
 							&copy; {new Date().getFullYear()} &mdash; {t("footer.copyright")}
 						</Typography>

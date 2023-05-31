@@ -38,7 +38,6 @@ export default function Home() {
 					<Typography>{t("home.sections.projectsDescription")}</Typography>
 					<ProjectsList space={70} />
 				</section>
-				<Line top={5} bottom={5} />
 			</article>
 		</Page>
 	);

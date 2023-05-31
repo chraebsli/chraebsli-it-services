@@ -4,16 +4,20 @@ import { Typography, useTheme } from "@mui/material";
 type LineProps = {
 	top?: number;
 	bottom?: number;
+	width?: string;
+	primary?: boolean;
 }
 
-export function Line({top, bottom}: LineProps) {
-	const primary = useTheme().palette.primary.main;
+export function Line({top, bottom, width, primary = true}: LineProps) {
+	const color = primary ? useTheme().palette.primary.main : useTheme().palette.secondary.main;
+
 	return (
 		<hr
 			style={{
-				border: `2px solid ${primary}`,
+				border: `2px solid ${color}`,
 				marginTop: `${top}rem` ?? 0,
 				marginBottom: `${bottom}rem` ?? 0,
+				width: width ?? "-webkit-fill-available",
 			}}
 		/>
 	);
