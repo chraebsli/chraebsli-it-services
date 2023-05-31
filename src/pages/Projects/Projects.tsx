@@ -6,13 +6,14 @@ import { Line, PageTitle } from "../../components/Text";
 import { useTranslation } from "react-i18next";
 import "./Projects.sass";
 import ProjectsList from "../../components/projects/ProjectsList";
+import { Pages } from "../../type/page";
 
 export default function Projects() {
 	const {t} = useTranslation();
 	return (
-		<Page page={"projects"}>
+		<Page page={Pages.Projects}>
 			<section>
-				<PageTitle>{t("projects.title")}</PageTitle>
+				<PageTitle>{t("project.title")}</PageTitle>
 				<Line bottom={2} />
 			</section>
 

@@ -1,4 +1,4 @@
-import { Translation } from "@models/translation";
+import { Translation } from "@type/translation";
 
 export default function en(): Translation {
 	return {
@@ -35,7 +35,7 @@ export default function en(): Translation {
 			},
 		},
 		common: {
-			projects: {
+			project: {
 				title: "Projects",
 				learnMore: "learn more",
 				imageAlt: "Image of project",
@@ -145,7 +145,7 @@ export default function en(): Translation {
 					},
 				},
 			},
-			services: {
+			service: {
 				title: "Services",
 				learnMore: "learn more",
 				illustration: "illustration",
@@ -164,7 +164,7 @@ export default function en(): Translation {
 						],
 					},
 				},
-				webapp: {
+				application: {
 					title: "Application",
 					teaser: "Do you need your own application for your company that meets your needs?",
 					description: "I will create a modern web application for you that meets all your wishes and is personalized for your concerns. This can be for smartphones, desktop devices and/or web based.",
@@ -177,7 +177,7 @@ export default function en(): Translation {
 					},
 				},
 				database: {
-					title: "Databases",
+					title: "Database",
 					teaser: "Do you need a new database or want to migrate an existing database?",
 					description: "I can create a database for you according to your wishes or migrate an existing one to another system. This can be a SQL or NoSQL DB.",
 					features: [
@@ -239,11 +239,6 @@ export default function en(): Translation {
 					other: "Other",
 				},
 			},
-			cookieDisclaimer: {
-				title: "This website uses cookies to enhance the user experience.",
-				learnMore: "Learn more",
-				accept: "Accept",
-			},
 		},
 		pages: {
 			error: {
@@ -260,9 +255,7 @@ export default function en(): Translation {
 					servicesTitle: "Services",
 					servicesDescription: "I offer following services:",
 					projectsTitle: "Projects",
-					projectsDescription: "This are some of my projects:",
-					socialTitle: "Social Media",
-					socialDescription: "Follow me on this social media platforms:",
+					projectsDescription: "These are some of my projects:",
 				},
 			},
 			about: {

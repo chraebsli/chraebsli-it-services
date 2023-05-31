@@ -5,13 +5,13 @@ import ServicesList from "../../components/services/ServicesList";
 import ProjectsList from "../../components/projects/ProjectsList";
 import { Line, SectionTitle } from "../../components/Text";
 import { useTranslation } from "react-i18next";
-import "./Home.sass";
+import { Paths } from "../../type/page";
 
 export default function Home() {
 	const {t} = useTranslation("pages");
 
 	return (
-		<Page page={"home"}>
+		<Page page={Paths.Home}>
 			<article>
 				<section id={"welcome"} style={{marginTop: "10rem"}}>
 					<Typography variant={"h3"} component={"h1"} sx={{color: "primary.main"}}>
@@ -30,13 +30,13 @@ export default function Home() {
 				<section>
 					<SectionTitle> {t("home.sections.servicesTitle")} </SectionTitle>
 					<Typography>{t("home.sections.servicesDescription")}</Typography>
-					<ServicesList space={70} />
+					<ServicesList />
 				</section>
 				<Line top={5} bottom={5} />
 				<section>
 					<SectionTitle>{t("home.sections.projectsTitle")}</SectionTitle>
 					<Typography>{t("home.sections.projectsDescription")}</Typography>
-					<ProjectsList space={70} />
+					<ProjectsList />
 				</section>
 			</article>
 		</Page>

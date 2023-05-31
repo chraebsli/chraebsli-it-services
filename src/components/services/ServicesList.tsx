@@ -1,45 +1,27 @@
 import React from "react";
-import { Autoplay, Mousewheel, Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Box, Button, Card, CardActions, CardContent, CardHeader, Grid, Skeleton, Typography } from "@mui/material";
+import { SwiperSlide } from "swiper/react";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, Grid, Typography } from "@mui/material";
 import { Image } from "../Text";
 import { useTranslation } from "react-i18next";
 import servicesList from "./services-list";
+import Swiper from "../swiper/Swiper";
 
-export default function ServicesList({loading = false, space = 30}: {loading?: boolean; space?: number}) {
+export default function ServicesList() {
 	const services = servicesList();
 	const {t} = useTranslation("common");
 
 	return (
-		<Swiper
-			slidesPerView={"auto"}
-			spaceBetween={space}
-			loop={true}
-			pagination={{clickable: true}}
-			navigation={true}
-			mousewheel={true}
-			autoplay={{
-				delay: 10000,
-				disableOnInteraction: false,
-			}}
-			modules={[Mousewheel, Autoplay, Pagination, Navigation]}
-			className="services-carousel">
+		<Swiper>
 			{services.map(service => (
 				<SwiperSlide key={service.id}>
 					<Grid item key={service.title} xs={12} sm={9} md={6}>
-						<Card
-							sx={{p: "1rem", backgroundColor: "background.default"}}>
-							{
-								// TODO: code style
-								loading
-									? <Skeleton animation="wave" variant="rectangular" height={200} />
-									: (
-										<Image
-											src={`/media/services/${service.id}.webp`}
-											alt={`${t("services.imageAlt")} ${service.title}`}
-											width={"100%"}
-											sx={{padding: "1rem"}} />
-									)}
+						<Card sx={{p: "1rem", backgroundColor: "background.default"}}>
+							<Image
+								src={`/media/service/${service.id}.webp`}
+								alt={`${t("service.imageAlt")} ${service.title}`}
+								width={"100%"}
+								sx={{padding: "1rem"}}
+							/>
 
 							<CardHeader title={service.title} titleTypographyProps={{align: "center"}} />
 							<CardContent>
@@ -62,7 +44,7 @@ export default function ServicesList({loading = false, space = 30}: {loading?: b
 							</CardContent>
 							<CardActions>
 								<Button fullWidth variant={"outlined"} href={service.href}>
-									{t("services.learnMore")}
+									{t("service.learnMore")}
 								</Button>
 							</CardActions>
 						</Card>

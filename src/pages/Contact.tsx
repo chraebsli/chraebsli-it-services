@@ -7,6 +7,27 @@ import { useTranslation } from "react-i18next";
 import { FormElements, FormGroup } from "../components/form/FormElements";
 import { handleFormSubmit } from "../components/form/FormSubmissionHandler";
 import SendIcon from "@mui/icons-material/Send";
+import { Pages } from "../type/page";
+
+type MessageProps = {
+	sending: boolean,
+	status: {code: number, message: string}
+}
+
+function Message({sending, status}: MessageProps) {
+	const {t} = useTranslation("pages");
+
+	let type: "success" | "error";
+	if (status.code === 200) type = "success";
+	else if (status.code === 0) return null;
+	else type = "error";
+
+	return (
+		<Alert severity={type}>
+			{type === "success" ? t("contact.form.success") : (`Error ${status.code}: ${status.message}`)}
+		</Alert>
+	);
+}
 
 export default function Contact() {
 	const {t} = useTranslation("pages");
@@ -31,7 +52,7 @@ export default function Contact() {
 	}, []);
 
 	return (
-		<Page page={"contact"}>
+		<Page page={Pages.Contact}>
 			<section>
 				<PageTitle>{pageName}</PageTitle>
 				<Line bottom={2} />
@@ -138,19 +159,7 @@ export default function Contact() {
 							</FormGroup>
 						</div>
 						<div className={"after-submit"}>
-							{
-								// TODO: code style
-								!sending && status.code === 200
-									? (
-										<Alert severity="success">
-											{t("contact.form.success")}
-										</Alert>)
-									: !sending && status.code !== 0 ? (
-										<Alert severity="error">
-											Error {status.code}: {status.message}
-										</Alert>
-									) : null
-							}
+							<Message sending={sending} status={status} />
 						</div>
 					</form>
 				</section>

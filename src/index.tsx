@@ -3,6 +3,8 @@ import { createRoot } from "react-dom/client";
 import { Box, Container, createTheme, CssBaseline, ThemeProvider, useMediaQuery } from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useCookies } from "react-cookie";
+import { Pages, Paths } from "./type/page";
+import { inject } from "@vercel/analytics";
 
 // styles
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,19 +15,15 @@ import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import Loader from "./components/common/Loader";
 import ScrollToTop from "./components/common/ScrollToTop";
-import CookieDisclaimer from "./components/common/CookieDisclaimer";
 
 // pages
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
-import SingleService from "./pages/Services/SingleService";
-
+import Service from "./pages/Services/Service";
 import Projects from "./pages/Projects/Projects";
-import SingleProject from "./pages/Projects/SingleProject";
-
+import Project from "./pages/Projects/Project";
 import Contact from "./pages/Contact";
 import About from "./pages/About/About";
-
 import Imprint from "./pages/Imprint";
 import NotFound404 from "./pages/Error/404";
 
@@ -63,6 +61,8 @@ function App() {
 		setChecked(!checked);
 	};
 
+	inject();
+
 	return (
 		<ThemeProvider theme={theme === "light" ? light : dark}>
 			<Router>
@@ -71,25 +71,22 @@ function App() {
 				<Container sx={{mt: "2rem", mb: "2rem"}}>
 					<React.Suspense fallback={<Loader />}>
 						<Routes>
-							<Route path="/" element={<Home />} />
-							<Route path="*" element={<NotFound404 />} />
-							<Route path="/services" element={<Services />} />
-							<Route path="/service/:service" element={<SingleService />} />
-
-							<Route path="/projects" element={<Projects />} />
-							<Route path="/project/:project" element={<SingleProject />} />
-
-							<Route path="/about" element={<About />} />
-							<Route path="/contact" element={<Contact />} />
-
-							<Route path="/imprint" element={<Imprint />} />
+							<Route path={Pages.Home} element={<Home />} />
+							<Route path={Paths.Home} element={<Home />} />
+							<Route path={Pages.Services} element={<Services />} />
+							<Route path={Pages.ServiceId} element={<Service />} />
+							<Route path={Pages.Projects} element={<Projects />} />
+							<Route path={Pages.ProjectId} element={<Project />} />
+							<Route path={Pages.About} element={<About />} />
+							<Route path={Pages.Contact} element={<Contact />} />
+							<Route path={Pages.Imprint} element={<Imprint />} />
+							<Route path={Pages.NotFound404} element={<NotFound404 />} />
 						</Routes>
 					</React.Suspense>
 				</Container>
 				<Box sx={{height: "220px", marginTop: "5rem"}} />
 				<Footer />
 				<ScrollToTop />
-				<CookieDisclaimer />
 			</Router>
 		</ThemeProvider>
 	);
