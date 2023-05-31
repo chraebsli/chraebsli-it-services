@@ -31,13 +31,13 @@ export default function Home() {
 				<section>
 					<SectionTitle> {t("home.sections.servicesTitle")} </SectionTitle>
 					<Typography>{t("home.sections.servicesDescription")}</Typography>
-					<ServicesList space={70} />
+					<ServicesList />
 				</section>
 				<Line top={5} bottom={5} />
 				<section>
 					<SectionTitle>{t("home.sections.projectsTitle")}</SectionTitle>
 					<Typography>{t("home.sections.projectsDescription")}</Typography>
-					<ProjectsList space={70} />
+					<ProjectsList />
 				</section>
 				<Line top={5} bottom={5} />
 			</article>
