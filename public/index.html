@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="de-CH">
 <head>
-	<!-- Google Tag Manager -->
-	<script>(function(w, d, s, l, i) {
-		w[l] = w[l] || [];
-		w[l].push({
-			"gtm.start":
-				new Date().getTime(), event: "gtm.js",
-		});
-		var f = d.getElementsByTagName(s)[0],
-			j = d.createElement(s), dl = l != "dataLayer" ? "&l=" + l : "";
-		j.async = true;
-		j.src =
-			"https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-		f.parentNode.insertBefore(j, f);
-	})(window, document, "script", "dataLayer", "GTM-5SG444F");</script>
-
 	<meta charset="utf-8" />
 	<link href="%PUBLIC_URL%/assets/favicon.svg" rel="icon" />
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -27,25 +12,24 @@
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-	<iframe
-		height="0"
-		src="https://www.googletagmanager.com/ns.html?id=GTM-5SG444F"
-		style="display:none;visibility:hidden"
-		width="0"></iframe>
-</noscript>
-
 <div id="root"></div>
-</body>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JC2VYQVPNX"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=%REACT_APP_GA_TRACKING_ID%"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-JC2VYQVPNX');
-</script></script>
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+
+	gtag("js", new Date());
+
+	gtag("config", "%REACT_APP_GA_TRACKING_ID%");
+</script>
+
+<!-- Digistats.ch -->
+<script data-host="https://digistats.ch" data-dnt="false" src="https://www.digistats.ch/js/script.js" id="%REACT_APP_DIGISTATS_ID%" async defer></script>
+</body>
+
 </html>
