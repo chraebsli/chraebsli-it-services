@@ -1,0 +1,3 @@
+setup:
+  project: chraebsli-it-services
+  config: dev
