@@ -16,7 +16,7 @@ export default function About() {
 						<h2>
 							<PersonIcon /> {t("about.title")}
 						</h2>
-						{description.map((paragraph, i) => <Typography key={i} dangerouslySetInnerHTML={{__html: paragraph}} />)}
+						{description.map((paragraph, i) => <Typography key={i} dangerouslySetInnerHTML={{__html: paragraph}} sx={{mb: "1rem"}} />)}
 					</Card>
 				</Stack>
 			</article>
