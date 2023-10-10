@@ -66,7 +66,7 @@ export default function Contact() {
 				<section>
 					<form
 						className={"gform"}
-						action={"https://script.google.com/macros/s/AKfycby34XnYlPlWxzA9ijreq24F38SzU0uwrRST9FBr64ykCMCrSkhueznWG7O7Afuvkmbj_Q/exec"}
+						action={"https://script.google.com/macros/s/AKfycbw6NEiX54pCz_WNjcVD1OOM-_yOJPEIt8IcrIDPQWb_GbPjq648Ha8cW87H7HUbBiL4vQ/exec"}
 						onSubmit={formSubmit}
 						method={"POST"}>
 						<div>

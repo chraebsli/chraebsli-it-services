@@ -5,27 +5,27 @@ export default function de(): Translation {
 		meta: {
 			home: {
 				title: "Startseite",
-				description: "Ich biete verschiedene IT Dienstleistungen an, um neben meiner schulischen Lehre als Informatiker etwas Geld zu verdienen.",
+				description: "Ich biete verschiedene IT Dienstleistungen an.",
 			},
 			about: {
 				title: "Über uns",
-				description: "Wir sind Chraebsli IT Services",
+				description: "Ich bin Chraebsli IT Services",
 			},
 			projects: {
 				title: "Projekte",
-				description: "Hier finden Sie eine Übersicht über meine Projekte.",
+				description: "Hier findest du eine Übersicht über meine Projekte.",
 			},
 			services: {
 				title: "Dienstleistungen",
-				description: "Hier finden Sie eine Übersicht über meine Dienstleistungen.",
+				description: "Hier findest du eine Übersicht über meine Dienstleistungen.",
 			},
 			contact: {
 				title: "Kontakt",
-				description: "Kontaktieren Sie mich, wenn Sie Fragen haben oder ein Projekt mit mir realisieren möchten.",
+				description: "Kontaktiere mich, wenn du Fragen hast oder ein Projekt mit mir realisieren möchtest.",
 			},
 			imprint: {
 				title: "Impressum",
-				description: "Hier finden Sie das Impressum dieser Website.",
+				description: "Hier findest du das Impressum dieser Website.",
 			},
 			error: {
 				404: {
@@ -250,7 +250,7 @@ export default function de(): Translation {
 			home: {
 				welcome: "Willkommen bei chraebsli IT-Services!",
 				subWelcome: "- IT-Dienstleistungen jeglicher Art -",
-				description: "Ich biete verschiedene IT Dienstleistungen an, um neben meiner schulischen Lehre als Informatiker etwas Geld zu verdienen.",
+				description: "",
 				sections: {
 					servicesTitle: "Dienstleistungen",
 					servicesDescription: "Ich biete folgende Dienstleistungen an:",
@@ -261,15 +261,16 @@ export default function de(): Translation {
 			about: {
 				title: "Über uns",
 				description: [
-					"Wir sind Chraebsli IT Services und bieten verschiedene IT Dienstleistungen an. Ich bin Informatiklehrling im 3. Lehrjahr und möchte neben meiner Ausbildung etwas verdienen, da ich keinen Lohn habe. Dies hat der Grund, da meine Ausbildung speziell ist und vom Kanton finanziert wird.",
-					"Ich möchte mit diesen Dienstleistungen zwar Geld verdienen, aber vor allem auch kleineren Vereinen und Startups ermöglichen, sich im Internet zu zeigen, ohne viel Geld ausgeben zu müssen. Dadurch probiere ich Kosten für Hosting, Email, Verwaltung, SEO, ... möglichst tief zu halten und dadurch attraktiver zu wirken. Dazu hoffe ich, dass ich später durch meine Projekte und Erfahrungen einen höheren Wert habe und bessere Stellen bekommen kann.",
-					"Ich arbeite an diesen Projekten nicht in meiner Vollzeitausbildung. Das heisst, dass ich in der Freizeit neben anderen Hobbys und in den Ferien mache. Da ich mich sehr für IT und Programmierung interessiere, ist dies sozusagen ein weiteres Hobby.",
+					"Mein Name ist Nicholas Krebs und ich bin ein junger Schweizer Informatiker. In meiner Freizeit biete ich verschiedene IT Dienstleistungen unter dem Namen «Chraebsli IT Services» an.",
+					"Während meiner Ausbildung als Informatiker habe ich angefangen, IT Dienstleistungen anzubieten, um neben der schulischen Lehre ohne Lohn etwas zu verdienen. Daraus entwickelte sich ein Interesse für die Webentwicklung und Programmierung, wodurch ich viel Zeit investierte, um es mir selbst beizubringen. Um mehr Erfahrung zu sammeln, fing ich an, zahlreiche Projekte in der Webentwicklung umzusetzen.",
+					"Durch Projekte für kleinere Vereine fand ich diverse Möglichkeiten heraus, im Internet mit einer modernen Website und anderen Diensten extrem günstig auftreten zu können. So können selbst die kleinsten Vereine kostengünstig im Internet aktiv sein.",
 					"Mein persönliches Portfolio findest du unter <a href='https://nicholas-krebs.ch'>nicholas-krebs.ch</a>.",
+					"Fun Fact: Diese Website (und andere) zu betreiben kostet mich kein Geld, ich zahle ausschliesslich die Domain. Alle anderen Komponenten wie Hosting, Mail, DNS Routing und Schutz etc. bestehen aus zahlreichen kostenlosen Diensten, die miteinander verbunden sind.",
 				],
 			},
 			contact: {
 				title: "Kontakt",
-				contactMe: "Bei Fragen oder Anregungen kontaktieren Sie mich bitte über folgende Email Adresse: <a href='mailto:contact@chraebsli.dev'>contact@chraebsli.dev</a>. Sie können mich auch über das Kontaktformular kontaktieren. <br /> Ich werde mich innerhalb von 1–2 Werktagen bei Ihnen melden.",
+				contactMe: "Bei Fragen oder Anregungen kontaktiere mich bitte über folgende Email Adresse: <a href='mailto:contact@chraebsli.dev'>contact@chraebsli.dev</a>. Alternativ kann auch über das Kontaktformular Kontakt mit mir aufgenommen werden.",
 				form: {
 					firstName: "Vorname",
 					lastName: "Nachname",
@@ -278,7 +279,7 @@ export default function de(): Translation {
 					message: "Nachricht",
 					required: "* Pflichtfeld",
 					send: "Senden",
-					success: "Danke für Ihre Nachricht. Ich werde mich innerhalb von 1–2 Werktagen bei Ihnen melden.",
+					success: "Danke für die Nachricht. Ich werde mich innerhalb von 1–2 Werktagen melden.",
 				},
 			},
 			imprint: {

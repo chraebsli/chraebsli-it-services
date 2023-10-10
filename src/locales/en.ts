@@ -5,11 +5,11 @@ export default function en(): Translation {
 		meta: {
 			home: {
 				title: "Home",
-				description: "I am offering different IT services to earn some money besides my school apprenticeship as an IT specialist.",
+				description: "I am offering different IT services.",
 			},
 			about: {
 				title: "About us",
-				description: "We are Chraebsli IT Services",
+				description: "I am Chraebsli IT Services",
 			},
 			projects: {
 				title: "Projects",
@@ -250,7 +250,7 @@ export default function en(): Translation {
 			home: {
 				welcome: "Welcome to chraebsli IT-Services!",
 				subWelcome: "- all different IT-Services -",
-				description: "I offer various IT services to earn some money alongside my school apprenticeship as a computer scientist.",
+				description: "",
 				sections: {
 					servicesTitle: "Services",
 					servicesDescription: "I offer following services:",
@@ -261,15 +261,16 @@ export default function en(): Translation {
 			about: {
 				title: "About us",
 				description: [
-					"We are Chraebsli IT Services and we offer various IT services. I'm an IT apprentice in my 3rd year and would like to earn something alongside my apprenticeship because I don't have a salary. This is because my apprenticeship is special and is financed by the canton of Bern (Switzerland).",
-					"I would like to earn money with these services, but above all I would like to enable smaller associations and start-ups to present themselves on the Internet without having to spend a lot of money. I try to keep the costs for hosting, email, administration, SEO, ... as low as possible to appear more attractive. Furthermore, I also hope that my projects and experiences will give me a higher value later on and that I can get better jobs.",
-					"I don't work on these projects in my full-time education. This means that in my spare time, I do this alongside other hobbies and on vacation. Since I'm truly interested in IT and programming, this is like another hobby for me.",
+					"My name is Nicholas Krebs, and I am a young Swiss computer scientist. In my spare time, I offer various IT services under the name “Chraebsli IT Services”.",
+					"During my apprenticeship as a computer scientist, I started offering IT services to earn something since I didn't get paid during my apprenticeship. This developed an interest in web development and programming, which led me to invest a lot of time in learning myself. To gain more experience, I started implementing numerous web projects.",
+					"Through projects for smaller societies, I discovered various ways to appear on the Internet extremely cheaply with a modern website and other services. This means that even the smallest clubs can be active on the Internet cost-effectively.",
 					"You can find my personal portfolio at <a href='https://nicholas-krebs.ch'>nicholas-krebs.ch</a>.",
+					"Fun fact: Running this website (and others) doesn't cost me any money; I only pay for the domain. All other components, such as hosting, mail, DNS routing, protection, etc., consist of numerous free services that are connected to each other.",
 				],
 			},
 			contact: {
 				title: "Contact",
-				contactMe: "If you have any questions or suggestions, please contact me at the following email address: <a href='mailto:contact@chraebsli.dev'>contact@chraebsli.dev</a>. You can also contact me using the contact form. <br /> I will get back to you within 1-2 business days.",
+				contactMe: "If you have any questions or suggestions, please contact me via the following email address: <a href='mailto:contact@chraebsli.dev'>contact@chraebsli.dev</a>. Alternatively, you can contact me using the contact form.",
 				form: {
 					firstName: "Firstname",
 					lastName: "Lastname",
